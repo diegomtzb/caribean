@@ -71,27 +71,80 @@ $(document).ready(function() {
         e.preventDefault();
         var lishowhideP = $( this ).find('p');
         lishowhideP.toggle();
+
+        if (lishowhideP.is(":visible") ){
+            $( this ).css("list-style-image", "url('imgs/Flecha-2.png')");
+        } else {
+            $( this ).css("list-style-image", "url('imgs/Flecha-1.png')");
+        }
+
     });
 
-    var showservices = $(".showservices");
+    /*var showservices = $(".showservices");
     showservices.hover(function() {
         var contenedor = $( this).parent().parent();
-        contenedor.find('p').toggle();
-    });
+        //contenedor.find('p').toggle();
+
+        if (!$( this ).hasClass('active') ){
+            contenedor.find('p').show();
+        }
+
+    });*/
+
+
+    var showservices = $(".showservices");
+    showservices.hover(
+        function() {
+            //mouse in
+            var contenedor = $( this).parent().parent();
+            contenedor.find('p').show();
+        }, function() {
+            //mouse out
+            var contenedor = $( this).parent().parent();
+            if (!$( this ).hasClass('active') ){
+                contenedor.find('p').hide();
+            }
+        }
+    );
+
+
 
     showservices.click(function(e){
         e.preventDefault();
 
+        $( this).toggleClass('active');
+        //showservices.removeClass('active');
+        //$( this).addClass('active');
+
+
+        /*if ($( this ).hasClass('active') ){
+            showservices.removeClass('active');
+            $( this).addClass('active');
+        } else {
+            showservices.removeClass('active');
+        }*/
+
+
         var contenedor = $( this).parent().parent();
-        contenedor.find('p').toggle();
 
 
 
         var serviciotoshow = contenedor.find('label').html();
         var showmeservice = $('#'+ serviciotoshow);
-        showmeservice.toggleClass('setService');
-        //$('.setService').hide();
         showmeservice.toggle();
+
+
+        var src= $( this ).attr("src");
+        src = src.substring(0, 16);
+
+
+        if ($( this ).hasClass('active') ){
+            $( this ).attr("src", src + '-selected.png');
+            contenedor.find('p').show();
+        } else {
+            $( this ).attr("src", src + '.png');
+            contenedor.find('p').hide();
+        }
 
 
     });

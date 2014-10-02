@@ -25,10 +25,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="0" selection-start="4350" selection-end="4350" vertical-scroll-proportion="0.36746302" vertical-offset="1173" max-vertical-offset="2193">
+                <state line="33" column="16" selection-start="1582" selection-end="1586" vertical-scroll-proportion="0.44262296" vertical-offset="183" max-vertical-offset="2414">
                   <folding />
                 </state>
               </provider>
@@ -37,7 +37,7 @@
           <file leaf-file-name="inmobiliaria.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/inmobiliaria.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="78" column="86" selection-start="3778" selection-end="3778" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="3417">
+                <state line="175" column="55" selection-start="9838" selection-end="9838" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3485">
                   <folding />
                 </state>
               </provider>
@@ -46,7 +46,7 @@
           <file leaf-file-name="grupoempresarial.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grupoempresarial.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="64" column="28" selection-start="3199" selection-end="3199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091">
+                <state line="64" column="105" selection-start="3434" selection-end="3434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091">
                   <folding />
                 </state>
               </provider>
@@ -55,7 +55,7 @@
           <file leaf-file-name="contacto.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/contacto.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="20" selection-start="1440" selection-end="1453" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1241">
+                <state line="10" column="8" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
                   <folding />
                 </state>
               </provider>
@@ -65,10 +65,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="style.styl" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="style.styl" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1004" column="0" selection-start="19056" selection-end="19056" vertical-scroll-proportion="0.84385765" vertical-offset="16333" max-vertical-offset="17204">
+                <state line="349" column="13" selection-start="7415" selection-end="7419" vertical-scroll-proportion="2.230492" vertical-offset="4075" max-vertical-offset="18615">
                   <folding />
                 </state>
               </provider>
@@ -77,7 +77,7 @@
           <file leaf-file-name="colorbox.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/colorbox.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="52" column="129" selection-start="3737" selection-end="3737" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1275">
+                <state line="52" column="129" selection-start="3737" selection-end="3737" vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1275">
                   <folding />
                 </state>
               </provider>
@@ -95,7 +95,7 @@
           <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="92" column="10" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.0" vertical-offset="965" max-vertical-offset="2346">
+                <state line="171" column="12" selection-start="4357" selection-end="4361" vertical-scroll-proportion="-20.24" vertical-offset="2401" max-vertical-offset="3247">
                   <folding />
                 </state>
               </provider>
@@ -177,16 +177,16 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/db.php" />
         <option value="$PROJECT_DIR$/css/media-queries.css" />
-        <option value="$PROJECT_DIR$/contacto.jade" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/single_descripcion.php" />
         <option value="$PROJECT_DIR$/action.php" />
         <option value="$PROJECT_DIR$/single_imagenes.php" />
-        <option value="$PROJECT_DIR$/inmobiliaria.jade" />
         <option value="$PROJECT_DIR$/colorbox.css" />
+        <option value="$PROJECT_DIR$/contacto.jade" />
         <option value="$PROJECT_DIR$/grupoempresarial.jade" />
-        <option value="$PROJECT_DIR$/style.styl" />
         <option value="$PROJECT_DIR$/index.jade" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/inmobiliaria.jade" />
+        <option value="$PROJECT_DIR$/style.styl" />
       </list>
     </option>
   </component>
@@ -319,6 +319,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -329,7 +330,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -613,13 +613,6 @@
         <state line="105" column="0" selection-start="5180" selection-end="5330" vertical-scroll-proportion="0.79038227" vertical-offset="1144" max-vertical-offset="1955" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contacto.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="20" selection-start="1440" selection-end="1453" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="20" selection-start="330" selection-end="330" vertical-scroll-proportion="0.17152466" vertical-offset="0" max-vertical-offset="6902" />
@@ -635,13 +628,6 @@
     <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/jade/bin/jade.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="164" column="0" selection-start="4069" selection-end="4069" vertical-scroll-proportion="0.33333334" vertical-offset="2598" max-vertical-offset="3264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="10" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.0" vertical-offset="965" max-vertical-offset="2346">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/single_descripcion.php">
@@ -679,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inmobiliaria.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="86" selection-start="3778" selection-end="3778" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="3417">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/colorbox.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="129" selection-start="3737" selection-end="3737" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1275">
@@ -693,23 +672,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grupoempresarial.jade">
+    <entry file="file://$PROJECT_DIR$/contacto.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="28" selection-start="3199" selection-end="3199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091">
+        <state line="10" column="8" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.styl">
+    <entry file="file://$PROJECT_DIR$/grupoempresarial.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1004" column="0" selection-start="19056" selection-end="19056" vertical-scroll-proportion="0.84385765" vertical-offset="16333" max-vertical-offset="17204">
+        <state line="64" column="105" selection-start="3434" selection-end="3434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inmobiliaria.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="55" selection-start="9838" selection-end="9838" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3485">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="4350" selection-end="4350" vertical-scroll-proportion="0.36746302" vertical-offset="1173" max-vertical-offset="2193">
+        <state line="33" column="16" selection-start="1582" selection-end="1586" vertical-scroll-proportion="0.44262296" vertical-offset="183" max-vertical-offset="2414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="12" selection-start="4357" selection-end="4361" vertical-scroll-proportion="-20.24" vertical-offset="2401" max-vertical-offset="3247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="349" column="13" selection-start="7415" selection-end="7419" vertical-scroll-proportion="2.230492" vertical-offset="4075" max-vertical-offset="18615">
           <folding />
         </state>
       </provider>

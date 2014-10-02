@@ -33,6 +33,9 @@ body {
   background-color: #be1622;
   height: 80px;
 }
+#page-grupo .header {
+  background: transparent;
+}
 #mainLogo {
   height: 260px;
   overflow: hidden;
@@ -52,8 +55,13 @@ body {
 .nav li a {
   color: #fff;
   font-size: 1.3em;
-  font-family: lato;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -69,8 +77,21 @@ body {
   background-color: transparent;
   text-decoration: underline;
 }
+#page-grupo .nav-pills > li.active > a,
+#page-grupo .nav-pills > li.active > a:hover,
+#page-grupo  .nav-pills > li.active > a:focus {
+  text-decoration: none;
+  border-bottom: 2px solid #be1622;
+  padding-bottom: 3px;
+}
+#page-grupo .nav > li > a:hover,
+#page-grupo  .nav > li > a:focus {
+  text-decoration: none;
+  border-bottom: 2px solid #be1622;
+  padding-bottom: 3px;
+}
 #page-home {
-  background: url("imgs/sala.jpg") no-repeat center center fixed;
+  background: url("imgs/Foto-incio.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -84,7 +105,7 @@ body {
   background-size: cover;
 }
 #page-grupo {
-  background: url("imgs/cartagena.jpg") no-repeat center center fixed;
+  background: url("imgs/Foto-Cartagena.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -131,6 +152,7 @@ body {
   margin-left: 2%;
   padding-top: 15px;
   padding-bottom: 15px;
+  overflow: hidden;
 }
 #section-main #busquedaCodigo div#codigo input {
   color: #be1622;
@@ -140,19 +162,28 @@ body {
   padding-left: 5px;
   font-style: italic;
   background: #fff url("imgs/Icono-Lupa.png") no-repeat right;
+  float: left;
 }
-::-webkit-input-placeholder {
+#section-main #busquedaCodigo div#codigo p {
+  color: #1a3c6e;
+  font-style: italic;
+  font-size: 0.8em;
+  float: left;
+  padding-left: 20px;
+  padding-top: 6px;
+}
+#section-main #busquedaCodigo div#codigo ::-webkit-input-placeholder {
   color: #be1622;
 }
-:-moz-placeholder {
+#section-main #busquedaCodigo div#codigo ::-moz-placeholder {
 /* Firefox 18- */
   color: #be1622;
 }
-::-moz-placeholder {
+#section-main #busquedaCodigo div#codigo ::-moz-placeholder {
 /* Firefox 19+ */
   color: #be1622;
 }
-:-ms-input-placeholder {
+#section-main #busquedaCodigo div#codigo ::-ms-input-placeholder {
   color: #be1622;
 }
 #section-main #busqueda {
@@ -228,7 +259,6 @@ body {
   color: #fff;
   margin-right: 2%;
   margin-left: 5%;
-  background-color: #efcc95;
   padding: 5px 24px;
   font-size: 1.5em;
   -webkit-border-radius: 4px;
@@ -273,13 +303,11 @@ body {
 }
 #section-main #busqueda div#ubicacion {
   background-color: transparent;
-  border: 1px solid #efcc95;
   padding: 0;
   margin: 0 10px;
 }
 #section-main #busqueda div#codigo {
   background-color: transparent;
-  border: 1px solid #efcc95;
   padding: 0;
   margin: 5px 24px;
   float: right;
@@ -317,7 +345,6 @@ body {
   margin-top: 10px;
   background-color: #ededed;
   overflow: hidden;
-  padding-top: 50px;
   padding-bottom: 50px;
   display: none;
   margin-bottom: 75px;
@@ -335,7 +362,6 @@ body {
   -ms-border-radius: 4px;
   border-radius: 4px;
   background-color: transparent;
-  border: 1px solid #efcc95;
   padding: 0;
   margin: 5px 35px;
 }
@@ -453,7 +479,7 @@ footer figure img {
   padding-bottom: 84;
 }
 section#mision {
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.5);
   margin-bottom: 15px;
   margin-top: 200px;
   padding: 40px 0;
@@ -476,7 +502,7 @@ section#mision p {
   font-style: italic;
 }
 section#vision {
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.5);
   margin-bottom: 85px;
   padding: 40px 0;
 }
@@ -539,6 +565,8 @@ section#vision p {
   font-size: 3em;
   font-weight: bold;
   color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 #nuestrosServicios #contenido div.texto h2 span {
   font-size: 0.8em;
@@ -547,33 +575,45 @@ section#vision p {
   font-size: 2em;
   display: none;
   color: #fff;
+  font-style: italic;
+  text-align: center;
 }
 #nuestrosServicios #contenido div.texto label {
   display: none;
 }
-#nuestrosServicios #fincaraiz {
+#nuestrosServicios .fincaraiz-gerenciadeproyectos {
   background-color: #fff;
   display: none;
+  position: relative;
 }
-#nuestrosServicios #fincaraiz h1 {
+#nuestrosServicios .fincaraiz-gerenciadeproyectos h1 {
   font-size: 4em;
   color: #e6332a;
   border-bottom: 1px solid #ef3f36;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
-#nuestrosServicios #fincaraiz ul li {
+#nuestrosServicios .fincaraiz-gerenciadeproyectos ul li {
   border-bottom: 1px solid #ef3f36;
+  list-style-image: url("imgs/Flecha-1.png");
 }
-#nuestrosServicios #fincaraiz ul li a {
+#nuestrosServicios .fincaraiz-gerenciadeproyectos ul li a {
   color: #1a3c6e;
-  font-size: 3em;
+  font-size: 2.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 65px;
 }
-#nuestrosServicios #fincaraiz ul li a:hover {
+#nuestrosServicios .fincaraiz-gerenciadeproyectos ul li a:hover {
   text-decoration: none;
 }
-#nuestrosServicios #fincaraiz ul li p {
+#nuestrosServicios .fincaraiz-gerenciadeproyectos ul li p {
   display: none;
+  font-size: 1.7em;
+  padding-bottom: 20px;
 }
-#nuestrosServicios #fincaraiz div.contacto {
+#nuestrosServicios .fincaraiz-gerenciadeproyectos div.contacto {
   border: 2px solid #ef3f36;
   color: #ef3f36;
   display: block;
@@ -588,49 +628,31 @@ section#vision p {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-#nuestrosServicios #fincaraiz div.contacto p {
+#nuestrosServicios .fincaraiz-gerenciadeproyectos div.contacto p {
   font-size: 1.4em;
   padding-top: 6px;
 }
-#nuestrosServicios #gerenciadeproyectos {
-  background-color: #fff;
-  display: none;
+#fincaraiz img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
-#nuestrosServicios #gerenciadeproyectos h1 {
-  font-size: 4em;
-  color: #e6332a;
+#fincaraiz ul li p {
+  max-width: 50%;
 }
-#nuestrosServicios #gerenciadeproyectos ul li {
-  border-bottom: 1px solid #ef3f36;
+#gerenciadeproyectos {
+  padding-top: 325px;
 }
-#nuestrosServicios #gerenciadeproyectos ul li a {
-  color: #1a3c6e;
-  font-size: 3em;
+#gerenciadeproyectos ul {
+  position: relative;
+  z-index: 1;
 }
-#nuestrosServicios #gerenciadeproyectos ul li a:hover {
-  text-decoration: none;
-}
-#nuestrosServicios #gerenciadeproyectos ul li p {
-  display: none;
-}
-#nuestrosServicios #gerenciadeproyectos div.contacto {
-  border: 2px solid #ef3f36;
-  color: #ef3f36;
-  display: block;
-  width: 230px;
-  height: 50px;
-  text-align: center;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-#nuestrosServicios #gerenciadeproyectos div.contacto p {
-  font-size: 1.4em;
-  padding-top: 6px;
+#gerenciadeproyectos img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 #page-grupo #asesor {
   background-color: #f39200;
@@ -645,8 +667,8 @@ section#vision p {
   margin-left: 5%;
 }
 #logo-grupo {
-  background: rgba(255,255,255,0.7);
-  margin-top: 350px;
+  background: rgba(255,255,255,0.3);
+  margin-top: 240px;
   margin-bottom: 120px;
 }
 #logo-grupo figure {
@@ -664,20 +686,31 @@ section#vision p {
   padding-bottom: 100px;
   padding-left: 100px;
 }
+#contenido-grupo div.container div {
+  padding-left: 7px;
+  padding-bottom: 1px;
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+}
 #contenido-grupo p {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #fff;
+  font-style: italic;
+  text-shadow: 1px 1px #000;
+}
+#contenido-grupo p span {
+  font-size: 0.8em;
 }
 #servicios-grupo {
   overflow: hidden;
   background: rgba(255,255,255,0.7);
 }
 #servicios-grupo div {
-  min-height: 680px;
-  padding-top: 115px;
-  padding-bottom: 60px;
+  padding-top: 50px;
   padding-left: 55px;
-  padding-right: 55px;
+  padding-right: 105px;
+  min-height: 400px;
 }
 #servicios-grupo div figure {
   overflow: hidden;
@@ -689,7 +722,7 @@ section#vision p {
   width: 100%;
 }
 #servicios-grupo div div.inside {
-  border-bottom: 5px solid #f39200;
+  border-bottom: 3px solid #f39200;
 }
 #servicios-grupo #midDiv {
   border-left: 4px solid #be1622;
@@ -702,6 +735,10 @@ section#vision p {
 }
 #servicios-grupo div p {
   font-size: 2em;
+}
+#servicios-grupo div p span {
+  font-weight: bold;
+  font-style: italic;
 }
 #contacto-grupo {
   margin-top: 110px;
@@ -789,6 +826,7 @@ section#vision p {
   padding-top: 250px;
   padding-bottom: 100px;
   background: rgba(255,255,255,0.6);
+  min-height: 100%;
 }
 #contacto-mainsection #info-contacto h3 {
   color: #be1622;
@@ -935,4 +973,46 @@ section#vision p {
 }
 .inmueble_id {
   display: none;
+}
+#suscripcion {
+  background-color: #be1622;
+}
+#suscripcion div {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#suscripcion > div > p {
+  color: #fff;
+  font-style: italic;
+}
+#suscripcion div input {
+  width: 80%;
+  height: 43px;
+  margin: 0 auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  padding-left: 10px;
+}
+#suscripcion div div.botonSuscribir {
+  width: 145px;
+  height: 43px;
+  color: #fff;
+  font-size: 1.5em;
+  background-color: #e6332a;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  float: left;
+  margin-left: 4%;
+  padding-left: 18px;
+  padding-top: 4px;
 }

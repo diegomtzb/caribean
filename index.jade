@@ -34,7 +34,7 @@ html
             main
                 section#section-main
                     div#alignText
-                        h2 LE ASESORAMOS DONDE REALIZAR <span><br> SU MEJOR INVERSION</span>
+                        h2 LE ASESORAMOS DONDE REALIZAR <span><br> SU MEJOR INVERSIÓN</span>
                     div#busqueda
                         h3 BUSQUE SU INMUEBLE
                         div.spaceBar
@@ -73,6 +73,10 @@ html
                     div#busquedaCodigo
                         div#codigo
                             input(type="text", placeholder="Buscar por código", name="codigo")
+                            p.
+                                Todos nuestros inmuebles tienen un código que los identifica,
+                                de esta manera facilitamos la búsqueda
+
 
                         //div#criterios2
 
@@ -87,8 +91,17 @@ html
                             div#codigo
                                 input(type="text", placeholder="BUSCAR POR CODIGO", name="codigo")
 
-
                 section#section-search
+
+                    section#suscripcion
+                        div
+                            p.
+                                Recibe en tu correo las ultimas ofertas inmobiliarias,
+                                remate de bienes y oportunidades de inversión.
+                            input(type="text", placeholder="ejemplo@email.com", name="suscribe")
+                            div.botonSuscribir
+                                p Suscribirse
+
                     div#order_by
                         select(onChange="javascript:orderByHasChanged();")
                             option(value="" disabled selected) Ordenar por
