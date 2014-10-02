@@ -28,7 +28,7 @@
           <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="16" selection-start="1582" selection-end="1586" vertical-scroll-proportion="0.44262296" vertical-offset="183" max-vertical-offset="2414">
+                <state line="41" column="46" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.37087598" vertical-offset="371" max-vertical-offset="2414">
                   <folding />
                 </state>
               </provider>
@@ -37,7 +37,7 @@
           <file leaf-file-name="inmobiliaria.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/inmobiliaria.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="175" column="55" selection-start="9838" selection-end="9838" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3485">
+                <state line="185" column="0" selection-start="10040" selection-end="10463" vertical-scroll-proportion="0.0" vertical-offset="2606" max-vertical-offset="3485">
                   <folding />
                 </state>
               </provider>
@@ -46,7 +46,7 @@
           <file leaf-file-name="grupoempresarial.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grupoempresarial.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="64" column="105" selection-start="3434" selection-end="3434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091">
+                <state line="116" column="0" selection-start="5585" selection-end="5585" vertical-scroll-proportion="0.0" vertical-offset="1212" max-vertical-offset="2125">
                   <folding />
                 </state>
               </provider>
@@ -55,7 +55,7 @@
           <file leaf-file-name="contacto.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/contacto.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="8" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+                <state line="4" column="15" selection-start="83" selection-end="85" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="1275">
                   <folding />
                 </state>
               </provider>
@@ -65,10 +65,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="style.styl" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="style.styl" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="349" column="13" selection-start="7415" selection-end="7419" vertical-scroll-proportion="2.230492" vertical-offset="4075" max-vertical-offset="18615">
+                <state line="719" column="20" selection-start="14047" selection-end="14047" vertical-scroll-proportion="-14.48" vertical-offset="11861" max-vertical-offset="18819">
                   <folding />
                 </state>
               </provider>
@@ -86,16 +86,16 @@
           <file leaf-file-name="media-queries.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/media-queries.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="8" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="986">
+                <state line="37" column="8" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="986">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="171" column="12" selection-start="4357" selection-end="4361" vertical-scroll-proportion="-20.24" vertical-offset="2401" max-vertical-offset="3247">
+                <state line="163" column="0" selection-start="4425" selection-end="4425" vertical-scroll-proportion="0.95752007" vertical-offset="1937" max-vertical-offset="3519">
                   <folding />
                 </state>
               </provider>
@@ -122,7 +122,7 @@
           <file leaf-file-name="action.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/action.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="120" column="34" selection-start="3503" selection-end="3503" vertical-scroll-proportion="0.0" vertical-offset="1522" max-vertical-offset="2329">
+                <state line="120" column="34" selection-start="3503" selection-end="3503" vertical-scroll-proportion="-20.884615" vertical-offset="1497" max-vertical-offset="2329">
                   <folding />
                 </state>
               </provider>
@@ -181,12 +181,12 @@
         <option value="$PROJECT_DIR$/action.php" />
         <option value="$PROJECT_DIR$/single_imagenes.php" />
         <option value="$PROJECT_DIR$/colorbox.css" />
-        <option value="$PROJECT_DIR$/contacto.jade" />
-        <option value="$PROJECT_DIR$/grupoempresarial.jade" />
-        <option value="$PROJECT_DIR$/index.jade" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/inmobiliaria.jade" />
+        <option value="$PROJECT_DIR$/grupoempresarial.jade" />
+        <option value="$PROJECT_DIR$/contacto.jade" />
+        <option value="$PROJECT_DIR$/index.jade" />
         <option value="$PROJECT_DIR$/style.styl" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -314,7 +314,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -618,13 +618,6 @@
         <state line="9" column="20" selection-start="330" selection-end="330" vertical-scroll-proportion="0.17152466" vertical-offset="0" max-vertical-offset="6902" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/media-queries.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="8" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/jade/bin/jade.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="164" column="0" selection-start="4069" selection-end="4069" vertical-scroll-proportion="0.33333334" vertical-offset="2598" max-vertical-offset="3264" />
@@ -640,13 +633,6 @@
     <entry file="file://$PROJECT_DIR$/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="34" selection-start="3503" selection-end="3503" vertical-scroll-proportion="0.0" vertical-offset="1522" max-vertical-offset="2329">
           <folding />
         </state>
       </provider>
@@ -672,44 +658,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contacto.jade">
+    <entry file="file://$PROJECT_DIR$/inmobiliaria.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+        <state line="185" column="0" selection-start="10040" selection-end="10463" vertical-scroll-proportion="0.0" vertical-offset="2606" max-vertical-offset="3485">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grupoempresarial.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="105" selection-start="3434" selection-end="3434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091">
+        <state line="116" column="0" selection-start="5585" selection-end="5585" vertical-scroll-proportion="0.0" vertical-offset="1212" max-vertical-offset="2125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inmobiliaria.jade">
+    <entry file="file://$PROJECT_DIR$/contacto.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="55" selection-start="9838" selection-end="9838" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3485">
+        <state line="4" column="15" selection-start="83" selection-end="85" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="16" selection-start="1582" selection-end="1586" vertical-scroll-proportion="0.44262296" vertical-offset="183" max-vertical-offset="2414">
+        <state line="41" column="46" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.37087598" vertical-offset="371" max-vertical-offset="2414">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/action.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="12" selection-start="4357" selection-end="4361" vertical-scroll-proportion="-20.24" vertical-offset="2401" max-vertical-offset="3247">
+        <state line="120" column="34" selection-start="3503" selection-end="3503" vertical-scroll-proportion="-20.884615" vertical-offset="1497" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/media-queries.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="8" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="986">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="349" column="13" selection-start="7415" selection-end="7419" vertical-scroll-proportion="2.230492" vertical-offset="4075" max-vertical-offset="18615">
+        <state line="719" column="20" selection-start="14047" selection-end="14047" vertical-scroll-proportion="-14.48" vertical-offset="11861" max-vertical-offset="18819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="0" selection-start="4425" selection-end="4425" vertical-scroll-proportion="0.95752007" vertical-offset="1937" max-vertical-offset="3519">
           <folding />
         </state>
       </provider>
