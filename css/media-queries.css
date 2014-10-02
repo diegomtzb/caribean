@@ -1,0 +1,52 @@
+/************************************************************************************
+smaller than 768
+*************************************************************************************/
+@media screen and (max-width: 768px) {
+    /*single*/
+    /*--------------------------------*/
+
+    .fullEntry div.title{
+        width: 100%;
+    }
+
+    .fullEntryFigure{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .fullEntryFigure img{
+        max-width: 350px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    /*--------------------------------*/
+
+
+}
+/*smaller than 991*/
+@media screen and (max-width: 991px) {
+    #servicios-grupo div {
+        min-height: 402px;
+    }
+}
+
+/*Bigger than 992*/
+@media (min-width: 992px) {
+    #mision-vision #vision {
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1350px) {
+    .container {
+        width: 1316px;
+    }
+}
+
+@media (min-width: 1526px) {
+    .container {
+        width: 1487px;
+    }
+}

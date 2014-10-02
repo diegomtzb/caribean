@@ -1,0 +1,1006 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?-lcj9le');
+  src: url('fonts/icomoon.eot?#iefix-lcj9le') format('embedded-opentype'),
+    url('fonts/icomoon.woff?-lcj9le') format('woff'),
+    url('fonts/icomoon.ttf?-lcj9le') format('truetype'),
+    url('fonts/icomoon.svg?-lcj9le#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkmark:after {
+  content: "\e600";
+}
+
+
+clrBckground = #EEEDE8
+
+clrDarkGreen = #668049
+clrLightGreen = #B6CFAA
+
+clrGreen = green
+clrLightGray = #f0f3f6
+clrDeepGray = rgb(100,100,100)
+clrGray = rgb(215, 218, 218)
+
+clrBluishGray = #445061
+clrBluishLightGray = #dde2e8
+
+
+maxWidth = 1664px
+
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  -o-{prop} args
+  -ms-{prop} args
+  {prop} args
+
+transition()
+  vendor(transition, arguments)
+
+user-select(value)
+  vendor(user-select, value)
+
+border-radius(amount)
+  vendor(border-radius, amount)
+
+border-top-radius(amount)
+  vendor(border-top-left-radius, amount)
+  vendor(border-top-right-radius, amount)
+
+border-bottom-radius(amount)
+  vendor(border-bottom-left-radius, amount)
+  vendor(border-bottom-right-radius, amount)
+
+border-left-radius(amount)
+  vendor(border-top-left-radius, amount)
+  vendor(border-bottom-left-radius, amount)
+
+border-right-radius(amount)
+  vendor(border-top-right-radius, amount)
+  vendor(border-bottom-right-radius, amount)
+
+
+body
+  font-size 16px
+  background-color clrBckground
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  min-height 100%
+
+.header
+  max-width: maxWidth
+  margin: 0 auto;
+  background-color #BE1622
+  height: 80px;
+
+#mainLogo
+  height: 260px;
+  overflow hidden
+
+#mainLogo img
+  height 100%
+  margin-top: -8px;
+
+#mainLogo figcaption
+  display none
+
+.nav
+  margin-top: 30px;
+  margin-right: 30px;
+  font-family: 'Lato', sans-serif;
+
+.nav li a
+  color white
+  font-size: 1.3em;
+  font-family: lato;
+  font-weight: 300;
+
+.nav > li > a:hover, .nav > li > a:focus
+  text-decoration: underline;
+  background-color: transparent;
+
+.nav-pills > li {
+  float: left;
+}
+
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus
+  background-color: transparent
+  text-decoration underline
+
+#page-home
+  background: url('imgs/sala.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+#page-nosotros
+  background: url('imgs/Inmobiliaria-Familia.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+#page-grupo
+  background: url('imgs/cartagena.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+#page-contacto
+  background: url('imgs/call-center.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+#section-main #alignText
+  display: table;
+  width: 100%;
+  height: 100px;
+  //text-align: center;
+  color white
+  padding-top: 65px;
+
+#section-main #alignText h2
+  display: table-cell;
+  vertical-align: middle;
+  float: left;
+
+#section-main #alignText h2 span
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+
+paddingTopDownSize = 5px
+paddingLeftRightSize = 24px
+
+
+#section-main #busquedaCodigo
+  background: rgba(255,255,255,0.6);
+  border-radius: 4px;
+  max-width: 83%;
+  margin: auto;
+  margin-top 15px
+
+#section-main #busquedaCodigo div#codigo
+  font-size: 1.5em;
+  margin-left 2%
+  padding-top 15px
+  padding-bottom  15px
+
+#section-main #busquedaCodigo div#codigo input
+  color: #be1622;
+  border: 2px solid #be1622;
+  padding: 3px 0;
+  width: 225px;
+  padding-left 5px
+  font-style italic
+  background: white url("imgs/Icono-Lupa.png") no-repeat right;
+
+::-webkit-input-placeholder {
+  color: #be1622;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #be1622;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #be1622;
+}
+
+:-ms-input-placeholder {
+  color: #be1622;
+}
+
+#section-main #busqueda
+  background: rgba(255,255,255,0.6);
+  border-radius: 4px;
+  max-width: 83%;
+  margin: auto;
+
+#section-main #busqueda h3
+  color #1A3C6E
+  text-align: center;
+  font-size: 1.8em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin 0
+  padding: 15px 0;
+
+.spaceBar
+  height 2px
+  width: 96%;
+  margin: 0 auto;
+  background-color #1A3C6E
+  border-radius: 4px;
+  margin-bottom: 20px;
+  clear both
+
+#section-main #busqueda #criterios1
+  display: inline-block
+  width 100%
+  margin-bottom: 25px;
+
+#section-main #busqueda #criterios1 div
+  float left
+  color white
+  background-color #be1622
+  margin-right 2%
+  margin-left: 2%;
+  padding: paddingTopDownSize paddingLeftRightSize;
+  //padding-left: 50px;
+  font-size: 1.5em;
+  border-radius: 4px;
+
+#section-main #busqueda #criterios1 div label
+  display none
+
+#section-main #busqueda #criterios1 select
+  color #C6C6CD
+  border: 2px solid #BE1622;
+  padding: 3px 0;
+  width 312px
+
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: white url("imgs/Iconos-Flecha.png") no-repeat right;
+
+
+#section-main #busqueda #criterios2
+  display: inline-block
+  width 100%
+
+#section-main #busqueda #criterios2 div
+  float left
+  color white
+  margin-right 2%
+  margin-left: 5%;
+  background-color #EFCC95
+  padding:paddingTopDownSize paddingLeftRightSize;
+  font-size: 1.5em;
+  border-radius: 4px;
+
+#section-main #busqueda div#ventas
+  padding: 5px 42px;
+  border: 1px solid #be1622;
+
+#section-main #busqueda div#ventas:hover
+  cursor pointer
+  background-color #e6332a
+
+#section-main #busqueda div#ventas.active
+  background-color #e6332a
+
+#section-main #busqueda div.checkTrue span.icon-checkmark
+  //display none
+  color #efcc95
+
+#section-main #busqueda div.checkTrue.active span.icon-checkmark
+  //display inline
+  color white
+
+#section-main #busqueda div#arriendos
+  margin-left 0%
+  border: 1px solid #be1622
+
+#section-main #busqueda div#arriendos:hover
+  cursor pointer
+  background-color #e6332a
+
+#section-main #busqueda div#arriendos.active
+  background-color #e6332a
+
+#section-main #busqueda div#tipo-inmueble
+  background-color: transparent;
+  //border: 1px solid #efcc95;
+  padding: 0;
+  margin: 0 10px;
+  font-style italic
+
+#section-main #busqueda div#ubicacion
+  background-color: transparent;
+  border: 1px solid #efcc95;
+  padding: 0;
+  margin: 0 10px;
+
+#section-main #busqueda div#codigo
+  background-color: transparent;
+  border: 1px solid #efcc95;
+  padding: 0;
+  margin: paddingTopDownSize paddingLeftRightSize;
+  float: right;
+  margin-right: 5%;
+
+#section-main #busqueda div#buscar
+  background-color: #BE1622
+  //float: right;
+  margin-right: 2%;
+  margin-left: 1%;
+  padding: 5px 10px;
+
+#section-main #busqueda div#buscar:hover
+  cursor pointer
+
+#section-main #busqueda div#nuevo:hover
+  cursor pointer
+  background-color #f39200
+
+#section-main #busqueda div#nuevo.active
+  background-color #f39200
+
+#section-main #busqueda div#usado:hover
+  cursor pointer
+  background-color #f39200
+
+#section-main #busqueda div#usado.active
+  background-color #f39200
+
+#section-main #busqueda div#codigo input
+  color #c6c6cd
+  border: 2px solid #1a3c6e;
+  width: 218px;
+
+
+
+
+
+
+#section-search
+  margin-top 10px
+  background-color #EDEDED
+  overflow: hidden
+  padding-top 50px
+  padding-bottom 50px
+  display: none
+  margin-bottom: 75px;
+  width 83%
+  margin-left auto
+  margin-right auto
+
+#section-search div#order_by
+  float left
+  color white
+  font-size: 1.5em;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #efcc95;
+  padding: 0;
+  margin: 5px 35px;
+
+#section-search div#order_by select
+  color #C6C6CD
+
+.search_result
+  padding 0
+  padding-right 1%
+  padding-left 1%
+  margin-top: 16px;
+  margin-bottom: 16px;
+  overflow: hidden;
+
+.search_result div.result_info
+  background-color #F39200
+  height 163px
+  width 50%
+  float left
+  padding-top: 15px;
+
+.search_result div.result_info P
+  color white
+  text-align center
+
+.search_result div.result_info p.pTipoInmuble
+  font-size: 1.4em;
+
+.search_result div.result_info p.pPrice
+  font-size: 1.3em;
+  color #575756
+  background-color white
+  margin-left: 13px;
+  margin-right: 13px;
+
+.search_result figure
+  background-color yellow
+  height 163px
+  width 50%
+  float left
+  overflow hidden
+
+.search_result figure img
+  width: 100%;
+  min-height: 100%;
+
+footer
+  width: 100%;
+  height 76px
+  background-color #EDEDED
+  bottom 0
+  padding: 15px 50px 30px 50px;
+  overflow hidden
+  position: relative
+
+footer.absolutePosition
+  position: absolute
+  overflow: hidden
+
+footer p
+  float left
+  color #AE8B8B
+
+footer div
+  float left
+  margin 0 8px
+  height: 22px;
+  width 1px
+  background-color #575756
+
+footer div.iamlast
+  height: 46px;
+  margin-top: -13px;
+
+footer figure
+  overflow hidden
+  position: absolute;
+  top: 0;
+  right: 100px;
+
+footer figure p
+  font-size: 0.6em;
+
+footer figure img
+  clear: both;
+  float: left;
+
+.noFloat
+  float none
+
+#inmobiliaria-mainsection
+  margin-top: 650px;
+
+#inmobiliaria-mainsection div
+  //border-left 4px solid #E30613
+  //max-width: 770px;
+  padding-left: 7px
+  padding-bottom: 1px;
+  text-align center
+  max-width: 85%;
+  margin: auto;
+
+#inmobiliaria-mainsection div h2
+  color #ffffff
+  font-style: italic;
+  font-size 2.5em
+  text-shadow: 1px 1px black;
+
+#inmobiliaria-mainsection div h2 span
+  font-size 0.8em
+
+#mision-vision
+  background-color white
+  overflow: hidden;
+  margin-top 23px
+  padding-top: 20px;
+  padding-bottom: 84;
+
+section#mision
+  background: rgba(255,255,255,0.7);
+  margin-bottom 15px
+  margin-top 200px
+  padding: 40px 0;
+
+section#mision > div > div
+  width 80%
+  margin: auto;
+
+section#vision > div > div
+  width 80%
+  margin: auto;
+
+section#mision h3
+  color #BE1630
+  font-size: 2.3em;
+
+section#mision p
+  color #1a3c6e
+  font-size: 1.8em;
+  font-style: italic;
+
+
+section#vision
+  background: rgba(255,255,255,0.7);
+  margin-bottom 85px
+  padding: 40px 0;
+
+section#vision h3
+  color #BE1630
+  font-size: 2.3em;
+
+section#vision p
+  color #1a3c6e
+  font-size: 1.8em;
+  font-style: italic;
+
+
+
+
+
+
+#mision-vision h3
+  color #BE1630
+  font-size: 1.8em;
+
+#mision-vision p
+  color #5A3C3B
+  font-size: 1.4em;
+
+#mision-vision #vision
+  padding-right 100px
+
+#nuestrosServicios #titulo
+  background-color #E6332A
+  padding: 62px 120px;
+
+#nuestrosServicios h3
+  color #ffffff
+  font-family: 'Lato', sans-serif;
+  font-style italic
+  font-size: 3.5em;
+  font-weight: bold;
+
+#nuestrosServicios #contenido
+  background-color #E6332A
+  overflow: hidden
+  padding-top: 90px;
+  padding-bottom: 200px;
+
+#nuestrosServicios #contenido figure
+  overflow hidden
+  width 300px
+  //height: 170px;
+  display block
+  margin 0 auto
+
+#nuestrosServicios #contenido figure img
+  width  100%
+
+#nuestrosServicios #contenido figure img:hover
+  cursor: pointer
+
+
+#nuestrosServicios #contenido div.texto
+  min-height: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+
+#nuestrosServicios #contenido div.texto h2
+  text-align center
+  font-size: 3em;
+  font-weight bold
+  color white
+
+#nuestrosServicios #contenido div.texto h2 span
+  font-size: 0.8em;
+
+#nuestrosServicios #contenido div.texto p
+  font-size: 2em;
+  display none
+  color white
+
+#nuestrosServicios #contenido div.texto label
+  display none
+
+#nuestrosServicios #fincaraiz
+  background-color #ffffff
+  display: none
+
+#nuestrosServicios #fincaraiz h1
+  font-size: 4em;
+  color #e6332a
+  border-bottom: 1px solid #EF3F36;
+
+#nuestrosServicios #fincaraiz ul li
+  border-bottom: 1px solid #EF3F36;
+
+
+#nuestrosServicios #fincaraiz ul li a
+  color #1a3c6e
+  font-size: 3em;
+
+#nuestrosServicios #fincaraiz ul li a:hover
+  text-decoration none
+
+
+#nuestrosServicios #fincaraiz ul li p
+  display none
+
+#nuestrosServicios #fincaraiz div.contacto
+  border: 2px solid #EF3F36;
+  color #EF3F36
+  display: block;
+  width: 230px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin-top 50px
+  margin-bottom 20px
+
+#nuestrosServicios #fincaraiz div.contacto p
+  font-size: 1.4em;
+  padding-top: 6px;
+
+
+
+
+
+
+#nuestrosServicios #gerenciadeproyectos
+  background-color #ffffff
+  display none
+
+#nuestrosServicios #gerenciadeproyectos h1
+  font-size: 4em;
+  color #e6332a
+
+#nuestrosServicios #gerenciadeproyectos ul li
+  border-bottom: 1px solid #EF3F36;
+
+
+#nuestrosServicios #gerenciadeproyectos ul li a
+  color #1a3c6e
+  font-size: 3em;
+
+#nuestrosServicios #gerenciadeproyectos ul li a:hover
+  text-decoration none
+
+
+#nuestrosServicios #gerenciadeproyectos ul li p
+  display none
+
+#nuestrosServicios #gerenciadeproyectos div.contacto
+  border: 2px solid #EF3F36;
+  color #EF3F36
+  display: block;
+  width: 230px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin-top 50px
+  margin-bottom 20px
+
+#nuestrosServicios #gerenciadeproyectos div.contacto p
+  font-size: 1.4em;
+  padding-top: 6px;
+
+
+
+
+#page-grupo #asesor
+  background-color #F39200
+  overflow: hidden;
+
+#page-grupo #asesor p
+  float: left
+  color white
+  font-style: italic;
+  font-size: 1.3em;
+  max-width: 505px;
+  margin-left: 5%;
+
+#logo-grupo
+  background: rgba(255,255,255,0.7);
+  margin-top 350px
+  margin-bottom: 120px;
+
+#logo-grupo figure
+  margin: 45px 0 80px 0;
+
+#logo-grupo figure img
+  display block
+  margin 0 auto
+
+#contenido-grupo
+  background-color transparent
+  overflow: hidden;
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+
+#contenido-grupo p
+  font-size: 2em;
+  color white
+
+#servicios-grupo
+  overflow hidden
+  background rgba(255,255,255,0.7)
+
+
+#servicios-grupo div
+  min-height 680px
+  //border-bottom 64px solid #BE1622
+  padding-top: 115px;
+  padding-bottom: 60px;
+  padding-left: 55px;
+  padding-right: 55px;
+
+#servicios-grupo div figure
+  overflow hidden
+  //width 430px
+  //height: 430px
+
+#servicios-grupo div figure figcaption
+  display none
+
+#servicios-grupo div figure img
+  width 100%
+
+#servicios-grupo div div.inside
+  border-bottom 5px solid #F39200
+
+
+
+#servicios-grupo #midDiv
+  border-left 4px solid #BE1622
+  border-right 4px solid #BE1622
+
+#servicios-grupo div h2
+  color #1A3C6E
+  font-weight bold
+  font-size: 2em;
+
+#servicios-grupo div p
+  font-size: 2em;
+
+#contacto-grupo
+  margin-top: 110px;
+  margin-bottom: 100px;
+  //background: transparent
+  //display: inline-block;
+  //width: 100%;
+
+#contacto-grupo div
+  border: 3px solid #F39200;
+  color #F39200
+  margin: auto;
+  display: block;
+  width: 350px;
+  height: 80px;
+  text-align: center;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.7);
+
+#contacto-grupo div p
+  font-size: 2em;
+  padding-top: 12px;
+
+#info-contacto
+  min-height 400px
+
+#info-contacto h3
+  color #1A3C6E
+  font-size: 2.2em;
+
+#info-contacto h3 span
+  font-weight bold
+
+#info-contacto ul
+  margin-bottom 10px
+
+#info-contacto ul li
+  color #575756
+
+#info-contacto ul li.titleContact
+  color #BE1630
+  font-size: 1.6em;
+
+#info-contacto ul li.italic
+  font-style italic
+
+#campos-contacto
+  min-height 400px
+  padding-top: 108px;
+
+
+
+#campos-contacto input
+  border 1px solid #BE1622
+  height: 38px;
+  border-radius 3px
+  margin-right: 15%;
+  margin-bottom: 14px;
+  float: left;
+  width: 30%;
+
+#campos-contacto textarea
+  border 1px solid #BE1622
+  border-radius 3px
+  margin-bottom 14px
+  //max-width: 82%;
+  float: left;
+  width: 76%;
+  height: 190px;
+
+#campos-contacto input[type="submit"]
+  max-width: 95px;
+  background: #be1622;
+  color: white;
+  border: none;
+  width: 95px;
+
+#blueRGBAColor
+  padding-top: 250px;
+  padding-bottom: 100px;
+  //background: rgba(26,60,110,0.7);
+  background rgba(255,255,255,0.6);
+
+#contacto-mainsection #info-contacto h3
+  color #be1622
+
+#contacto-mainsection #info-contacto h3 span
+  color #1a3c6e
+
+#contacto-mainsection #info-contacto li
+  color #1a3c6e
+
+#contacto-mainsection #info-contacto li.titleContact
+  color #be1622
+
+
+#page-single_imagenes
+  background-color white
+
+#page-single_imagenes .header
+  background-color #F39200
+  height: 70px;
+
+#page-single_imagenes .header ul.nav
+  margin-top: 0
+  margin-right: 0
+
+#page-single_imagenes .header ul li
+  font-size: 1.5em;
+
+#single-info
+  background-color #EDEDED
+  display: inline-block;
+  float right
+  margin-top: 54px;
+  border-radius 3px
+  padding: 38px 25px 20px 25px;
+  line-height: 0.9em;
+  text-align center
+  -webkit-box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.83);
+  -moz-box-shadow:    0px 7px 14px 0px rgba(50, 50, 50, 0.83);
+  box-shadow:         0px 7px 14px 0px rgba(50, 50, 50, 0.83);
+
+
+#single-info p
+  font-size 1.5em
+  color black
+  clear both
+
+#single-info p.precio
+  border 2px solid #F39200
+  border-radius 3px
+  font-size: 2.5em;
+  padding: 22px 30px;
+  color #575756
+
+#page-single_imagenes #contenido-single
+  overflow hidden
+  float: left;
+  clear: left;
+  max-width: 100%;
+
+#page-single_imagenes #contenido-single h2
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+
+#page-single_imagenes #contenido-single figure#mainFigure
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 600px;
+  padding: 2% 7%;
+  border: 1px solid #737373;
+  background-color #EDEDED
+
+#page-single_imagenes #contenido-single figure#mainFigure img
+  max-width 100%
+
+#page-single_imagenes #minuatures-single
+  overflow: hidden;
+  clear both
+
+#page-single_imagenes #minuatures-single figure.miniatureFigure
+  width: 135px;
+  height: 100px;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-right: 25px
+  float left
+  position: relative
+
+
+#page-single_imagenes #minuatures-single figure.miniatureFigure.active
+  background-color yellow
+
+#page-single_imagenes #minuatures-single figure.miniatureFigure img
+  max-width: 100%;
+
+#page-single_imagenes #minuatures-single figure.miniatureFigure img:hover
+  cursor pointer
+
+#page-single_imagenes #footer-single
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+#page-single_imagenes #footer-single #logo-single
+  float: right;
+
+
+#page-single_imagenes #contenido-single div#mainDescripcion
+  overflow: hidden;
+  max-width: 100%;
+  padding: 2% 7%;
+  border: 1px solid #737373;
+  background-color #EDEDED
+
+#page-single_imagenes #contenido-single div#mainDescripcion div
+  border-bottom 4px solid #1A3C6E
+  overflow: hidden;
+
+#page-single_imagenes #contenido-single div#mainDescripcion div:last-child
+  border-bottom none
+
+#page-single_imagenes #contenido-single div#mainDescripcion div h4
+  font-size: 1.6em;
+  font-weight bold
+
+#page-single_imagenes #contenido-single div#mainDescripcion div p
+  font-size: 1.6em;
+  margin-top: 6px;
+
+#page-single_imagenes h3
+  color #1A3C6E
+  font-size 1.6em
+  clear: both;
+  padding-top: 75px;
+  padding-left: 30px;
+
+#page-single_imagenes h3 span
+  color #000000
+
+
+
+
+.inmueble_id
+  display none
+
+
+

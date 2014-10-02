@@ -1,0 +1,67 @@
+doctype html5
+html
+    head
+        title Contacto - Caribean Service
+        meta(charset='utf-8')
+        meta(name="description" content="Contacto - Somos una empresa especializada en el sector de gestión inmobiliria: Ventas, arriendos, avalúos, administración de propiedad horizontal y gerenciamiento de ventas de nuevos proyectos inmobiliarios.")
+        meta(name="keywords" content="Empresarial, Inmobiliaria, Ventas, Arriendos, Avaluos, propiedad horizontal, bienes, proyectos, inmobiliarios")
+        meta(name="author" content="Caribean service")
+        meta(name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1")
+
+
+
+        link(rel='stylesheet', href='css/reset.css')
+        link(rel='stylesheet', href='css/bootstrap.css')
+        link(rel='stylesheet', href='style.css')
+        link(rel='stylesheet', href='css/media-queries.css')
+    body#page-contacto
+        header.header
+            div.container
+                figure.pull-left#mainLogo
+                    img(src='imgs/logo.png')
+                    figcaption Caribean Service
+                ul.nav.nav-pills.pull-right
+                    li: a(href='index.html') INICIO
+                    li: a(href='inmobiliaria.html') INMOBILIARIA
+                    li: a(href='grupoempresarial.html') GRUPO EMPRESARIAL
+                    li.active: a(href='#') CONTACTO
+        main
+            section#contacto-mainsection
+                div#blueRGBAColor
+                    div.container
+
+                        div#info-contacto.col-md-5
+                            h3 CONTACTANOS <br><span>PARA ASESORARTE</span>
+                            ul.col-lg-5
+                                li.titleContact Teléfonos:
+                                li (5) 668 70 64
+                                li (5) 660 52 05
+                            ul.col-lg-7
+                                li.titleContact Email:
+                                li gerenciacomercial@caribeanservice.com
+
+                            ul.col-sm-12
+                                li.titleContact Dirección:
+                                li Centro, Sector La Matuna Edificio Banco Cafetero
+                                li Oficina 703 -704 - 705
+                                li.italic Cartagena - Colombia
+                        div#campos-contacto.col-md-7
+                            form(name="htmlform" method="post" action="html_form_send.php")
+                                input(type="text", placeholder="Nombre", name="name", required = "required")
+                                input(type="email", placeholder="E-mail", name="email", required = "required")
+                                textarea(placeholder="Mensaje", name="message", required = "required")
+                                input(type="submit" value="Enviar")
+
+
+        footer
+            p gerenciacomercial@caribeanservice.com
+            div
+            p (5)668 70 64 - (5) 660 52 05
+            div
+            p Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia
+            div
+            figure
+                p SOMOS UNA EMPRESA MIEMBRO DE
+                img(src="imgs/logo_footer.png")
+    script(type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js")
+    script(type="text/javascript" src="js/script.js")

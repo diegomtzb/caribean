@@ -1,0 +1,123 @@
+doctype html5
+html
+    head
+        title Caribean Service
+        meta(charset='utf-8')
+        meta(name="description" content="Somos una empresa especializada en el sector de gestión inmobiliria: Ventas, arriendos, avalúos, administración de propiedad horizontal y gerenciamiento de ventas de nuevos proyectos inmobiliarios.")
+        meta(name="keywords" content="Empresarial, Inmobiliaria, Ventas, Arriendos, Avaluos, propiedad horizontal, bienes, proyectos, inmobiliarios")
+        meta(name="author" content="Caribean Service")
+        meta(name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1")
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+
+        link(rel='stylesheet', href='css/reset.css')
+        link(rel='stylesheet', href='css/bootstrap.css')
+        link(rel='stylesheet', href='style.css')
+        link(rel='stylesheet', href='css/media-queries.css')
+
+    body#page-home
+        header.header
+            div.container
+                figure.pull-left#mainLogo
+                    img(src='imgs/logo.png')
+                    figcaption Caribean Service
+                ul.nav.nav-pills.pull-right
+                    li.active: a(href='#') INICIO
+                    li: a(href='inmobiliaria.html') INMOBILIARIA
+                    //li: a(href='servicios.html') SERVICIOS
+                    li: a(href='grupoempresarial.html') GRUPO EMPRESARIAL
+                    li: a(href='contacto.html') CONTACTO
+
+        div.container
+            main
+                section#section-main
+                    div#alignText
+                        h2 LE ASESORAMOS DONDE REALIZAR <span><br> SU MEJOR INVERSION</span>
+                    div#busqueda
+                        h3 BUSQUE SU INMUEBLE
+                        div.spaceBar
+                        div#criterios1
+                            div#ventas.active.checkTrue
+                                span Ventas
+                                //Asi debe aparecer en la base de datos
+                                label VENTA
+                            div#arriendos.checkTrue
+                                span Arriendos
+                                //Asi debe aparecer en la base de datos
+                                label ARRIENDO
+                            div#tipo-inmueble
+                                select
+                                    option(value="" disabled selected) Tipo de inmueble
+                                    option(value="Apartamento") Apartamento
+                                    option(value="Casa") Casa
+                                    option(value="Bodega") Bodega
+                                    option(value="Local") Local
+                                    option(value="Proyecto") Proyecto
+                                    option(value="Edificio") Edificio
+                                    option(value="Finca") Finca
+                                    option(value="Garaje") Garaje
+                                    option(value="Lote") Lote
+                                    option(value="Lote") Oficina
+                            div#ubicacion
+                                select
+                                    option(value="" disabled selected) Ubicación
+                                    option(value="Manga") Manga
+                                    option(value="Boca_Grande") Boca Grande
+                                    option(value="Pie_de_la_Popa") Pie de la Popa
+                                    option(value="Bosque") Bosque
+                            div#buscar
+                                span Buscar
+
+                    div#busquedaCodigo
+                        div#codigo
+                            input(type="text", placeholder="Buscar por código", name="codigo")
+
+                        //div#criterios2
+
+                            div#nuevo.checkTrue
+                                span NUEVO
+                                span.icon-checkmark
+                            div#usado.checkTrue
+                                span USADO
+                                span.icon-checkmark
+
+
+                            div#codigo
+                                input(type="text", placeholder="BUSCAR POR CODIGO", name="codigo")
+
+
+                section#section-search
+                    div#order_by
+                        select(onChange="javascript:orderByHasChanged();")
+                            option(value="" disabled selected) Ordenar por
+                            option(value="Tipo de inmueble") Tipo de inmueble
+                            option(value="Ubicacion") Ubicacion
+                            option(value="Precio") Precio
+                            option(value="Area") Area
+                    div.spaceBar
+                    div#tipo-inmueble
+                    div#flash
+                    div#show
+                    div.spaceBar
+
+
+        footer.absolutePosition
+            p.noFloat Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia
+            p gerenciacomercial@caribeanservice.com
+            div
+            p (5)668 70 64 - (5) 660 52 05
+            div
+            p *Diseño Web: Ludico
+
+            figure
+                p SOMOS UNA EMPRESA MIEMBRO DE
+                img(src="imgs/logo_footer.png")
+
+
+    script(type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js")
+    script(type="text/javascript" src="js/script.js")
+    <link rel="stylesheet" href="colorbox.css">
+    <script src="jquery.colorbox-min.js"></script>
+
