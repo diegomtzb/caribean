@@ -20,6 +20,20 @@ $fetch = mysqli_query($conn, $query);
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/media-queries.css"/>
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-47464037-5', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
 </head>
 <body id="page-home">
 <header class="header">
