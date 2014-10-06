@@ -1,3 +1,22 @@
+/*Bigger than 992*/
+@media (min-width: 992px) {
+    #mision-vision #vision {
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1350px) {
+    .container {
+        width: 1316px;
+    }
+}
+
+@media (min-width: 1526px) {
+    .container {
+        width: 1487px;
+    }
+}
+
 /************************************************************************************
 smaller than 768
 *************************************************************************************/
@@ -32,21 +51,19 @@ smaller than 768
     }
 }
 
-/*Bigger than 992*/
-@media (min-width: 992px) {
-    #mision-vision #vision {
-        padding-right: 0;
+/************************************************************************************
+smaller than 1526
+*************************************************************************************/
+@media screen and (max-width: 1526px) {
+    /*--------------------------------*/
+
+    #section-main #busqueda #criterios1 select{
+        padding: 3px 45px 3px 0;
+        width: 100%;
     }
+
+    /*--------------------------------*/
 }
 
-@media (min-width: 1350px) {
-    .container {
-        width: 1316px;
-    }
-}
 
-@media (min-width: 1526px) {
-    .container {
-        width: 1487px;
-    }
-}
+

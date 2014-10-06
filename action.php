@@ -9,6 +9,7 @@ $tipo_negocio = $_POST['negocio'];
 $tipo_inmueble = $_POST['tipo'];
 $ubicacion = $_POST['ubicacion'];
 
+
 $query="SELECT * FROM inmueble WHERE ";
 
 if ($tipo_negocio == "VENTA") {
@@ -52,13 +53,18 @@ $query=$query . "inm_negocio='" . $tipo_negocio . "'";
 //Las siguientes variables se asignan opcionalmente por el usuario
 if(strlen($ubicacion)>0)
 {
-    $query=$query . " and barrio='" . $ubicacion . "'";
+    $queryUbicacion = "SELECT * FROM zonas WHERE zon_nombre='" . $ubicacion . "'" . " and zon_ciu_id=3";
+    $fetchUbicacion = mysqli_query($conn, $queryUbicacion);
+    $rowUbicacion = mysqli_fetch_array($fetchUbicacion);
+    $query=$query . " and inm_zon_id='" . $rowUbicacion['zon_id'] . "'";
 }
 
 if(strlen($tipo_inmueble)>0)
 {
     $query=$query ."and inm_tipo='" . $tipo_inmueble ."'" ;
 }
+
+$query = $query .  "LIMIT 0,12";
 
 //$fetch= mysqli_query($conn,"SELECT * FROM inmobiliaria WHERE tipoInmueble='" . $tipo_inmueble ."'" );
 $fetch= mysqli_query($conn, $query);
@@ -118,7 +124,17 @@ while($row = mysqli_fetch_array($fetch)) {
                 <p class="inmueble_id"> <?php echo $row['inm_id']; ?></p>
             </div>
             <figure>
-                <img src="imgs/dumy.jpg"/>
+                <?php
+                if (file_exists('images/inmuebles/' .$row['inm_id'] . '/destacado/' .$row['inm_img'])) {
+                    ?>
+                    <img src="images/inmuebles/<?php echo $row['inm_id'] ?>/destacado/<?php echo $row['inm_img'] ?>"/>
+                <?php
+                } else{
+                ?>
+                    <img src="imgs/No-foto.jpg"/>
+                <?php
+                }
+                ?>
             </figure>
         </div>
     </a>
