@@ -62,7 +62,8 @@ $fetch = mysqli_query($conn, $query);
                     </div>
                     <div id="arriendos" class="checkTrue"><span>Arriendos</span><!--Asi debe aparecer en la base de datos--><label>ARRIENDO</label>
                     </div>
-                    <div id="tipo-inmueble"><select>
+                    <div id="tipo-inmueble">
+                        <select onChange="javascript:tipoInmuebleHasChanged();">
                             <option value="" disabled="disabled" selected="selected">Tipo de inmueble</option>
                             <?php
                             while($row = mysqli_fetch_array($fetch)) {
@@ -106,14 +107,16 @@ $fetch = mysqli_query($conn, $query);
                             <option value="Lote">Lote</option>
                             <option value="Lote">Oficina</option>-->
                         </select></div>
-                    <div id="ubicacion"><select>
+                    <div id="ubicacion">
+                        <select onChange="javascript:ubicacionHasChanged();">
                             <option value="" disabled="disabled" selected="selected">Ubicación</option>
                             <option value="Manga">Manga</option>
                             <option value="Bocagrande">Bocagrande</option>
                             <option value="Pie de la Popa">Pie de la Popa</option>
                             <option value="Bosque">Bosque</option>
                             <option value="Ternera">Ternera</option>
-                        </select></div>
+                        </select>
+                    </div>
                     <div id="buscar"><span>Buscar</span></div>
                 </div>
             </div>

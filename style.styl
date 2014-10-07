@@ -334,8 +334,8 @@ paddingLeftRightSize = 24px
   display none
 
 #section-main #busqueda #criterios1 select
-  //color #C6C6CD
-  color #BE1622
+  color #C6C6CD
+  //color #BE1622
   border: 2px solid #BE1622;
   padding: 3px 0;
   width 312px
@@ -347,6 +347,16 @@ paddingLeftRightSize = 24px
   appearance: none;
   background: white url("imgs/Iconos-Flecha.png") no-repeat right;
 
+#section-main #busqueda #criterios1 select option
+  color #BE1623
+
+#section-main #busqueda #criterios1 select option:first-child
+  color #C6C6CD
+
+
+select[disabled="disabled"]{
+  color: #ffff00;
+}
 
 #section-main #busqueda #criterios2
   display: inline-block

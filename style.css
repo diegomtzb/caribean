@@ -283,7 +283,7 @@ main.main-index {
   display: none;
 }
 #section-main #busqueda #criterios1 select {
-  color: #be1622;
+  color: #c6c6cd;
   border: 2px solid #be1622;
   padding: 3px 0;
   width: 312px;
@@ -292,6 +292,15 @@ main.main-index {
   -moz-appearance: none;
   appearance: none;
   background: #fff url("imgs/Iconos-Flecha.png") no-repeat right;
+}
+#section-main #busqueda #criterios1 select option {
+  color: #be1623;
+}
+#section-main #busqueda #criterios1 select option:first-child {
+  color: #c6c6cd;
+}
+select[disabled="disabled"] {
+  color: #ff0;
 }
 #section-main #busqueda #criterios2 {
   display: inline-block;

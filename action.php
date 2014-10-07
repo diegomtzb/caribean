@@ -20,25 +20,25 @@ if ($tipo_negocio == "VENTA") {
 
 
 
-if ( $tipo_inmueble == "Apartamento") {
+if ( $tipo_inmueble == "APARTAMENTO") {
     $tipo_inmueble=2;
-} elseif (  $tipo_inmueble == "Casa") {
+} elseif (  $tipo_inmueble == "CASA") {
     $tipo_inmueble=3;
-} elseif ( $tipo_inmueble == "Bodega") {
+} elseif ( $tipo_inmueble == "BODEGA") {
     $tipo_inmueble=7;
-} elseif (  $tipo_inmueble == "Local") {
+} elseif (  $tipo_inmueble == "LOCAL") {
     $tipo_inmueble=6;
-} elseif (  $tipo_inmueble == "Proyecto") {
+} elseif (  $tipo_inmueble == "PROYECTO") {
     $tipo_inmueble=1;
-} elseif ( $tipo_inmueble == "Edificio") {
+} elseif ( $tipo_inmueble == "EDIFICIO") {
     $tipo_inmueble=4;
-} elseif (  $tipo_inmueble == "Finca") {
+} elseif (  $tipo_inmueble == "FINCA") {
     $tipo_inmueble=9;
-} elseif ( $tipo_inmueble == "Garaje") {
+} elseif ( $tipo_inmueble == "GARAJE") {
     $tipo_inmueble=10;
-} elseif (  $tipo_inmueble == "Lote") {
+} elseif (  $tipo_inmueble == "LOTE") {
     $tipo_inmueble=8;
-} elseif (  $tipo_inmueble == "Oficina") {
+} elseif (  $tipo_inmueble == "OFICINA") {
     $tipo_inmueble=5;
 }
 
@@ -125,9 +125,9 @@ while($row = mysqli_fetch_array($fetch)) {
             </div>
             <figure>
                 <?php
-                if (file_exists('images/inmuebles/' .$row['inm_id'] . '/destacado/' .$row['inm_img'])) {
+                if (file_exists('images/inmuebles/' .$row['inm_codigo'] . '/destacado/' .$row['inm_img'])) {
                     ?>
-                    <img src="images/inmuebles/<?php echo $row['inm_id'] ?>/destacado/<?php echo $row['inm_img'] ?>"/>
+                    <img src="images/inmuebles/<?php echo $row['inm_codigo'] ?>/destacado/<?php echo $row['inm_img'] ?>"/>
                 <?php
                 } else{
                 ?>

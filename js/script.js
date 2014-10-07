@@ -47,7 +47,7 @@ $(document).ready(function() {
 
                 section_search.slideDown( "slow", function() {
                     $("#show").after(html);
-                    clear_box();
+                    //clear_box();
                     $("#flash").hide();
                 });
 
@@ -165,7 +165,7 @@ $(document).ready(function() {
 
             $('html, body').animate({
                 scrollTop: showmeservice.offset().top
-            }, 500);
+            }, 1000);
         }
 
 
@@ -183,6 +183,14 @@ function clear_box(){
 
 function orderByHasChanged(){
     alert("ok");
+}
+
+function tipoInmuebleHasChanged(){
+    $('#tipo-inmueble select').css('color', '#e6332a');
+}
+
+function ubicacionHasChanged(){
+    $('#ubicacion select').css('color', '#e6332a');
 }
 
 var miniatureFigureImg = $(".miniatureFigure img");
