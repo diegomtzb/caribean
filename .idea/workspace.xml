@@ -34,7 +34,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="35" column="0" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.6975381" vertical-offset="0" max-vertical-offset="3434">
@@ -79,10 +79,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="style.styl" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="style.styl" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="89" column="0" selection-start="1902" selection-end="1902" vertical-scroll-proportion="0.3534279" vertical-offset="1214" max-vertical-offset="21522">
+                <state line="89" column="0" selection-start="1902" selection-end="1902" vertical-scroll-proportion="-11.96" vertical-offset="1214" max-vertical-offset="21522">
                   <folding />
                 </state>
               </provider>
@@ -106,10 +106,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="26" selection-start="543" selection-end="543" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="3553">
+                <state line="167" column="18" selection-start="4745" selection-end="4745" vertical-scroll-proportion="0.8238771" vertical-offset="2142" max-vertical-offset="3621">
                   <folding />
                 </state>
               </provider>
@@ -200,7 +200,6 @@
         <option value="$PROJECT_DIR$/db.php" />
         <option value="$PROJECT_DIR$/single_descripcion.php" />
         <option value="$PROJECT_DIR$/colorbox.css" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/media-queries.css" />
         <option value="$PROJECT_DIR$/action.php" />
         <option value="$PROJECT_DIR$/single_imagenes.php" />
@@ -210,6 +209,7 @@
         <option value="$PROJECT_DIR$/contacto.jade" />
         <option value="$PROJECT_DIR$/index.jade" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -686,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="543" selection-end="543" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="3553">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/media-queries.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="19" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
@@ -724,7 +717,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="0" selection-start="1902" selection-end="1902" vertical-scroll-proportion="0.3534279" vertical-offset="1214" max-vertical-offset="21522">
+        <state line="89" column="0" selection-start="1902" selection-end="1902" vertical-scroll-proportion="-11.96" vertical-offset="1214" max-vertical-offset="21522">
           <folding />
         </state>
       </provider>
@@ -766,6 +759,13 @@
             <marker date="1412635959960" expanded="true" signature="167:224" placeholder="..." />
             <marker date="1412635959960" expanded="true" signature="174:224" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="18" selection-start="4745" selection-end="4745" vertical-scroll-proportion="0.8238771" vertical-offset="2142" max-vertical-offset="3621">
+          <folding />
         </state>
       </provider>
     </entry>

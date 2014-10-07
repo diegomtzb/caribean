@@ -162,6 +162,10 @@ $(document).ready(function() {
             contenedor.find('p').show();
             //showmeservice.show();
             showmeservice.slideDown( "fast" );
+
+            $('html, body').animate({
+                scrollTop: showmeservice.offset().top
+            }, 500);
         }
 
 
