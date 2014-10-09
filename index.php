@@ -121,25 +121,21 @@ $fetch = mysqli_query($conn, $query);
                 </div>
             </div>
             <div id="busquedaCodigo">
-                <div id="codigo"><input type="text" placeholder="Buscar por código" name="codigo"/>
+                <div id="codigo">
+                    <div class="surroundcodigo">
+                        <input type="text" placeholder="Buscar por código" name="codigo"/>
+                        <span class="hovercodigo"></span>
+                    </div>
+
+
 
                     <p>Todos nuestros inmuebles tienen un código que los identifica,
                         de esta manera facilitamos la búsqueda
 
-                    </p></div>
-                <!--div#criterios2div#nuevo.checkTrue
-                    span NUEVO
-                    span.icon-checkmark
-                div#usado.checkTrue
-                    span USADO
-                    span.icon-checkmark
+                    </p>
+                </div>
 
 
-                div#codigo
-                    input(type="text", placeholder="BUSCAR POR CODIGO", name="codigo")
-
-
-                    --></div>
         </section>
         <section id="section-search">
             <div id="order_by"><select onChange="javascript:orderByHasChanged();">
@@ -161,10 +157,10 @@ $fetch = mysqli_query($conn, $query);
     <div><p>Recibe en tu correo las ultimas ofertas inmobiliarias,
             remate de bienes y oportunidades de inversión.</p>
 
-        <form name="suscribe_form" method="post" action="suscribe_form_send.php">
-            <input type="text" placeholder="ejemplo@email.com" name="suscribe" required="required"/>
+        <form id="suscription_form" name="suscribe_form" action="html_form_suscribe.php">
+            <input id="suscribe_email" type="email" placeholder="ejemplo@email.com" name="suscribe" required="required"/>
+            <input class="botonSuscribir" type="submit" value="Suscribirse" >
 
-            <input class="botonSuscribir" type="submit" value="Suscribirse">
         </form>
     </div>
     <figure class="social">

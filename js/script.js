@@ -19,24 +19,19 @@ $(document).ready(function() {
             "ubicacion" : ubicacion
         };
 
-
-        //section_search.show("slow");
-
-        /*if ( $( "#section-search" ).is( ":hidden" ) ) {
-            $("#section-search" ).slideDown( "slow" );
-        }*/
-
-        /*section_search.slideDown( "slow", function() {
-            // Animation complete.
-        });*/
-
-
         $search_result.remove();
 
         $("footer").removeClass("absolutePosition");
         $("#flash")
             .show()
-            .fadeIn(400).html('<span class="load">Loading..</span>');
+            .fadeIn(400).html('<div class="medium load"><div>Loading…</div></div>');
+
+
+
+        section_search.slideDown( "fast");
+
+
+
         $.ajax({
             type: "POST",
             url: "action.php",
@@ -44,16 +39,8 @@ $(document).ready(function() {
             cache: true,
             success: function(html){
 
-
-                section_search.slideDown( "slow", function() {
-                    $("#show").after(html);
-                    //clear_box();
-                    $("#flash").hide();
-                });
-
-
-
-
+                $("#flash").hide();
+                $("#show").after(html);
             }
         });
 
@@ -62,6 +49,29 @@ $(document).ready(function() {
 
         return false;
     });
+
+
+    var suscription_form = $("#suscription_form");
+    suscription_form.submit(function(event) {
+        var form = $( this );
+        var url = form.attr( 'action' );
+        var susc_email = $("#suscribe_email").val();
+        var dataString = {
+            "srEmail" : susc_email
+        };
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: dataString,
+            cache: true,
+            success: function(html){
+                $("#suscribe_email").val('');
+                alert("Ok");
+            }
+        });
+        return false;
+    });
+
 
     var btnCheckActive = $(".checkTrue");
     btnCheckActive.click(function(e){

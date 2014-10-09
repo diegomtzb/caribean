@@ -9,6 +9,8 @@
   font-style: normal;
 }
 
+
+
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -258,6 +260,22 @@ paddingLeftRightSize = 24px
   padding-top 15px
   padding-bottom  15px
   overflow: hidden;
+
+#section-main #busquedaCodigo div#codigo .surroundcodigo
+  position: relative;
+  overflow: hidden;
+  float: left;
+
+
+#section-main #busquedaCodigo div#codigo .surroundcodigo span.hovercodigo
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 44px;
+
+#section-main #busquedaCodigo div#codigo .surroundcodigo span.hovercodigo:hover
+  cursor pointer
 
 #section-main #busquedaCodigo div#codigo input
   color: #be1622;
@@ -513,7 +531,7 @@ select[disabled="disabled"]{
 
 .search_result div.result_info
   //background-color #1a3c6e
-  height 163px
+  height 190px
   width 50%
   float left
   //padding-top: 15px;
@@ -524,6 +542,7 @@ select[disabled="disabled"]{
   background-color: #1a3c6e;
   border-radius: 4px;
   margin-top: 10px;
+  height: 130px;
 
 .search_result div.result_info P
   color white
@@ -554,7 +573,7 @@ select[disabled="disabled"]{
 
 .search_result figure
   //background-color yellow
-  height 163px
+  height 190 px
   width 50%
   float left
   overflow hidden
@@ -1295,6 +1314,75 @@ section#vision p
   color #ffffff
   text-align center
   font-size 0.8em
+
+
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+.load {
+  position: relative;
+  display: block;
+  width: 5em;
+  height: 5em;
+  margin: 0 auto;
+  font-size: 12px;
+  text-indent: 999em;
+  overflow: hidden;
+  animation: spin 1s infinite steps(8);
+  -webkit-animation: spin 1s infinite steps(8);
+}
+
+.small.load {
+  font-size: 6px;
+}
+
+.large.load {
+  font-size: 24px;
+}
+
+.load:before,
+.load:after,
+.load > div:before,
+.load > div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2.25em; /* (container width - part width)/2 */
+  width: .5em;
+  height: 1.5em;
+  border-radius: .2em;
+  background: #eee;
+  box-shadow: 0 3.5em #eee; /* container height - part height */
+  transform-origin: 50% 2.5em; /* container height / 2 */
+  -webkit-transform-origin: 50% 2.5em;
+}
+
+.load:before {
+  background: #555;
+}
+
+.load:after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  background: #777;
+}
+
+.load > div:before {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  background: #999;
+}
+
+.load > div:after {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  background: #bbb;
+}
 
 
 

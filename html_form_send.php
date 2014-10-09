@@ -4,8 +4,7 @@ if(isset($_POST['email'])) {
     // CHANGE THE TWO LINES BELOW
     $email_to = "diegomtzb@hotmail.com";
 
-    $email_subject = "Mensaje Página Web Caribean";
-
+    $email_subject = utf8_decode ("Mensaje Página Web Caribean");
 
     function died($error) {
         // your error code can go here
@@ -68,7 +67,7 @@ if(isset($_POST['email'])) {
             // Print a message
             alert('Gracias por su mensaje. Nos pondremos en contacto con usted muy pronto.');
             // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-            window.location = 'index.html';
+            window.location = 'contacto.html';
         </script>
     <?php
     }else { ?>
@@ -76,7 +75,7 @@ if(isset($_POST['email'])) {
             // Print a message
             alert('Su mensaje no pudo ser enviado. Puede contactarse directamente con nosotros a mailto@mail.com');
             // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-            window.location = 'index.html';
+            window.location = 'contacto.html';
         </script>
     <?php
     }?>

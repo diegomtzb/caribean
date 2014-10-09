@@ -4,7 +4,7 @@ include('db.php');
 
 $all_data = array();
 
-//Se asignan las ariables de php obteniendolas por el metodo POST enviadas desde script.js por Ajax
+//Se asignan las variables de php obteniendolas por el metodo POST enviadas desde script.js por Ajax
 $tipo_negocio = $_POST['negocio'];
 $tipo_negocio_num = 0;
 $tipo_inmueble = $_POST['tipo'];
