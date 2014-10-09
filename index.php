@@ -36,7 +36,7 @@ $fetch = mysqli_query($conn, $query);
 
 </head>
 <body id="page-home">
-<header class="header">
+<header class="header fixed">
     <div class="container">
         <figure id="mainLogo" class="pull-left"><img src="imgs/logo.png"/>
             <figcaption>Caribean Service</figcaption>
@@ -159,39 +159,55 @@ $fetch = mysqli_query($conn, $query);
 </div>
 <section id="suscripcion">
     <div><p>Recibe en tu correo las ultimas ofertas inmobiliarias,
-            remate de bienes y oportunidades de inversión.</p><input type="text" placeholder="ejemplo@email.com"
-                                                                     name="suscribe"/>
+            remate de bienes y oportunidades de inversión.</p>
 
-        <div class="botonSuscribir"><p>Suscribirse</p></div>
+        <form name="suscribe_form" method="post" action="suscribe_form_send.php">
+            <input type="text" placeholder="ejemplo@email.com" name="suscribe" required="required"/>
+
+            <input class="botonSuscribir" type="submit" value="Suscribirse">
+        </form>
     </div>
     <figure class="social">
         <div>
-            <img src="imgs/Facebook-rojo.png"/>
-            <p>caribeanservice</p>
+            <a href="http://www.facebook.com/caribeanservice" target="_blank">
+                <img src="imgs/Facebook-rojo.png"/>
+                <p>caribeanservice</p>
+            </a>
         </div>
 
         <div>
-            <img src="imgs/Twitter-rojo.png"/>
-            <p>@caribean_ser</p>
+            <a href="http://www.twitter.com/caribean_serv" target="_blank">
+                <img src="imgs/Twitter-rojo.png"/>
+                <p>@caribean_ser</p>
+            </a>
         </div>
 
         <div>
-            <img src="imgs/Insta-rojo.png"/>
-            <p>caribean</p>
+            <a href="#">
+                <img src="imgs/Instagram-rojo.png"/>
+                <p>caribean</p>
+            </a>
         </div>
 
     </figure>
 </section>
-<footer class="absolutePosition noneDisplay"><p class="noFloat">Centro, Sector La Matuna Edificio Banco Cafetero Oficina
-        703 -704 - 705, Cartagena - Colombia</p>
-
-    <p>(5)668 70 64 - (5) 660 52 05</p>
-
+<footer class="absolutePosition noneDisplay">
+    <p>Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia</p>
     <div></div>
+    <p>(5)668 70 64 - (5) 660 52 05</p>
     <div></div>
     <p>*Diseño Web: Ludico</p>
-    <figure class="footer-logo"><p>Somos una empresa miembro de</p><img src="imgs/logo_footer.png"/></figure>
+    <div></div>
+
+    <figure class="footer-logo">
+        <p>Somos una empresa miembro de</p><img src="imgs/logo_footer.png"/>
+    </figure>
 </footer>
+
+
+
+
+
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>

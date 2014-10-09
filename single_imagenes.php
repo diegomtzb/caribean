@@ -66,9 +66,9 @@ $row = mysqli_fetch_array($fetch);
     <div id="contenido-single" class="col-sm-6"><h2>Cod. C16281</h2>
         <figure id="mainFigure">
             <?php
-            if (file_exists('images/inmuebles/' .$row['inm_id'] . '/lightbox/' .$row['inm_img'])) {
+            if (file_exists('images/inmuebles/' .$row['inm_codigo'] . '/lightbox/' .$row['inm_img'])) {
                 ?>
-                <img src="images/inmuebles/<?php echo $row['inm_id'] ?>/lightbox/<?php echo $row['inm_img'] ?>"/>
+                <img src="images/inmuebles/<?php echo $row['inm_codigo'] ?>/lightbox/<?php echo $row['inm_img'] ?>"/>
             <?php
             } else{
                 ?>
