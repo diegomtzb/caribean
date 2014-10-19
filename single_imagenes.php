@@ -64,7 +64,20 @@ $row = mysqli_fetch_array($fetch);
 </header>
 <div class="container">
     <div id="contenido-single" class="col-sm-6"><h2>Cod. C16281</h2>
-        <figure id="mainFigure"><img src="imgs/dumy.jpg"/></figure>
+        <figure id="mainFigure">
+            <?php
+            if (file_exists('images/inmuebles/' .$row['inm_codigo'] . '/lightbox/' .$row['inm_img'])) {
+                ?>
+                <img src="images/inmuebles/<?php echo $row['inm_codigo'] ?>/lightbox/<?php echo $row['inm_img'] ?>"/>
+            <?php
+            } else{
+                ?>
+                <img src="imgs/No-foto.jpg"/>
+            <?php
+            }
+            ?>
+
+        </figure>
     </div>
     <?php
     $imgMiniatures = array();

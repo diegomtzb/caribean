@@ -64,9 +64,10 @@ html
                                 select
                                     option(value="" disabled selected) Ubicación
                                     option(value="Manga") Manga
-                                    option(value="Boca_Grande") Boca Grande
-                                    option(value="Pie_de_la_Popa") Pie de la Popa
+                                    option(value="Bocagrande") Bocagrande
+                                    option(value="Pie de la Popa") Pie de la Popa
                                     option(value="Bosque") Bosque
+                                    option(value="Ternera") Ternera
                             div#buscar
                                 span Buscar
 
@@ -91,16 +92,11 @@ html
                             div#codigo
                                 input(type="text", placeholder="BUSCAR POR CODIGO", name="codigo")
 
+
+
                 section#section-search
 
-                    section#suscripcion
-                        div
-                            p.
-                                Recibe en tu correo las ultimas ofertas inmobiliarias,
-                                remate de bienes y oportunidades de inversión.
-                            input(type="text", placeholder="ejemplo@email.com", name="suscribe")
-                            div.botonSuscribir
-                                p Suscribirse
+
 
                     div#order_by
                         select(onChange="javascript:orderByHasChanged();")
@@ -115,18 +111,33 @@ html
                     div#show
                     div.spaceBar
 
-
-        footer.absolutePosition
-            p.noFloat Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia
-            p gerenciacomercial@caribeanservice.com
+        section#suscripcion
             div
+                p.
+                    Recibe en tu correo las ultimas ofertas inmobiliarias,
+                    remate de bienes y oportunidades de inversión.
+                input(type="text", placeholder="ejemplo@email.com", name="suscribe")
+                div.botonSuscribir
+                    p Suscribirse
+            figure.social
+                img(src="imgs/Facebook-rojo.png")
+                p caribeanservice
+                img(src="imgs/Twitter-rojo.png")
+                p
+                img(src="imgs/Insta-rojo.png")
+
+
+        footer.absolutePosition.noneDisplay
+            p.noFloat Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia
             p (5)668 70 64 - (5) 660 52 05
+            div
             div
             p *Diseño Web: Ludico
 
-            figure
-                p SOMOS UNA EMPRESA MIEMBRO DE
+            figure.footer-logo
+                p Somos una empresa miembro de
                 img(src="imgs/logo_footer.png")
+
 
 
     script(type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js")

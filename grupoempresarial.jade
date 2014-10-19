@@ -14,6 +14,17 @@ html
         link(rel='stylesheet', href='css/bootstrap.css')
         link(rel='stylesheet', href='style.css')
         link(rel='stylesheet', href='css/media-queries.css')
+
+
+        script.
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47464037-5', 'auto');
+                ga('send', 'pageview');
+
+
     body#page-grupo
         header.header
             div.container
@@ -21,7 +32,7 @@ html
                     img(src='imgs/logo.png')
                     figcaption Caribean Service
                 ul.nav.nav-pills.pull-right
-                    li: a(href='index.html') INICIO
+                    li: a(href='index.php') INICIO
                     li: a(href='inmobiliaria.html') INMOBILIARIA
                     li.active: a(href='#') GRUPO EMPRESARIAL
                     li: a(href='contacto.html') CONTACTO
@@ -45,9 +56,9 @@ html
                 div.col-md-12
                     div.container.inside
                         figure.pull-left.col-md-4
-                            img(src='imgs/logos-I.png')
+                            img(src='imgs/logo-C-Service.png')
                             figcaption Caribean Service
-                        p.pull-right.col-md-8.
+                        p.pull-right.col-md-7.
                             Somos una empresa prestadora de servicios en el sector
                             <span>inmobliario, asi como Gerencia de proyectos y
                             administración de propiedad horizontal.</span>
@@ -58,9 +69,9 @@ html
                 div.col-md-12
                     div.container
                         figure.pull-left.col-md-4
-                            img(src='imgs/logos-RC.png')
+                            img(src='imgs/logo-C-Solutions.png')
                             figcaption Caribean Solutions
-                        p.pull-right.col-md-8.
+                        p.pull-right.col-md-7.
                             Brindamos soluciones integrales en los procesos de
                             <span>Recuperación de Cartera y sus instancias Prejuridica y Jurídica,</span>
                             buscando optimizar y mantener la relación entre nuestros
@@ -71,7 +82,8 @@ html
 
             section#contacto-grupo
                 div
-                    p CONTÁCTANOS
+                    a(href="contacto.html")
+                        p CONTÁCTANOS
 
             div#asesor
                 p.
@@ -104,14 +116,13 @@ html
 
 
         footer.absolutePosition
-            p.noFloat Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia
-            p gerenciacomercial@caribeanservice.com
+            p Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia
             div
             p (5)668 70 64 - (5) 660 52 05
             div
             p *Diseño Web: Ludico
-                figure
-                p SOMOS UNA EMPRESA MIEMBRO DE
+            figure.footer-logo
+                p Somos una empresa miembro de
                 img(src="imgs/logo_footer.png")
 
 

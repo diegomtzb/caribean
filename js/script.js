@@ -1,6 +1,8 @@
 $(document).ready(function() {
     $("#buscar").click(function(e) {
         e.preventDefault();
+
+
         var section_search = $("#section-search");
 
         var $search_result=$(".search_result")
@@ -17,24 +19,19 @@ $(document).ready(function() {
             "ubicacion" : ubicacion
         };
 
-
-        //section_search.show("slow");
-
-        /*if ( $( "#section-search" ).is( ":hidden" ) ) {
-            $("#section-search" ).slideDown( "slow" );
-        }*/
-
-        /*section_search.slideDown( "slow", function() {
-            // Animation complete.
-        });*/
-
-
         $search_result.remove();
 
         $("footer").removeClass("absolutePosition");
         $("#flash")
             .show()
-            .fadeIn(400).html('<span class="load">Loading..</span>');
+            .fadeIn(400).html('<div class="medium load"><div>Loading…</div></div>');
+
+
+
+        section_search.slideDown( "fast");
+
+
+
         $.ajax({
             type: "POST",
             url: "action.php",
@@ -42,21 +39,39 @@ $(document).ready(function() {
             cache: true,
             success: function(html){
 
-
-                section_search.slideDown( "slow", function() {
-                    $("#show").after(html);
-                    clear_box();
-                    $("#flash").hide();
-                });
-
-
-
-
+                $("#flash").hide();
+                $("#show").after(html);
             }
         });
 
+        $('#suscripcion').css('margin-bottom', '5em');
+        $('footer').removeClass('noneDisplay');
+
         return false;
     });
+
+
+    var suscription_form = $("#suscription_form");
+    suscription_form.submit(function(event) {
+        var form = $( this );
+        var url = form.attr( 'action' );
+        var susc_email = $("#suscribe_email").val();
+        var dataString = {
+            "srEmail" : susc_email
+        };
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: dataString,
+            cache: true,
+            success: function(html){
+                $("#suscribe_email").val('');
+                alert("Ok");
+            }
+        });
+        return false;
+    });
+
 
     var btnCheckActive = $(".checkTrue");
     btnCheckActive.click(function(e){
@@ -115,37 +130,22 @@ $(document).ready(function() {
     );
 
 
+    var showservicesfinca = $(".showservices.fincaser");
+    var showservicesgerencia = $(".showservices.gerenser");
+
+    var showmeservicefinca = $('#fincaraiz');
+    var showmeservicegerencia = $('#gerenciadeproyectos');
 
     showservices.click(function(e){
         e.preventDefault();
 
-        $( this).toggleClass('active');
-
-        //showservices.removeClass('active');
-        //$( this).addClass('active');
-
-        if ($( this ).hasClass('active') ){
-         showservices.removeClass('active');
-         $( this).addClass('active');
-         }
-
-
-        /*if ($( this ).hasClass('active') ){
-            showservices.removeClass('active');
-            $( this).addClass('active');
-        } else {
-            showservices.removeClass('active');
-            $( this).addClass('active');
-        }*/
-
-
         var contenedor = $( this).parent().parent();
+        var contenedorParent = $( this).parent().parent().parent();
 
 
 
         var serviciotoshow = contenedor.find('label').html();
         var showmeservice = $('#'+ serviciotoshow);
-        showmeservice.toggle();
 
 
         var src= $( this ).attr("src");
@@ -153,13 +153,29 @@ $(document).ready(function() {
 
 
         if ($( this ).hasClass('active') ){
-            //POR AQUI PUEDE EMPEZAR LA SOLUCION
-            //showservices.attr("src",  src + '.png');
+            $( this ).removeClass('active');
+            $( this ).attr("src", src + '.png');
+            showmeservice.hide();
+        } else {
+            showservices.removeClass('active');
+
+            showservicesfinca.attr("src", 'imgs/Boton-Finca.png');
+            showservicesgerencia.attr("src", 'imgs/Boton-Geren.png');
+            contenedorParent.find('p').hide();
+            showmeservicefinca.hide();
+            showmeservicegerencia.hide();
+
+
+
+            $( this ).addClass('active');
             $( this ).attr("src", src + '-selected.png');
             contenedor.find('p').show();
-        } else {
-            $( this ).attr("src", src + '.png');
-            contenedor.find('p').hide();
+            //showmeservice.show();
+            showmeservice.slideDown( "fast" );
+
+            $('html, body').animate({
+                scrollTop: showmeservice.offset().top
+            }, 1000);
         }
 
 
@@ -177,6 +193,14 @@ function clear_box(){
 
 function orderByHasChanged(){
     alert("ok");
+}
+
+function tipoInmuebleHasChanged(){
+    $('#tipo-inmueble select').css('color', '#e6332a');
+}
+
+function ubicacionHasChanged(){
+    $('#ubicacion select').css('color', '#e6332a');
 }
 
 var miniatureFigureImg = $(".miniatureFigure img");

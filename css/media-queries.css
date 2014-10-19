@@ -1,3 +1,22 @@
+/*Bigger than 992*/
+@media (min-width: 992px) {
+    #mision-vision #vision {
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1350px) {
+    .container {
+        width: 1316px;
+    }
+}
+
+@media (min-width: 1526px) {
+    .container {
+        width: 1487px;
+    }
+}
+
 /************************************************************************************
 smaller than 768
 *************************************************************************************/
@@ -32,21 +51,78 @@ smaller than 768
     }
 }
 
-/*Bigger than 992*/
-@media (min-width: 992px) {
-    #mision-vision #vision {
-        padding-right: 0;
+/************************************************************************************
+smaller than 1526
+*************************************************************************************/
+@media screen and (max-width: 1526px) {
+    /*--------------------------------*/
+
+    #section-main #busqueda #criterios1 select{
+        padding: 3px 45px 3px 0;
+        width: 100%;
     }
+
+    /*--------------------------------*/
 }
 
-@media (min-width: 1350px) {
-    .container {
-        width: 1316px;
+/************************************************************************************
+smaller than 1200
+*************************************************************************************/
+@media screen and (max-width: 1200px) {
+    /*--------------------------------*/
+    #section-main #busqueda{
+        width: 100%;
+        max-width: 100%;
     }
+
+    #section-main #busquedaCodigo{
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /*--------------------------------*/
 }
 
-@media (min-width: 1526px) {
-    .container {
-        width: 1487px;
+/************************************************************************************
+smaller than 1000
+*************************************************************************************/
+@media screen and (max-width: 1000px) {
+    /*--------------------------------*/
+    .nav{
+        margin-right: 0;
     }
+
+    .nav li a{
+        font-size: 0.9em;
+        padding: 10px 5px;
+    }
+
+    #section-main #busqueda div#buscar{
+        margin-top: 10px;
+        width: 300px;
+        text-align: center;
+    }
+
+    #section-main #busqueda div#ubicacion{
+        margin-top: 10px;
+    }
+
+    /*--------------------------------*/
 }
+
+/************************************************************************************
+smaller than 606
+*************************************************************************************/
+@media screen and (max-width: 606px) {
+    /*--------------------------------*/
+    #section-main #busqueda div#tipo-inmueble{
+        margin-top: 10px;
+    }
+
+
+    /*--------------------------------*/
+}
+
+
+

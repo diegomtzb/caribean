@@ -14,14 +14,22 @@ html
         link(rel='stylesheet', href='css/bootstrap.css')
         link(rel='stylesheet', href='style.css')
         link(rel='stylesheet', href='css/media-queries.css')
+
+
+        script.
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47464037-5', 'auto');
+                ga('send', 'pageview');
+
+
     body#page-contacto
         header.header
             div.container
-                figure.pull-left#mainLogo
-                    img(src='imgs/logo.png')
-                    figcaption Caribean Service
-                ul.nav.nav-pills.pull-right
-                    li: a(href='index.html') INICIO
+                 ul.nav.nav-pills.pull-right
+                    li: a(href='index.php') INICIO
                     li: a(href='inmobiliaria.html') INMOBILIARIA
                     li: a(href='grupoempresarial.html') GRUPO EMPRESARIAL
                     li.active: a(href='#') CONTACTO
@@ -31,7 +39,7 @@ html
                     div.container
 
                         div#info-contacto.col-md-5
-                            h3 CONTACTANOS <br><span>PARA ASESORARTE</span>
+                            h3 CONTÁCTANOS <br><span>Estaremos felices de poder asesorarte</span>
                             ul.col-lg-5
                                 li.titleContact Teléfonos:
                                 li (5) 668 70 64
@@ -47,6 +55,14 @@ html
                                 li.italic Cartagena - Colombia
                         div#campos-contacto.col-md-7
                             form(name="htmlform" method="post" action="html_form_send.php")
+                                select
+                                    //Check if value="" rquired!!!
+                                    option(value="" disabled selected, required = "required") Usted está interesado en:
+                                    option(value="Vender su inmueble") Vender su inmueble
+                                    option(value="Servicio de avaluos") Servicio de avaluos
+                                    option(value="Gerencia de proyectos") Gerencia de proyectos
+                                    option(value="Servicio de callcenter") Servicio de callcenter
+                                    option(value="Vender su cartera") Vender su cartera
                                 input(type="text", placeholder="Nombre", name="name", required = "required")
                                 input(type="email", placeholder="E-mail", name="email", required = "required")
                                 textarea(placeholder="Mensaje", name="message", required = "required")
@@ -54,14 +70,13 @@ html
 
 
         footer.absolutePosition
-            p.noFloat Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia
-            p gerenciacomercial@caribeanservice.com
+            p Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia
             div
             p (5)668 70 64 - (5) 660 52 05
             div
             p *Diseño Web: Ludico
-                figure
-                p SOMOS UNA EMPRESA MIEMBRO DE
+            figure.footer-logo
+                p Somos una empresa miembro de
                 img(src="imgs/logo_footer.png")
 
 
