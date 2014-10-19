@@ -28,7 +28,7 @@
           <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="46" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.37087598" vertical-offset="371" max-vertical-offset="2414">
+                <state line="41" column="46" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.5109718" vertical-offset="371" max-vertical-offset="2414">
                   <folding />
                 </state>
               </provider>
@@ -37,7 +37,7 @@
           <file leaf-file-name="inmobiliaria.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/inmobiliaria.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="185" column="0" selection-start="10040" selection-end="10463" vertical-scroll-proportion="0.0" vertical-offset="2606" max-vertical-offset="3485">
+                <state line="185" column="0" selection-start="10040" selection-end="10463" vertical-scroll-proportion="0.0" vertical-offset="3145" max-vertical-offset="3485">
                   <folding />
                 </state>
               </provider>
@@ -55,7 +55,7 @@
           <file leaf-file-name="contacto.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/contacto.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="15" selection-start="83" selection-end="85" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="1275">
+                <state line="4" column="15" selection-start="83" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1275">
                   <folding />
                 </state>
               </provider>
@@ -68,7 +68,7 @@
           <file leaf-file-name="style.styl" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="719" column="20" selection-start="14047" selection-end="14047" vertical-scroll-proportion="-14.48" vertical-offset="11861" max-vertical-offset="18819">
+                <state line="719" column="20" selection-start="14047" selection-end="14047" vertical-scroll-proportion="0.0" vertical-offset="11861" max-vertical-offset="18819">
                   <folding />
                 </state>
               </provider>
@@ -92,10 +92,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="163" column="0" selection-start="4425" selection-end="4425" vertical-scroll-proportion="0.95752007" vertical-offset="1937" max-vertical-offset="3519">
+                <state line="163" column="0" selection-start="4425" selection-end="4425" vertical-scroll-proportion="0.0" vertical-offset="1937" max-vertical-offset="3519">
                   <folding />
                 </state>
               </provider>
@@ -122,16 +122,16 @@
           <file leaf-file-name="action.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/action.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="120" column="34" selection-start="3503" selection-end="3503" vertical-scroll-proportion="-20.884615" vertical-offset="1497" max-vertical-offset="2329">
+                <state line="120" column="34" selection-start="3503" selection-end="3503" vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="2329">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="db.php" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="db.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/db.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+                <state line="7" column="84" selection-start="253" selection-end="266" vertical-scroll-proportion="0.08947369" vertical-offset="0" max-vertical-offset="570">
                   <folding />
                 </state>
               </provider>
@@ -140,7 +140,7 @@
           <file leaf-file-name="single_imagenes.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/single_imagenes.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="85" column="13" selection-start="3202" selection-end="3202" vertical-scroll-proportion="0.0" vertical-offset="947" max-vertical-offset="1853">
+                <state line="85" column="13" selection-start="3202" selection-end="3202" vertical-scroll-proportion="0.0" vertical-offset="1445" max-vertical-offset="1853">
                   <folding />
                 </state>
               </provider>
@@ -194,8 +194,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -211,7 +211,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -222,60 +222,10 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caribean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caribean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caribean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caribean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caribean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="single_descripcion.jade" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caribean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caribean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index.jade" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../colegio-madre-gabriela" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="FullScreen" value="false" />
@@ -313,13 +263,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -331,9 +280,10 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -630,13 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/single_imagenes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="13" selection-start="3202" selection-end="3202" vertical-scroll-proportion="0.0" vertical-offset="947" max-vertical-offset="1853">
@@ -674,21 +617,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contacto.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="15" selection-start="83" selection-end="85" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="1275">
+        <state line="4" column="15" selection-start="83" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="46" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.37087598" vertical-offset="371" max-vertical-offset="2414">
+        <state line="41" column="46" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.5109718" vertical-offset="371" max-vertical-offset="2414">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/action.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="34" selection-start="3503" selection-end="3503" vertical-scroll-proportion="-20.884615" vertical-offset="1497" max-vertical-offset="2329">
+        <state line="120" column="34" selection-start="3503" selection-end="3503" vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="2329">
           <folding />
         </state>
       </provider>
@@ -702,14 +645,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="719" column="20" selection-start="14047" selection-end="14047" vertical-scroll-proportion="-14.48" vertical-offset="11861" max-vertical-offset="18819">
+        <state line="719" column="20" selection-start="14047" selection-end="14047" vertical-scroll-proportion="0.0" vertical-offset="11861" max-vertical-offset="18819">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="0" selection-start="4425" selection-end="4425" vertical-scroll-proportion="0.95752007" vertical-offset="1937" max-vertical-offset="3519">
+        <state line="163" column="0" selection-start="4425" selection-end="4425" vertical-scroll-proportion="0.0" vertical-offset="1937" max-vertical-offset="3519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="84" selection-start="253" selection-end="266" vertical-scroll-proportion="0.08947369" vertical-offset="0" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
