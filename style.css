@@ -51,6 +51,7 @@ main.main-index {
 #mainLogo {
   height: 260px;
   overflow: hidden;
+  position: absolute;
 }
 #mainLogo img {
   height: 100%;
@@ -131,6 +132,13 @@ main.main-index {
   display: block;
   border-bottom: 1px solid #be1622;
   width: 100%;
+}
+#mobilemenu {
+  display: none;
+  z-index: 999;
+  position: absolute;
+  top: 28px;
+  right: 2%;
 }
 #page-home {
   background: url("imgs/SALA_Playa-mod.png") no-repeat center center fixed;

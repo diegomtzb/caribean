@@ -3,6 +3,10 @@ include('db.php');
 $query="SELECT inm_tipo FROM inmueble WHERE inm_negocio=2 GROUP BY inm_tipo";
 $fetch = mysqli_query($conn, $query);
 
+$queryzona="SELECT inm_zon_id FROM inmueble WHERE inm_negocio=2 GROUP BY inm_tipo";
+$fetchzona = mysqli_query($conn, $queryzona);
+
+
 ?>
 <!DOCTYPE html5>
 <html>
@@ -20,6 +24,7 @@ $fetch = mysqli_query($conn, $query);
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="css/media-queries.css"/>
+    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
 
 
     <script>
@@ -41,13 +46,22 @@ $fetch = mysqli_query($conn, $query);
         <figure id="mainLogo" class="pull-left"><img src="imgs/logo.png"/>
             <figcaption>Caribean Service</figcaption>
         </figure>
-        <ul class="nav nav-pills pull-right">
+        <ul id="menuprincipal" class="nav nav-pills pull-right">
             <li class="active"><a href="#">INICIO</a></li>
             <li><a href="inmobiliaria.html">INMOBILIARIA</a></li>
             <!--li: a(href='servicios.html') SERVICIOS-->
             <li><a href="grupoempresarial.html">GRUPO EMPRESARIAL</a></li>
             <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
+        <div id="mobilemenu" class="rmm rmm-home" data-menu-style = "mystyle">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="inmobiliaria.html">INMOBILIARIA</a></li>
+                <li><a href="grupoempresarial.html">GRUPO EMPRESARIA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+
     </div>
 </header>
 <div class="container">
@@ -110,11 +124,28 @@ $fetch = mysqli_query($conn, $query);
                     <div id="ubicacion">
                         <select onChange="javascript:ubicacionHasChanged();">
                             <option value="" disabled="disabled" selected="selected">Ubicación</option>
-                            <option value="Manga">Manga</option>
+                            <?php
+                            while($row = mysqli_fetch_array($fetchzona)) {
+                                $queryUbicacion = "SELECT zon_nombre FROM zonas WHERE zon_id='" . $row['inm_zon_id'] . "'";
+                                $fetchUbicacion = mysqli_query($conn, $queryUbicacion);
+                                $rowUbicacion = mysqli_fetch_array($fetchUbicacion);
+                                $ubicacion = $rowUbicacion['zon_nombre'];
+                                if (strlen($ubicacion)>0)
+                                {
+
+                            ?>
+                                    <option value="<?php echo $ubicacion?>"><?php echo $ubicacion?></option>
+                            <?php
+                                }
+                            }
+                            ?>
+
+
+                            <!--<option value="Manga">Manga</option>
                             <option value="Bocagrande">Bocagrande</option>
                             <option value="Pie de la Popa">Pie de la Popa</option>
                             <option value="Bosque">Bosque</option>
-                            <option value="Ternera">Ternera</option>
+                            <option value="Ternera">Ternera</option>-->
                         </select>
                     </div>
                     <div id="buscar"><span>Buscar</span></div>
@@ -209,4 +240,5 @@ $fetch = mysqli_query($conn, $query);
 <script type="text/javascript" src="js/script.js"></script>
 <link rel="stylesheet" href="colorbox.css">
 <script src="jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="js/responsivemobilemenu.js"></script>
 </html>
