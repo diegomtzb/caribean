@@ -12,6 +12,64 @@ $tipo_inmueble_num = 0;
 $ubicacion = $_POST['ubicacion'];
 
 
+
+
+//Variables para la paginación
+$pagi = 0;
+if (isset($_GET['s']))
+{
+    $pagi = $_GET['pagi'];
+}
+$contar_pagi = (strlen($pagi));    // Contamos el numero de caracteres
+
+// Numero de registros por pagina
+$numer_reg = 12;
+
+// Contamos los registros totales
+$query0 = "select * from inmueble";     // Esta linea hace la consulta
+$result0 = mysqli_query($conn,$query0);
+$numero_registros0 = mysqli_num_rows($result0);
+
+
+$pag_anterior = "";
+$separador = "";
+$pag_siguiente = "";
+
+##############################################
+// ----------------------------- Pagina anterior
+$prim_reg_an = $numer_reg - $pagi;
+$prim_reg_ant = abs($prim_reg_an);        // Tomamos el valor absoluto
+
+if ($pagi <> 0)
+{
+    $pag_anterior = "<a href='resultados.php?pagi=$prim_reg_ant'>Pagina anterior</a>";
+}
+
+// ----------------------------- Pagina siguiente
+$prim_reg_sigu = $numer_reg + $pagi;
+
+if ($pagi < $numero_registros0 - ($numer_reg - 1))
+{
+    //$pag_siguiente = "<a href='action.php?pagi=$prim_reg_sigu'>Pagina siguiente</a>";
+    $pag_siguiente = "<a id ='linkNextPagi' href='#'>Pagina siguiente</a>";
+}
+
+// ----------------------------- Separador
+if ($pagi <> 0 and $pagi < $numero_registros0 - ($numer_reg - 1))
+{
+    $separador = "|";
+}
+// Creamos la barra de navegacion
+
+$pagi_navegacion = "$pag_anterior $separador $pag_siguiente";
+
+// -----------------------------
+##############################################
+
+
+
+
+
 $query="SELECT * FROM inmueble WHERE ";
 
 if ($tipo_negocio == "VENTA") {
@@ -66,10 +124,49 @@ if(strlen($tipo_inmueble)>0)
     $query=$query ."and inm_tipo='" . $tipo_inmueble_num ."'" ;
 }
 
-$query = $query .  "LIMIT 0,12";
+
+
+
+//Mostraremos solo los n elementos necesarios
+//-----------------------------------------
+if ($contar_pagi > 0)
+{
+// Si recibimos un valor por la variable $page ejecutamos esta consulta
+
+    //$query = "select * from $nombre_tabla LIMIT $pagi,$numer_reg";
+    $query = $query .  "LIMIT  $pagi,$numer_reg";
+}
+else
+{
+// Si NO recibimos un valor por la variable $page ejecutamos esta consulta
+
+    //$query = "select * from $nombre_tabla LIMIT 0,$numer_reg";
+    $query = $query .  "LIMIT  0,$numer_reg";
+}
+$fetch= mysqli_query($conn, $query);
+$numero_registros = mysqli_num_rows($fetch);
+//-----------------------------------------
+
+?>
+
+<p>Registros: <?php echo $numero_registros?> de un total de <?php echo $numero_registros0?></p>
+<p><?php echo $pagi_navegacion?></p>
+
+
+
+
+
+
+
+
+<?php
+
+
+
+//$query = $query .  "LIMIT 0,12";
 
 //$fetch= mysqli_query($conn,"SELECT * FROM inmobiliaria WHERE tipoInmueble='" . $tipo_inmueble ."'" );
-$fetch= mysqli_query($conn, $query);
+//$fetch= mysqli_query($conn, $query);
 ?>
 
 <?php

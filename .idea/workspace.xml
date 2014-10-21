@@ -44,13 +44,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html_form_send.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="html_form_send.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html_form_send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="809" selection-end="809" vertical-scroll-proportion="0.37297922" vertical-offset="0" max-vertical-offset="1768">
+            <state line="19" column="5" selection-start="809" selection-end="809" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="1768">
               <folding>
                 <marker date="1413906827378" expanded="true" signature="2790:2840" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="action.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="42" selection-start="1419" selection-end="1419" vertical-scroll-proportion="-0.88235295" vertical-offset="856" max-vertical-offset="4556">
+              <folding>
+                <marker date="1413912904836" expanded="true" signature="628:650" placeholder="select * fro..inmueble..." />
+                <marker date="1413912904836" expanded="true" signature="1782:1810" placeholder="SELECT * FRO..inmueble..." />
+                <marker date="1413912904836" expanded="true" signature="3487:3537" placeholder="select * fro..$nombre_tabla LIMIT..." />
+                <marker date="1413912904836" expanded="true" signature="3691:3737" placeholder="select * fro..$nombre_tabla LIMIT..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="182" column="0" selection-start="5014" selection-end="5014" vertical-scroll-proportion="0.6748879" vertical-offset="2492" max-vertical-offset="4012">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/action.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/style.styl" />
         <option value="$PROJECT_DIR$/css/responsivemobilemenu.css" />
@@ -74,6 +96,8 @@
         <option value="$PROJECT_DIR$/grupoempresarial.jade" />
         <option value="$PROJECT_DIR$/contacto.jade" />
         <option value="$PROJECT_DIR$/html_form_send.php" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/action.php" />
       </list>
     </option>
   </component>
@@ -125,6 +149,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="caribean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caribean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caribean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,10 +286,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html_form_send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="809" selection-end="809" vertical-scroll-proportion="0.37297922" vertical-offset="0" max-vertical-offset="1768">
+        <state line="19" column="5" selection-start="809" selection-end="809" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="1768">
           <folding>
             <marker date="1413906827378" expanded="true" signature="2790:2840" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="42" selection-start="1419" selection-end="1419" vertical-scroll-proportion="-0.88235295" vertical-offset="856" max-vertical-offset="4556">
+          <folding>
+            <marker date="1413912904836" expanded="true" signature="628:650" placeholder="select * fro..inmueble..." />
+            <marker date="1413912904836" expanded="true" signature="1782:1810" placeholder="SELECT * FRO..inmueble..." />
+            <marker date="1413912904836" expanded="true" signature="3487:3537" placeholder="select * fro..$nombre_tabla LIMIT..." />
+            <marker date="1413912904836" expanded="true" signature="3691:3737" placeholder="select * fro..$nombre_tabla LIMIT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="0" selection-start="5014" selection-end="5014" vertical-scroll-proportion="0.6748879" vertical-offset="2492" max-vertical-offset="4012">
+          <folding />
         </state>
       </provider>
     </entry>
