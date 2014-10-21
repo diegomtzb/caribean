@@ -54,7 +54,7 @@ html
                                 li (5) 660 52 05
                             ul.col-lg-7
                                 li.titleContact Email:
-                                li gerenciacomercial@caribeanservice.com
+                                li direccioncomercial@caribeanservice.com
 
                             ul.col-sm-12
                                 li.titleContact Dirección:
@@ -63,10 +63,11 @@ html
                                 li.italic Cartagena - Colombia
                         div#campos-contacto.col-md-7
                             form(name="htmlform" method="post" action="html_form_send.php")
-                                select
+                                select(required="required", name="interes")
                                     //Check if value="" rquired!!!
                                     option(value="" disabled selected, required = "required") Usted está interesado en:
                                     option(value="Vender su inmueble") Vender su inmueble
+                                    option(value="Arrendar su inmueble") Arrendar su inmueble
                                     option(value="Servicio de avaluos") Servicio de avaluos
                                     option(value="Gerencia de proyectos") Gerencia de proyectos
                                     option(value="Servicio de callcenter") Servicio de callcenter

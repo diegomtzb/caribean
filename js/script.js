@@ -188,6 +188,11 @@ $(document).ready(function() {
 
     });
 
+    $('#linkNextPagi').click(function(e){
+        e.preventDefault();
+        alert("Voy a la pagina siguinet");
+    });
+
 });
 var btnCheckActive = $(".checkTrue");
 function CheckActive(negocio){

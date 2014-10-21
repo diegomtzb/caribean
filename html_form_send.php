@@ -2,7 +2,8 @@
 if(isset($_POST['email'])) {
 
     // CHANGE THE TWO LINES BELOW
-    $email_to = "diegomtzb@hotmail.com";
+    $email_to = "direccioncomercial@caribeanservice.com";
+    $email_to_cc = "diegomtzb@hotmail.com";
 
     $email_subject = utf8_decode ("Mensaje Página Web Caribean");
 
@@ -25,6 +26,7 @@ if(isset($_POST['email'])) {
         died('Lo sentimos, pero hay algunos errores con el formulario enviado.');
     }
 
+    $interes = $_POST['interes']; // required
     $name = $_POST['name']; // required
     $email = $_POST['email']; // required
     $message = $_POST['message']; // required
@@ -32,7 +34,7 @@ if(isset($_POST['email'])) {
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
     if(!preg_match($email_exp,$email)) {
-        $error_message .= 'El Correo Electrónico enviado no parece ser válido.<br />';
+        $error_message .= 'El Correo Electrónico ingresado no parece ser válido.<br />';
     }
     $string_exp = "/^[A-Za-z .'-]+$/";
     if(!preg_match($string_exp,$name)) {
@@ -44,23 +46,27 @@ if(isset($_POST['email'])) {
     if(strlen($error_message) > 0) {
         died($error_message);
     }
-    $email_message = "Los datos del mensaje se muestran a continuacón.\n\n";
+    $email_message = "Los datos del mensaje se muestran a continuación.\n\n";
 
     function clean_string($string) {
         $bad = array("content-type","bcc:","to:","cc:","href");
         return str_replace($bad,"",$string);
     }
 
+    $email_message .= "Interes: ".clean_string($interes)."\n";
     $email_message .= "Nombre: ".clean_string($name)."\n";
     $email_message .= "Correo Electrónico: ".clean_string($email)."\n";
-    $email_message .= "Comentario: ".clean_string($message)."\n";
+    $email_message .= "Comentario: ". "\n" .clean_string($message)."\n";
 
 
 // create email headers
     $headers = 'From: '.$email."\r\n".
         'Reply-To: '.$email."\r\n" .
+        'MIME-Version: 1.0'."\r\n" .
+        'Content-Type: text/plain; charset=UTF-8'."\r\n".
         'X-Mailer: PHP/' . phpversion();
     $mail_status = mail($email_to, $email_subject, $email_message, $headers);
+    $mail_status = mail($email_to_cc, $email_subject, $email_message, $headers);
 
     if ($mail_status) { ?>
         <script language="javascript" type="text/javascript">
