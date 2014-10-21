@@ -72,9 +72,9 @@ $fetchzona = mysqli_query($conn, $queryzona);
 
                 <div class="spaceBar"></div>
                 <div id="criterios1">
-                    <div id="ventas" class="active checkTrue"><span>Ventas</span><!--Asi debe aparecer en la base de datos--><label>VENTA</label>
+                    <div id="ventas" class="active checkTrue" onclick="CheckActive(2);"><span>Ventas</span><!--Asi debe aparecer en la base de datos--><label>VENTA</label>
                     </div>
-                    <div id="arriendos" class="checkTrue"><span>Arriendos</span><!--Asi debe aparecer en la base de datos--><label>ARRIENDO</label>
+                    <div id="arriendos" class="checkTrue" onclick="CheckActive(3);"><span>Arriendos</span><!--Asi debe aparecer en la base de datos--><label>ARRIENDO</label>
                     </div>
                     <div id="tipo-inmueble">
                         <select onChange="javascript:tipoInmuebleHasChanged();">

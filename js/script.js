@@ -1,18 +1,23 @@
 $(document).ready(function() {
+
+
+
+
+
+
     $("#buscar").click(function(e) {
         e.preventDefault();
 
-
         var section_search = $("#section-search");
-
         var $search_result=$(".search_result")
 
         //Se asignan las variables a asignar a dataString y enviar por ajax en un Json
         var $negocio = $("#criterios1").find(".active").find("label");
-
         var tipo_negocio = $negocio.text();
         var tipo_inmueble = $("#tipo-inmueble select").val();
         var ubicacion = $("#ubicacion select").val();
+
+
         var dataString = {
             "negocio" : tipo_negocio,
             "tipo" : tipo_inmueble,
@@ -73,12 +78,14 @@ $(document).ready(function() {
     });
 
 
-    var btnCheckActive = $(".checkTrue");
+    /*var btnCheckActive = $(".checkTrue");
     btnCheckActive.click(function(e){
         e.preventDefault();
         btnCheckActive.toggleClass("active");
         //$( this ).toggleClass("active");
-    });
+
+        alert("okok");
+    });*/
 
 
     var lishowhide = $(".showhide");
@@ -182,6 +189,36 @@ $(document).ready(function() {
     });
 
 });
+var btnCheckActive = $(".checkTrue");
+function CheckActive(negocio){
+    btnCheckActive.toggleClass("active");
+
+    var tipo_inmueble = $("#tipo-inmueble select").val();
+    var ubicacion = $("#ubicacion select").val();
+
+
+    var dataString = {
+        "negocio" : negocio,
+        "tipo" : tipo_inmueble,
+        "ubicacion" : ubicacion,
+        "parametro" : 2
+    };
+
+    $("#tipo-inmueble").find('select').html('<option value="" disabled="disabled" selected="selected">Cargando...</option>');
+
+    $.ajax({
+        type: "POST",
+        url: "change_search_attribute.php",
+        data: dataString,
+        cache: true,
+        success: function(html){
+            alert(html);
+            //$("#tipo-inmueble").find('select').html('<option value="" disabled="disabled" selected="selected">Tipo de inmueble</option>');
+            html='<option value="" disabled="disabled" selected="selected">Tipo de inmueble</option>' + html;
+            $("#tipo-inmueble").find('select').html(html);
+        }
+    });
+}
 
 function clear_box(){
     var tipo_inmueble = $("#tipo-inmueble select");
