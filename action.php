@@ -8,7 +8,7 @@ $all_data = array();
 $tipo_negocio = $_POST['negocio'];
 $tipo_negocio_num = 0;
 $tipo_inmueble = $_POST['tipo'];
-$tipo_inmueble_num = 0;
+$tipo_inmueble_val = $_POST['tipo_val'];
 $ubicacion = $_POST['ubicacion'];
 
 
@@ -80,28 +80,6 @@ if ($tipo_negocio == "VENTA") {
 
 
 
-if ( $tipo_inmueble == "APARTAMENTO") {
-    $tipo_inmueble_num=2;
-} elseif (  $tipo_inmueble == "CASA") {
-    $tipo_inmueble_num=3;
-} elseif ( $tipo_inmueble == "BODEGA") {
-    $tipo_inmueble_num=7;
-} elseif (  $tipo_inmueble == "LOCAL") {
-    $tipo_inmueble_num=6;
-} elseif (  $tipo_inmueble == "PROYECTO") {
-    $tipo_inmueble_num=1;
-} elseif ( $tipo_inmueble == "EDIFICIO") {
-    $tipo_inmueble_num=4;
-} elseif (  $tipo_inmueble == "FINCA") {
-    $tipo_inmueble_num=9;
-} elseif ( $tipo_inmueble == "GARAJE") {
-    $tipo_inmueble_num=10;
-} elseif (  $tipo_inmueble == "LOTE") {
-    $tipo_inmueble_num=8;
-} elseif (  $tipo_inmueble == "OFICINA") {
-    $tipo_inmueble_num=5;
-}
-
 //$tipo_negocio debe venir siempre o venta o arriendo pero nunca vacio
 $query=$query . "inm_negocio='" . $tipo_negocio_num . "'";
 
@@ -121,7 +99,7 @@ if(strlen($ubicacion)>0)
 
 if(strlen($tipo_inmueble)>0)
 {
-    $query=$query ."and inm_tipo='" . $tipo_inmueble_num ."'" ;
+    $query=$query ."and inm_tipo='" . $tipo_inmueble ."'" ;
 }
 
 
@@ -181,30 +159,32 @@ while($row = mysqli_fetch_array($fetch)) {
 
 
 
-    if ( strlen($tipo_inmueble) == 0 )
-    {
-        if ( $row['inm_tipo'] == 1) {
-            $tipo_inmueble="PROYECTO";
-        } elseif ( $row['inm_tipo'] == 2) {
-            $tipo_inmueble="APARTAMENTO";
-        } elseif ( $row['inm_tipo'] == 3) {
-            $tipo_inmueble="CASA";
-        } elseif ( $row['inm_tipo'] == 4) {
-            $tipo_inmueble="EDIFICIO";
-        } elseif ( $row['inm_tipo'] == 5) {
-            $tipo_inmueble="OFICINA";
-        } elseif ( $row['inm_tipo'] == 6) {
-            $tipo_inmueble="LOCAL";
-        } elseif ( $row['inm_tipo'] == 7) {
-            $tipo_inmueble="BODEGA";
-        } elseif ( $row['inm_tipo'] == 8) {
-            $tipo_inmueble="LOTE";
-        } elseif ( $row['inm_tipo'] == 9) {
-            $tipo_inmueble="FINCA";
-        } elseif ( $row['inm_tipo'] == 10) {
-            $tipo_inmueble="GARAJE";
-        }
+
+    if ( $row['inm_tipo'] == 1) {
+        $tipo_inmueble="PROYECTO";
+    } elseif ( $row['inm_tipo'] == 2) {
+        $tipo_inmueble="APARTAMENTO";
+    } elseif ( $row['inm_tipo'] == 3) {
+        $tipo_inmueble="CASA";
+    } elseif ( $row['inm_tipo'] == 4) {
+        $tipo_inmueble="EDIFICIO";
+    } elseif ( $row['inm_tipo'] == 5) {
+        $tipo_inmueble="OFICINA";
+    } elseif ( $row['inm_tipo'] == 6) {
+        $tipo_inmueble="LOCAL";
+    } elseif ( $row['inm_tipo'] == 7) {
+        $tipo_inmueble="BODEGA";
+    } elseif ( $row['inm_tipo'] == 8) {
+        $tipo_inmueble="LOTE";
+    } elseif ( $row['inm_tipo'] == 9) {
+        $tipo_inmueble="FINCA";
+    } elseif ( $row['inm_tipo'] == 10) {
+        $tipo_inmueble="GARAJE";
     }
+
+
+
+
 
     $ciudad="CIUDAD";
     if ( $row['inm_ciu_id'] == 2) {

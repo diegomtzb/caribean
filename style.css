@@ -313,7 +313,7 @@ main.main-index {
 #section-main #busqueda #criterios1 select {
   color: #c6c6cd;
   border: 2px solid #be1622;
-  padding: 3px 0;
+  padding: 3px 3px;
   width: 312px;
   font-style: italic;
   -webkit-appearance: none;
@@ -326,9 +326,6 @@ main.main-index {
 }
 #section-main #busqueda #criterios1 select option:first-child {
   color: #c6c6cd;
-}
-select[disabled="disabled"] {
-  color: #ff0;
 }
 #section-main #busqueda #criterios2 {
   display: inline-block;

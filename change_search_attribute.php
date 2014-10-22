@@ -8,53 +8,47 @@ $parametro = $_POST['parametro'];
 
 if($parametro==1)
 {
-    $query="SELECT inm_tipo FROM inmueble WHERE inm_negocio= " . $tipo_negocio . " GROUP BY inm_tipo";
+
+
+
+
+    $query="SELECT inmueble.inm_tipo, tipos_inmueble.tipo_nombre
+            FROM inmueble,tipos_inmueble
+            WHERE inm_negocio= " . $tipo_negocio .
+                  " AND inmueble.inm_tipo = tipos_inmueble.tipo_inm_id
+            GROUP BY inm_tipo";
     $fetch = mysqli_query($conn, $query);
 
     while($row = mysqli_fetch_array($fetch)) {
-        $tipo_inmueble="INMUEBLE";
-        if ( $row['inm_tipo'] == 1) {
-            $tipo_inmueble="PROYECTO";
-        } elseif ( $row['inm_tipo'] == 2) {
-            $tipo_inmueble="APARTAMENTO";
-        } elseif ( $row['inm_tipo'] == 3) {
-            $tipo_inmueble="CASA";
-        } elseif ( $row['inm_tipo'] == 4) {
-            $tipo_inmueble="EDIFICIO";
-        } elseif ( $row['inm_tipo'] == 5) {
-            $tipo_inmueble="OFICINA";
-        } elseif ( $row['inm_tipo'] == 6) {
-            $tipo_inmueble="LOCAL";
-        } elseif ( $row['inm_tipo'] == 7) {
-            $tipo_inmueble="BODEGA";
-        } elseif ( $row['inm_tipo'] == 8) {
-            $tipo_inmueble="LOTE";
-        } elseif ( $row['inm_tipo'] == 9) {
-            $tipo_inmueble="FINCA";
-        } elseif ( $row['inm_tipo'] == 10) {
-            $tipo_inmueble="GARAJE";
-        }
+
 
         ?>
-        <option value="<?php echo $tipo_inmueble?>"><?php echo $tipo_inmueble?></option>
+        <option value="<?php echo $row['inm_tipo'] ?>"><?php echo $row['tipo_nombre']?></option>
     <?php
 }
     }
 elseif($parametro == 2)
 {
-    $queryzona="SELECT inm_zon_id FROM inmueble WHERE inm_negocio= " . $tipo_negocio . " GROUP BY inm_zon_id";
+    $queryzona="SELECT inmueble.inm_zon_id, zonas.zon_nombre
+            FROM inmueble,zonas
+            WHERE inmueble.inm_negocio = " . $tipo_negocio .
+                  " AND inmueble.inm_zon_id = zonas.zon_id";
+    if(strlen($tipo_inmueble)>0)
+    {
+        $queryzona = $queryzona . " AND inm_tipo = " . $tipo_inmueble;
+
+    }
+    $queryzona = $queryzona . " GROUP BY inmueble.inm_zon_id";
+
+
     $fetchzona = mysqli_query($conn, $queryzona);
 
-
     while($row = mysqli_fetch_array($fetchzona)) {
-        //$queryUbicacion = "SELECT zon_nombre FROM zonas WHERE zon_id='" . $row['inm_zon_id'] . "'";
-        //$fetchUbicacion = mysqli_query($conn, $queryUbicacion);
-        //$rowUbicacion = mysqli_fetch_array($fetchUbicacion);
-        //$ubicacion = $rowUbicacion['zon_nombre'];
-        if (strlen($row['inm_zon_id'])>0)
+        $ubicacion = $row['zon_nombre'];
+        if (strlen($ubicacion)>0)
         {
             ?>
-            <option value="<?php echo $row['inm_zon_id'] ?>"><?php echo $row['inm_zon_id'] ?></option>
+            <option value="<?php echo utf8_encode($ubicacion) ?>"><?php echo utf8_encode($ubicacion) ?></option>
         <?php
         }
     }
