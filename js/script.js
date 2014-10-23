@@ -193,31 +193,35 @@ $(document).ready(function() {
 });
 var btnCheckActive = $(".checkTrue");
 function CheckActive(elemen, negocio){
+    var me = $(elemen);
+    if (!me.hasClass("active"))
+    {
+        gotoChangeSearchAttributeFromNegocio(negocio)
+    }
+}
 
-    //Si el boton que se unde es el que contiene la clase active entoncesnhacer el toggleClass
-    //En esta forma de utilizar la funcion no he podido comprobar si el que se unde es el que tiene la clase
-    //elemen en un objeto y no un jquery
-    //Buscar la alerta que sale al dar click
 
-   alert($(".checkTrue active"));
-
-   elemen.css('background-color', '#c6c6cd');
-
+function gotoChangeSearchAttributeFromNegocio(negocio){
     btnCheckActive.toggleClass("active");
 
     var tipo_inmueble = $("#tipo-inmueble select").val();
     var ubicacion = $("#ubicacion select").val();
 
-    $('#tipo-inmueble select').css('color', '#c6c6cd');
+
     $('#ubicacion select').css('color', '#c6c6cd');
+    $('#tipo-inmueble select').css('color', '#c6c6cd');
 
 
     var dataString = {
         "negocio" : negocio,
-        "tipo" : tipo_inmueble,
-        "ubicacion" : ubicacion,
+        //"tipo" : tipo_inmueble,
+        "tipo" : null,
+        //"ubicacion" : ubicacion,
+        "ubicacion" : null,
         "parametro" : 1
     };
+
+
 
     $("#tipo-inmueble").find('select').html('<option value="" disabled="disabled" selected="selected">Cargando...</option>');
 
@@ -235,10 +239,15 @@ function CheckActive(elemen, negocio){
     });
 
 
+
+
+
     var dataString = {
         "negocio" : negocio,
-        "tipo" : tipo_inmueble,
-        "ubicacion" : ubicacion,
+        //"tipo" : tipo_inmueble,
+        "tipo" : null,
+        //"ubicacion" : ubicacion,
+        "ubicacion" : null,
         "parametro" : 2
     };
 
@@ -254,8 +263,78 @@ function CheckActive(elemen, negocio){
             $("#ubicacion").find('select').html(html);
         }
     });
-
 }
+
+
+function gotoChangeSearchAttributeFromTipoInmueble(negocio){
+
+    var tipo_inmueble = $("#tipo-inmueble select").val();
+    var ubicacion = $("#ubicacion select").val();
+
+    if(ubicacion==null)
+    {
+        $('#ubicacion select').css('color', '#c6c6cd');
+
+        var dataString = {
+            "negocio" : negocio,
+            "tipo" : tipo_inmueble,
+            //"tipo" : null,
+            //"ubicacion" : ubicacion,
+            "ubicacion" : null,
+            "parametro" : 2
+        };
+
+        $("#ubicacion").find('select').html('<option value="" disabled="disabled" selected="selected">Cargando...</option>');
+
+        $.ajax({
+            type: "POST",
+            url: "change_search_attribute.php",
+            data: dataString,
+            cache: true,
+            success: function(html){
+                html='<option value="" disabled="disabled" selected="selected">Ubicación</option>' + html;
+                $("#ubicacion").find('select').html(html);
+            }
+        });
+    }
+}
+
+
+function gotoChangeSearchAttributeFromUbicacion(negocio){
+    var tipo_inmueble = $("#tipo-inmueble select").val();
+    var ubicacion = $("#ubicacion select").val();
+
+    if(tipo_inmueble==null)
+    {
+        $('#tipo-inmueble select').css('color', '#c6c6cd');
+
+        var dataString = {
+            "negocio" : negocio,
+            "tipo" : null,
+            "ubicacion" : ubicacion,
+            "parametro" : 1
+        };
+
+        $("#tipo-inmueble").find('select').html('<option value="" disabled="disabled" selected="selected">Cargando...</option>');
+
+        $.ajax({
+            type: "POST",
+            url: "change_search_attribute.php",
+            data: dataString,
+            cache: true,
+            success: function(html){
+                html='<option value="" disabled="disabled" selected="selected">Tipo de inmueble</option>' + html;
+                $("#tipo-inmueble").find('select').html(html);
+            }
+        });
+    }
+}
+
+
+
+
+
+
 
 function clear_box(){
     var tipo_inmueble = $("#tipo-inmueble select");
@@ -271,10 +350,30 @@ function orderByHasChanged(){
 
 function tipoInmuebleHasChanged(){
     $('#tipo-inmueble select').css('color', '#e6332a');
+
+    var negocio = $("#criterios1").find(".active").find("label").text();
+    if (negocio=="VENTA")
+    {
+        negocio = 2;
+    }else
+    {
+        negocio = 3;
+    }
+    gotoChangeSearchAttributeFromTipoInmueble(negocio);
 }
 
 function ubicacionHasChanged(){
     $('#ubicacion select').css('color', '#e6332a');
+
+    var negocio = $("#criterios1").find(".active").find("label").text();
+    if (negocio=="VENTA")
+    {
+        negocio = 2;
+    }else
+    {
+        negocio = 3;
+    }
+    gotoChangeSearchAttributeFromUbicacion(negocio);
 }
 
 var miniatureFigureImg = $(".miniatureFigure img");
