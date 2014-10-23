@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-
-
-
-
-
     $("#buscar").click(function(e) {
         e.preventDefault();
 

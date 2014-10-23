@@ -28,7 +28,7 @@
           <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="83" column="60" selection-start="3545" selection-end="3554" vertical-scroll-proportion="0.33880422" vertical-offset="1122" max-vertical-offset="3672">
+                <state line="83" column="55" selection-start="3549" selection-end="3549" vertical-scroll-proportion="0.33880422" vertical-offset="1122" max-vertical-offset="3672">
                   <folding>
                     <marker date="1413999883813" expanded="true" signature="33:159" placeholder="SELECT inmue..inmueble..." />
                     <marker date="1413999883813" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
@@ -57,7 +57,7 @@
           <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="204" column="44" selection-start="5661" selection-end="5661" vertical-scroll-proportion="0.45199063" vertical-offset="3082" max-vertical-offset="5270">
+                <state line="203" column="19" selection-start="5712" selection-end="5712" vertical-scroll-proportion="0.3676815" vertical-offset="3137" max-vertical-offset="5185">
                   <folding />
                 </state>
               </provider>
@@ -173,6 +173,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -201,7 +202,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -297,7 +298,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="60" selection-start="3545" selection-end="3554" vertical-scroll-proportion="0.33880422" vertical-offset="1122" max-vertical-offset="3672">
+        <state line="83" column="55" selection-start="3549" selection-end="3549" vertical-scroll-proportion="0.33880422" vertical-offset="1122" max-vertical-offset="3672">
           <folding>
             <marker date="1413999883813" expanded="true" signature="33:159" placeholder="SELECT inmue..inmueble..." />
             <marker date="1413999883813" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
@@ -311,7 +312,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="44" selection-start="5661" selection-end="5661" vertical-scroll-proportion="0.45199063" vertical-offset="3082" max-vertical-offset="5270">
+        <state line="203" column="19" selection-start="5712" selection-end="5712" vertical-scroll-proportion="0.3676815" vertical-offset="3137" max-vertical-offset="5185">
           <folding />
         </state>
       </provider>
