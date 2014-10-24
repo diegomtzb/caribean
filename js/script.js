@@ -271,37 +271,51 @@ function gotoChangeSearchAttributeFromTipoInmueble(negocio){
     var tipo_inmueble = $("#tipo-inmueble select").val();
     var ubicacion = $("#ubicacion select").val();
 
-    if(ubicacion==null)
-    {
-        $('#ubicacion select').css('color', '#c6c6cd');
 
-        var dataString = {
-            "negocio" : negocio,
-            "tipo" : tipo_inmueble,
-            //"tipo" : null,
-            //"ubicacion" : ubicacion,
-            "ubicacion" : null,
-            "parametro" : 2
-        };
 
-        $("#ubicacion").find('select').html('<option value="" disabled="disabled" selected="selected">Cargando...</option>');
+    //if(ubicacion==null)
+    //{
+    //}
 
-        $.ajax({
-            type: "POST",
-            url: "change_search_attribute.php",
-            data: dataString,
-            cache: true,
-            success: function(html){
-                html='<option value="" disabled="disabled" selected="selected">Ubicación</option>' + html;
-                $("#ubicacion").find('select').html(html);
-            }
-        });
-    }
+
+
+
+    $('#ubicacion select').css('color', '#c6c6cd');
+
+    $("#ubicacion").find('select').html('<option value="" disabled="disabled" selected="selected">Cargando...</option>');
+
+
+    var dataString = {
+        "negocio" : negocio,
+        "tipo" : tipo_inmueble,
+        //"tipo" : null,
+        //"ubicacion" : ubicacion,
+        "ubicacion" : ubicacion,
+        "parametro" : 2
+    };
+
+
+    $.ajax({
+        type: "POST",
+        url: "change_search_attribute.php",
+        data: dataString,
+        cache: true,
+        success: function(html){
+            html='<option value="" disabled="disabled" selected="selected">Ubicación</option>' + html;
+            $("#ubicacion").find('select').html(html);
+        }
+    });
+
+
+
+
+
+
 }
 
 
 function gotoChangeSearchAttributeFromUbicacion(negocio){
-    var tipo_inmueble = $("#tipo-inmueble select").val();
+   /* var tipo_inmueble = $("#tipo-inmueble select").val();
     var ubicacion = $("#ubicacion select").val();
 
     if(tipo_inmueble==null)
@@ -327,7 +341,7 @@ function gotoChangeSearchAttributeFromUbicacion(negocio){
                 $("#tipo-inmueble").find('select').html(html);
             }
         });
-    }
+    }*/
 }
 
 
