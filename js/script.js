@@ -185,12 +185,8 @@ $(document).ready(function() {
 
     });
 
-    $('#linkNextPagi').click(function(e){
-        e.preventDefault();
-        alert("Voy a la pagina siguinet");
-    });
-
 });
+
 var btnCheckActive = $(".checkTrue");
 function CheckActive(elemen, negocio){
     var me = $(elemen);
@@ -198,6 +194,10 @@ function CheckActive(elemen, negocio){
     {
         gotoChangeSearchAttributeFromNegocio(negocio)
     }
+}
+
+function linkNextPagi(){
+    alert("Voy a la pagina siguinet");
 }
 
 

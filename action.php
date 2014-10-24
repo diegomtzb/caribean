@@ -14,60 +14,6 @@ $ubicacion = $_POST['ubicacion'];
 
 
 
-//Variables para la paginación
-$pagi = 0;
-if (isset($_GET['s']))
-{
-    $pagi = $_GET['pagi'];
-}
-$contar_pagi = (strlen($pagi));    // Contamos el numero de caracteres
-
-// Numero de registros por pagina
-$numer_reg = 12;
-
-// Contamos los registros totales
-$query0 = "select * from inmueble";     // Esta linea hace la consulta
-$result0 = mysqli_query($conn,$query0);
-$numero_registros0 = mysqli_num_rows($result0);
-
-
-$pag_anterior = "";
-$separador = "";
-$pag_siguiente = "";
-
-##############################################
-// ----------------------------- Pagina anterior
-$prim_reg_an = $numer_reg - $pagi;
-$prim_reg_ant = abs($prim_reg_an);        // Tomamos el valor absoluto
-
-if ($pagi <> 0)
-{
-    $pag_anterior = "<a href='resultados.php?pagi=$prim_reg_ant'>Pagina anterior</a>";
-}
-
-// ----------------------------- Pagina siguiente
-$prim_reg_sigu = $numer_reg + $pagi;
-
-if ($pagi < $numero_registros0 - ($numer_reg - 1))
-{
-    //$pag_siguiente = "<a href='action.php?pagi=$prim_reg_sigu'>Pagina siguiente</a>";
-    $pag_siguiente = "<a id ='linkNextPagi' href='#'>Pagina siguiente</a>";
-}
-
-// ----------------------------- Separador
-if ($pagi <> 0 and $pagi < $numero_registros0 - ($numer_reg - 1))
-{
-    $separador = "|";
-}
-// Creamos la barra de navegacion
-
-$pagi_navegacion = "$pag_anterior $separador $pag_siguiente";
-
-// -----------------------------
-##############################################
-
-
-
 
 
 $query="SELECT * FROM inmueble WHERE ";
@@ -105,6 +51,63 @@ if(strlen($tipo_inmueble)>0)
 
 
 
+//Variables para la paginación
+$pagi = 0;
+if (isset($_GET['s']))
+{
+    $pagi = $_GET['pagi'];
+}
+$contar_pagi = (strlen($pagi));    // Contamos el numero de caracteres
+
+// Numero de registros por pagina
+$numer_reg = 12;
+
+// Contamos los registros totales
+//$query0 = "select * from inmueble";     // Esta linea hace la consulta
+//$result0 = mysqli_query($conn,$query0);
+$result0= mysqli_query($conn, $query);
+$numero_registros0 = mysqli_num_rows($result0);
+
+
+$pag_anterior = "";
+$separador = "";
+$pag_siguiente = "";
+
+##############################################
+// ----------------------------- Pagina anterior
+$prim_reg_an = $numer_reg - $pagi;
+$prim_reg_ant = abs($prim_reg_an);        // Tomamos el valor absoluto
+
+if ($pagi <> 0)
+{
+    $pag_anterior = "<a href='resultados.php?pagi=$prim_reg_ant'>Pagina anterior</a>";
+}
+
+// ----------------------------- Pagina siguiente
+$prim_reg_sigu = $numer_reg + $pagi;
+
+if ($pagi < $numero_registros0 - ($numer_reg - 1))
+{
+    //$pag_siguiente = "<a href='action.php?pagi=$prim_reg_sigu'>Pagina siguiente</a>";
+    //$pag_siguiente = "<a href='javascript:void(0)' onclick='linkNextPagi();'>Pagina siguiente</a>";
+
+}
+
+// ----------------------------- Separador
+if ($pagi <> 0 and $pagi < $numero_registros0 - ($numer_reg - 1))
+{
+    $separador = "|";
+}
+// Creamos la barra de navegacion
+
+$pagi_navegacion = "$pag_anterior $separador $pag_siguiente";
+
+// -----------------------------
+##############################################
+
+
+
+
 //Mostraremos solo los n elementos necesarios
 //-----------------------------------------
 if ($contar_pagi > 0)
@@ -129,8 +132,6 @@ $numero_registros = mysqli_num_rows($fetch);
 
 <p>Registros: <?php echo $numero_registros?> de un total de <?php echo $numero_registros0?></p>
 <p><?php echo $pagi_navegacion?></p>
-
-
 
 
 

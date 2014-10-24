@@ -28,10 +28,10 @@
           <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="77" column="35" selection-start="3237" selection-end="3237" vertical-scroll-proportion="0.15943728" vertical-offset="1173" max-vertical-offset="3672">
+                <state line="80" column="0" selection-start="3410" selection-end="3410" vertical-scroll-proportion="0.6635404" vertical-offset="794" max-vertical-offset="3689">
                   <folding>
-                    <marker date="1413999883813" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
-                    <marker date="1413999883813" expanded="true" signature="312:511" placeholder="SELECT inmue..inmueble..." />
+                    <marker date="1414165086425" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
+                    <marker date="1414165086425" expanded="true" signature="312:511" placeholder="SELECT inmue..inmueble..." />
                   </folding>
                 </state>
               </provider>
@@ -50,11 +50,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="343" column="7" selection-start="9232" selection-end="9232" vertical-scroll-proportion="0.67235494" vertical-offset="5240" max-vertical-offset="7106">
+                <state line="199" column="38" selection-start="5433" selection-end="5433" vertical-scroll-proportion="-21.8" vertical-offset="2838" max-vertical-offset="7106">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="action.php" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/action.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="90" column="65" selection-start="2206" selection-end="2244" vertical-scroll-proportion="0.3321256" vertical-offset="1255" max-vertical-offset="4233">
+                  <folding>
+                    <marker date="1414166141285" expanded="true" signature="390:418" placeholder="SELECT * FRO..inmueble..." />
+                    <marker date="1414166141285" expanded="true" signature="1477:1499" placeholder="select * fro..inmueble..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -62,16 +74,7 @@
           <file leaf-file-name="change_search_attribute.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/change_search_attribute.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="0" selection-start="1006" selection-end="1122" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1037">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="action.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/action.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="101" column="59" selection-start="2557" selection-end="2612" vertical-scroll-proportion="0.0" vertical-offset="1271" max-vertical-offset="4216">
+                <state line="19" column="41" selection-start="588" selection-end="588" vertical-scroll-proportion="-5.3461537" vertical-offset="184" max-vertical-offset="1037">
                   <folding />
                 </state>
               </provider>
@@ -89,11 +92,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/action.php" />
         <option value="$PROJECT_DIR$/change_search_attribute.php" />
         <option value="$PROJECT_DIR$/style.styl" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/action.php" />
       </list>
     </option>
   </component>
@@ -162,7 +165,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -226,8 +229,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="35" selection-start="3237" selection-end="3237" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="3672">
           <folding>
-            <marker date="1413999883813" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
-            <marker date="1413999883813" expanded="true" signature="312:511" placeholder="SELECT inmue..inmueble..." />
+            <marker date="1414165086425" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
+            <marker date="1414165086425" expanded="true" signature="312:511" placeholder="SELECT inmue..inmueble..." />
           </folding>
         </state>
       </provider>
@@ -256,7 +259,10 @@
     <entry file="file://$PROJECT_DIR$/action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="59" selection-start="2557" selection-end="2612" vertical-scroll-proportion="0.0" vertical-offset="1271" max-vertical-offset="4216">
-          <folding />
+          <folding>
+            <marker date="1414166141285" expanded="true" signature="390:418" placeholder="SELECT * FRO..inmueble..." />
+            <marker date="1414166141285" expanded="true" signature="1477:1499" placeholder="select * fro..inmueble..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -264,8 +270,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="35" selection-start="3523" selection-end="3529" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="3672">
           <folding>
-            <marker date="1413999883813" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
-            <marker date="1413999883813" expanded="true" signature="312:511" placeholder="SELECT inmue..inmueble..." />
+            <marker date="1414165086425" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
+            <marker date="1414165086425" expanded="true" signature="312:511" placeholder="SELECT inmue..inmueble..." />
           </folding>
         </state>
       </provider>
@@ -294,7 +300,10 @@
     <entry file="file://$PROJECT_DIR$/action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="59" selection-start="2557" selection-end="2612" vertical-scroll-proportion="0.0" vertical-offset="1271" max-vertical-offset="4216">
-          <folding />
+          <folding>
+            <marker date="1414166141285" expanded="true" signature="390:418" placeholder="SELECT * FRO..inmueble..." />
+            <marker date="1414166141285" expanded="true" signature="1477:1499" placeholder="select * fro..inmueble..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -302,8 +311,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="55" selection-start="3549" selection-end="3549" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="3672">
           <folding>
-            <marker date="1413999883813" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
-            <marker date="1413999883813" expanded="true" signature="312:511" placeholder="SELECT inmue..inmueble..." />
+            <marker date="1414165086425" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
+            <marker date="1414165086425" expanded="true" signature="312:511" placeholder="SELECT inmue..inmueble..." />
           </folding>
         </state>
       </provider>
@@ -332,14 +341,10 @@
     <entry file="file://$PROJECT_DIR$/action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="59" selection-start="2557" selection-end="2612" vertical-scroll-proportion="0.0" vertical-offset="1271" max-vertical-offset="4216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="59" selection-start="2557" selection-end="2612" vertical-scroll-proportion="0.0" vertical-offset="1271" max-vertical-offset="4216">
-          <folding />
+          <folding>
+            <marker date="1414166141285" expanded="true" signature="390:418" placeholder="SELECT * FRO..inmueble..." />
+            <marker date="1414166141285" expanded="true" signature="1477:1499" placeholder="select * fro..inmueble..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -350,27 +355,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/change_search_attribute.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1006" selection-end="1122" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1037">
-          <folding />
+        <state line="80" column="0" selection-start="3410" selection-end="3410" vertical-scroll-proportion="0.6635404" vertical-offset="794" max-vertical-offset="3689">
+          <folding>
+            <marker date="1414165086425" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
+            <marker date="1414165086425" expanded="true" signature="312:511" placeholder="SELECT inmue..inmueble..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/change_search_attribute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="35" selection-start="3237" selection-end="3237" vertical-scroll-proportion="0.15943728" vertical-offset="1173" max-vertical-offset="3672">
-          <folding>
-            <marker date="1413999883813" expanded="true" signature="33:258" placeholder="SELECT inmue..inmueble..." />
-            <marker date="1413999883813" expanded="true" signature="312:511" placeholder="SELECT inmue..inmueble..." />
-          </folding>
+        <state line="19" column="41" selection-start="588" selection-end="588" vertical-scroll-proportion="-5.3461537" vertical-offset="184" max-vertical-offset="1037">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="343" column="7" selection-start="9232" selection-end="9232" vertical-scroll-proportion="0.67235494" vertical-offset="5240" max-vertical-offset="7106">
+        <state line="199" column="38" selection-start="5433" selection-end="5433" vertical-scroll-proportion="-21.8" vertical-offset="2838" max-vertical-offset="7106">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="65" selection-start="2206" selection-end="2244" vertical-scroll-proportion="0.3321256" vertical-offset="1255" max-vertical-offset="4233">
+          <folding>
+            <marker date="1414166141285" expanded="true" signature="390:418" placeholder="SELECT * FRO..inmueble..." />
+            <marker date="1414166141285" expanded="true" signature="1477:1499" placeholder="select * fro..inmueble..." />
+          </folding>
         </state>
       </provider>
     </entry>

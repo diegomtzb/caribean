@@ -79,6 +79,7 @@ $fetchzona = mysqli_query($conn, $queryzona);
             <div id="alignText"><h2>LE ASESORAMOS DONDE REALIZAR <span><br> SU MEJOR INVERSIÓN</span></h2></div>
             <div id="busqueda"><h3>BUSQUE SU INMUEBLE</h3>
 
+
                 <div class="spaceBar"></div>
                 <div id="criterios1">
                     <div id="ventas" class="active checkTrue" onclick="CheckActive(this, 2);"><span>Ventas</span><!--Asi debe aparecer en la base de datos--><label>VENTA</label>
