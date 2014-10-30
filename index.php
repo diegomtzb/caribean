@@ -144,11 +144,24 @@ $fetchzona = mysqli_query($conn, $queryzona);
                     <option value="Precio">Precio</option>
                     <option value="Area">Area</option>
                 </select></div>
+
+            <div class="paginacion">
+                <!--<a href="#">Anterior</a>
+                <p> Página 0 de 0 </p>
+                <a href="#">Siguiente</a>-->
+            </div>
+
             <div class="spaceBar"></div>
             <div id="tipo-inmueble"></div>
             <div id="flash"></div>
             <div id="show"></div>
             <div class="spaceBar"></div>
+
+            <div class="paginacion">
+                <!--<a href="#">Anterior</a>
+                <p> Página 0 de 0 </p>
+                <a href="#">Siguiente</a>-->
+            </div>
         </section>
     </main>
 </div>

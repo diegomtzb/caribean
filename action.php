@@ -1,4 +1,5 @@
 <?php
+
 include('db.php');
 //$check = mysqli_query($conn,"SELECT * FROM inmobiliaria");
 
@@ -53,9 +54,9 @@ if(strlen($tipo_inmueble)>0)
 
 //Variables para la paginación
 $pagi = 0;
-if (isset($_GET['s']))
+if (isset($_POST['pagi']))
 {
-    $pagi = $_GET['pagi'];
+    $pagi = $_POST['pagi'];
 }
 $contar_pagi = (strlen($pagi));    // Contamos el numero de caracteres
 
@@ -80,7 +81,9 @@ $prim_reg_ant = abs($prim_reg_an);        // Tomamos el valor absoluto
 
 if ($pagi <> 0)
 {
-    $pag_anterior = "<a href='resultados.php?pagi=$prim_reg_ant'>Pagina anterior</a>";
+    //$pag_anterior = "<a href='resultados.php?pagi=$prim_reg_ant'>Pagina anterior</a>";
+    $pag_anterior = "<a href='javascript:void(0)' onclick='linkNextPagi($prim_reg_ant);'>Anterior</a>";
+
 }
 
 // ----------------------------- Pagina siguiente
@@ -89,15 +92,15 @@ $prim_reg_sigu = $numer_reg + $pagi;
 if ($pagi < $numero_registros0 - ($numer_reg - 1))
 {
     //$pag_siguiente = "<a href='action.php?pagi=$prim_reg_sigu'>Pagina siguiente</a>";
-    //$pag_siguiente = "<a href='javascript:void(0)' onclick='linkNextPagi();'>Pagina siguiente</a>";
+    $pag_siguiente = "<a href='javascript:void(0)' onclick='linkNextPagi($prim_reg_sigu);'>Siguiente</a>";
 
 }
 
 // ----------------------------- Separador
-if ($pagi <> 0 and $pagi < $numero_registros0 - ($numer_reg - 1))
-{
-    $separador = "|";
-}
+$pagActual = $pagi/$numer_reg + 1;
+$numPaginas = ceil($numero_registros0/$numer_reg);
+$separador = "<p>Página $pagActual de $numPaginas</p>";
+
 // Creamos la barra de navegacion
 
 $pagi_navegacion = "$pag_anterior $separador $pag_siguiente";
@@ -130,23 +133,11 @@ $numero_registros = mysqli_num_rows($fetch);
 
 ?>
 
-<p>Registros: <?php echo $numero_registros?> de un total de <?php echo $numero_registros0?></p>
-<p><?php echo $pagi_navegacion?></p>
 
 
-
-
-
-
-<?php
-
-
-
-//$query = $query .  "LIMIT 0,12";
-
-//$fetch= mysqli_query($conn,"SELECT * FROM inmobiliaria WHERE tipoInmueble='" . $tipo_inmueble ."'" );
-//$fetch= mysqli_query($conn, $query);
-?>
+INICIO(BORRAR),
+Navegcion-><?php echo $pagi_navegacion;?>,
+FIN(BORRAR)
 
 <?php
 while($row = mysqli_fetch_array($fetch)) {
@@ -209,7 +200,8 @@ while($row = mysqli_fetch_array($fetch)) {
                 <div class="divInfo">
                     <p class="pTipoInmuble"> <?php echo $tipo_inmueble; ?> </p>
                     <p class="pTipoNegocio"> <?php echo $tipo_negocio; ?> </p>
-                    <p><?php echo $ciudad; ?>, <?php echo $rowUbicacion['zon_nombre']; ?></p>
+                    <p><?php echo $ciudad; ?> </p>
+                    <p><?php echo $rowUbicacion['zon_nombre']; ?></p>
                     <p><?php echo $row['inm_area']; ?> m2 - <?php echo $row['inm_alcobas']; ?> habitacion(es)</p>
                     <p class="inmueble_id"> <?php echo $row['inm_id']; ?></p>
                 </div>
