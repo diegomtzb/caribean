@@ -377,11 +377,13 @@ main.main-index {
   padding: 0;
   margin: 0 10px;
   font-style: italic;
+  width: 224px;
 }
 #section-main #busqueda div#ubicacion {
   background-color: transparent;
   padding: 0;
   margin: 0 10px;
+  width: 309px;
 }
 #section-main #busqueda div#codigo {
   background-color: transparent;
