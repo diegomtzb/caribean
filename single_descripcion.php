@@ -76,6 +76,7 @@ $row = mysqli_fetch_array($fetch);
 
                 <p class="col-lg-3">105 m2</p></div>
         </div>
+
     </div>
     <h3>OTRAS CARACTERISTICAS: <span>Area De Labores, Cocina Semintegral, Comedor, Sala</span></h3></div>
 <div id="footer-single">

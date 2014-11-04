@@ -35,7 +35,11 @@ $row = mysqli_fetch_array($fetch);
             <li class="active"><a href="#">IMÁGENES</a></li>
             <li><a href="single_descripcion.php?id=<?php echo $id; ?>">DESCRIPCIÓN</a></li>
         </ul>
-        <div id="single-info"><p>Apartamento en Cartagena</p>
+        <div id="single-info">
+            <div>
+                <h4 class="col-sm-7">CIUDAD</h4>
+                <p class="col-sm-3">Cartagena</p>
+            </div>
 
             <?php
                 $tipoNegocio="";
@@ -46,20 +50,44 @@ $row = mysqli_fetch_array($fetch);
                 } elseif ($row['inm_negocio'] == 3) {
                     $tipoNegocio="Arriendo";
                 }
+
+
+
+                $queryUbicacion = "SELECT zon_nombre FROM zonas WHERE zon_id='" . $row['inm_zon_id'] . "'";
+                $fetchUbicacion = mysqli_query($conn, $queryUbicacion);
+                $rowUbicacion = mysqli_fetch_array($fetchUbicacion);
             ?>
 
-            <p>Para <?php echo  $tipoNegocio?></p>
+            <div>
+                <h4 class="col-sm-7">BARRIO</h4>
+                <p class="col-sm-3"> <?php echo $rowUbicacion['zon_nombre']?></p>
+            </div>
 
-            <p> <?php echo $row['inm_zon_id']?></p>
+            <div>
+                <h4 class="col-sm-7">TIPO DE INMUEBLE</h4>
+                <p class="col-sm-3"><?php echo  $tipoNegocio?></p>
+            </div>
 
-            <p> <?php echo $row['inm_area']?>m2</p>
+            <div>
+                <h4 class="col-sm-7">HABITACIONES</h4>
+                <p class="col-sm-3"> <?php echo $row['inm_alcobas']?></p>
+            </div>
 
-            <p> <?php echo $row['inm_alcobas']?> habitaciones</p>
+            <div>
+                <h4 class="col-sm-7">BAÑOS</h4>
+                <p class="col-sm-3"> <?php echo $row['inm_banos']?></p>
+            </div>
 
-            <p> <?php echo $row['inm_banos']?> baños</p>
+            <div>
+                <h4 class="col-sm-7">AREA</h4>
+                <p class="col-sm-3"> <?php echo $row['inm_area']?>m2</p>
+            </div>
 
-            <?php $format_price =  number_format($row['inm_valor'])?>
-            <p class="precio">$ <?php echo $format_price?></p></div>
+            <div>
+                <?php $format_price =  number_format($row['inm_valor'])?>
+                <p class="precio">$ <?php echo $format_price?></p></div>
+            </div>
+
     </div>
 </header>
 <div class="container">
@@ -81,9 +109,9 @@ $row = mysqli_fetch_array($fetch);
     </div>
     <?php
     $imgMiniatures = array();
-    $imgMiniatures = explode(",", $row['inm_img_array'] );
+    //$imgMiniatures = explode(",", $row['inm_img_array'] );
     //print_r($imgMiniatures);
-    ?>
+    /*?>
     <div id="minuatures-single" class="col-lg-7">
         <?php
         for ($i = 0; $i < count($imgMiniatures); $i++) {
@@ -99,9 +127,18 @@ $row = mysqli_fetch_array($fetch);
         <?php
             }
         }
+    */
         ?>
 
+    <!--</div>-->
+    <div id="reservar">
+        <div id ="reservar_btn">
+            <p>RESERVA TU CITA</p>
+        </div>
+        <div id="reservar_frm">
+        </div>
     </div>
+
 </div>
 <div id="footer-single">
     <div class="container">

@@ -1082,10 +1082,17 @@ section#vision p {
   -moz-box-shadow: 0px 7px 14px 0px rgba(50,50,50,0.83);
   box-shadow: 0px 7px 14px 0px rgba(50,50,50,0.83);
 }
+#single-info div {
+  border-bottom: 4px solid #1a3c6e;
+  overflow: hidden;
+}
+#single-info div h4 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
 #single-info p {
-  font-size: 1.5em;
-  color: #000;
-  clear: both;
+  font-size: 1.6em;
+  margin-top: 14px;
 }
 #single-info p.precio {
   border: 2px solid #f39200;
@@ -1325,6 +1332,43 @@ section#vision p {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
   background: #bbb;
+}
+#reservar {
+  clear: both;
+  float: right;
+}
+#reservar_btn {
+  border: 2px solid #ef3f36;
+  color: #ef3f36;
+  display: block;
+  width: 230px;
+  height: 50px;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+#reservar_btn p {
+  font-size: 1.4em;
+  padding-top: 6px;
+}
+#reservar_btn:hover {
+  background-color: #ef3f36;
+  color: #fff;
+  cursor: pointer;
+}
+#reservar_frm {
+  width: 230px;
+  height: 0;
+  background-color: #00f;
 }
 @-moz-keyframes spin {
   to {
