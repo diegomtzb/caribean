@@ -314,7 +314,7 @@ main.main-index {
   color: #c6c6cd;
   border: 2px solid #be1622;
   padding: 3px 3px;
-  width: 312px;
+  width: 100%;
   font-style: italic;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1055,7 +1055,7 @@ section#vision p {
   background-color: #fff;
 }
 #page-single_imagenes .header {
-  background-color: #f39200;
+  background-color: #1a3c6e;
   height: 70px;
 }
 #page-single_imagenes .header ul.nav {
@@ -1069,7 +1069,7 @@ section#vision p {
   background-color: #ededed;
   display: inline-block;
   float: right;
-  margin-top: 54px;
+  margin-top: 61px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
@@ -1089,6 +1089,7 @@ section#vision p {
 #single-info div h4 {
   font-size: 1.6em;
   font-weight: bold;
+  text-align: left;
 }
 #single-info p {
   font-size: 1.6em;
@@ -1341,7 +1342,7 @@ section#vision p {
   border: 2px solid #ef3f36;
   color: #ef3f36;
   display: block;
-  width: 230px;
+  width: 100%;
   height: 50px;
   text-align: center;
   -webkit-border-radius: 4px;

@@ -33,7 +33,6 @@ $row = mysqli_fetch_array($fetch);
     <div class="container">
         <ul class="nav nav-pills pull-left">
             <li><a href="single_imagenes.php?id=<?php echo $id; ?>">IMÁGENES</a></li>
-            <li class="active"><a href="#">DESCRIPCIÓN</a></li>
         </ul>
         <div id="single-info"><p>Apartamento en Cartagena</p>
 
@@ -54,27 +53,27 @@ $row = mysqli_fetch_array($fetch);
     <div id="contenido-single" class="col-sm-6"><h2>Cod. C16281</h2>
 
         <div id="mainDescripcion">
-            <div><h4 class="col-lg-7">CIUDAD</h4>
-
+            <div><h4 class="col-lg-8">CIUDAD</h4>
                 <p class="col-lg-3">Cartagena</p></div>
-            <div><h4 class="col-lg-7">BARRIO</h4>
 
+            <div><h4 class="col-lg-8">BARRIO</h4>
                 <p class="col-lg-3">Bocagrande</p></div>
-            <div><h4 class="col-lg-7">TIPO DE INMUEBLE</h4>
 
+            <div><h4 class="col-lg-8">TIPO DE INMUEBLE</h4>
                 <p class="col-lg-3">Apartamento</p></div>
-            <div><h4 class="col-lg-7">ESTRATO</h4>
 
+            <div><h4 class="col-lg-8">ESTRATO</h4>
                 <p class="col-lg-3">6</p></div>
-            <div><h4 class="col-lg-7">HABITACIONES</h4>
 
+            <div><h4 class="col-lg-8">HABITACIONES</h4>
                 <p class="col-lg-3">2</p></div>
-            <div><h4 class="col-lg-7">BAÑOS</h4>
 
+            <div><h4 class="col-lg-8">BAÑOS</h4>
                 <p class="col-lg-3">3</p></div>
-            <div><h4 class="col-lg-7">AREA</h4>
 
+            <div><h4 class="col-lg-8">AREA</h4>
                 <p class="col-lg-3">105 m2</p></div>
+
         </div>
 
     </div>
