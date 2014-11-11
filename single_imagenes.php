@@ -138,6 +138,13 @@ $row = mysqli_fetch_array($fetch);
             <p>RESERVA TU CITA</p>
         </div>
         <div id="reservar_frm">
+
+            <form name="htmlform2" method="post" action="html_form_send2.php">
+                <input type="text" placeholder="Nombre y Apellido" name="name" required="required"/>
+                <input type="text" placeholder="Ciudad" name="city" required="required"/>
+                <input type="email" placeholder="E-mail" name="email" required="required"/>
+                <input type="tel" placeholder="Teléfono" name="tel" required="required"/>
+                <input type="submit"/>
         </div>
     </div>
 

@@ -14,8 +14,6 @@ $queryzona="SELECT inmueble.inm_zon_id, zonas.zon_nombre
 $fetchzona = mysqli_query($conn, $queryzona);
 
 
-
-
 ?>
 <!DOCTYPE html5>
 <html>

@@ -201,8 +201,14 @@ $(document).ready(function() {
                 scrollTop: showmeservice.offset().top
             }, 1000);
         }
+    });
 
-
+    var btnReservar = $('#reservar_btn');
+    btnReservar.click(function(e){
+        e.preventDefault();
+        var frmReservar = $('#reservar_frm');
+        frmReservar.slideToggle( );
+        btnReservar.toggleClass("highlight")
     });
 
 });
@@ -245,11 +251,7 @@ function linkNextPagi(pagi){
         .show()
         .fadeIn(400).html('<div class="medium load"><div>Loading…</div></div>');
 
-
-
     section_search.slideDown( "fast");
-
-
 
     $.ajax({
         type: "POST",
@@ -384,11 +386,6 @@ function gotoChangeSearchAttributeFromTipoInmueble(negocio){
         }
     });
 
-
-
-
-
-
 }
 
 
@@ -426,7 +423,9 @@ function gotoChangeSearchAttributeFromUbicacion(negocio){
 
 
 
-
+function closeLightWindow(){
+    $.colorbox.close();
+}
 
 function clear_box(){
     var tipo_inmueble = $("#tipo-inmueble select");
@@ -437,7 +436,7 @@ function clear_box(){
 }
 
 function orderByHasChanged(){
-    alert("ok");
+    //alert("ok");
 }
 
 function tipoInmuebleHasChanged(){

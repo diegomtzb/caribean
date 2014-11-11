@@ -1,11 +1,15 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="jquery.colorbox-min.js"></script>
 <?php
 if(isset($_POST['email'])) {
 
     // CHANGE THE TWO LINES BELOW
-    $email_to = "direccioncomercial@caribeanservice.com";
+    //$email_to = "direccioncomercial@caribeanservice.com";
+    $email_to = "diego_martine57@hotmail.com";
     $email_to_cco = "diegomtzb@hotmail.com";
 
-    $email_subject = utf8_decode ("Mensaje Página Web Caribean");
+    $email_subject = utf8_decode ("Reserva Página Web Caribean");
 
     function died($error) {
         // your error code can go here
@@ -21,15 +25,16 @@ if(isset($_POST['email'])) {
 
     // validation expected data exists
     if(!isset($_POST['name']) ||
+        !isset($_POST['city']) ||
         !isset($_POST['email']) ||
-        !isset($_POST['message'])) {
+        !isset($_POST['tel'])) {
         died('Lo sentimos, pero hay algunos errores con el formulario enviado.');
     }
 
-    $interes = $_POST['interes']; // required
     $name = $_POST['name']; // required
+    $city = $_POST['city']; // required
     $email = $_POST['email']; // required
-    $message = $_POST['message']; // required
+    $tel= $_POST['tel']; // required
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -39,9 +44,6 @@ if(isset($_POST['email'])) {
     $string_exp = "/^[A-Za-z .'-]+$/";
     if(!preg_match($string_exp,$name)) {
         $error_message .= 'El Nombre ingresado no parece ser válido.<br />';
-    }
-    if(strlen($message) < 2) {
-        $error_message .= 'Los comentarios ingresados no parecen válidos.<br />';
     }
     if(strlen($error_message) > 0) {
         died($error_message);
@@ -53,10 +55,10 @@ if(isset($_POST['email'])) {
         return str_replace($bad,"",$string);
     }
 
-    $email_message .= "Interes: ".clean_string($interes)."\n";
     $email_message .= "Nombre: ".clean_string($name)."\n";
+    $email_message .= "Ciudad: ".clean_string($city)."\n";
     $email_message .= "Correo Electrónico: ".clean_string($email)."\n";
-    $email_message .= "Comentario: ". "\n" .clean_string($message)."\n";
+    $email_message .= "Teléfono: " . clean_string(tel)."\n";
 
 
 // create email headers
@@ -71,9 +73,10 @@ if(isset($_POST['email'])) {
     if ($mail_status) { ?>
         <script language="javascript" type="text/javascript">
             // Print a message
-            alert('Gracias por su mensaje. Nos pondremos en contacto con usted muy pronto.');
+            //alert('Gracias por su mensaje. Nos pondremos en contacto con usted muy pronto.');
             // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-            window.location = 'contacto.html';
+            //window.location = 'index.php';
+            $("#cboxClose").click();
         </script>
     <?php
     }else { ?>
@@ -81,7 +84,8 @@ if(isset($_POST['email'])) {
             // Print a message
             alert('Su mensaje no pudo ser enviado. Puede contactarse directamente con nosotros a direccioncomercial@caribeanservice.com');
             // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-            window.location = 'contacto.html';
+            //window.location = 'index.php';
+            $("#cboxClose").click();
         </script>
     <?php
     }?>
@@ -89,7 +93,7 @@ if(isset($_POST['email'])) {
 
     <!-- place your own success html below -->
 
-    Gracias por su mensaje. Nos pondremos en contacto con usted muy pronto.
+    Gracias por contactarnos. Nos pondremos en contacto con usted muy pronto.
 
 
 <?php
