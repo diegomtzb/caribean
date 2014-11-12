@@ -153,6 +153,18 @@ $(document).ready(function() {
         }
     );
 
+    var search_result = $(".search_result");
+    search_result.hover(
+        function() {
+            //mouse in
+            var labelVerInmueble = $( this).find(".labelVerInmueble");
+            labelVerInmueble.addClass( "activeVerInmueble" );
+        }, function() {
+            //mouse out
+            var labelVerInmueble = $( this).find(".labelVerInmueble");
+            labelVerInmueble.removeClass( "activeVerInmueble" );
+        }
+    );
 
     var showservicesfinca = $(".showservices.fincaser");
     var showservicesgerencia = $(".showservices.gerenser");

@@ -184,7 +184,7 @@ while($row = mysqli_fetch_array($fetch)) {
     } elseif ($row['inm_ciu_id'] == 3) {
         $ciudad="BARRANQUILLA";
     }
-    $ciudad="CARTAGENA";
+    $ciudad="Cartagena";
 
 
     $queryUbicacion = "SELECT zon_nombre FROM zonas WHERE zon_id='" . $row['inm_zon_id'] . "'";
@@ -195,7 +195,7 @@ while($row = mysqli_fetch_array($fetch)) {
 
     ?>
     <a class="iframe" href="single_imagenes.php?id=<?php echo $row['inm_id']; ?>">
-        <div class="search_result col-lg-4">
+        <div class="search_result col-lg-4 col-md-6">
             <div class="result_info">
                 <div class="divInfo">
                     <p class="pTipoInmuble"> <?php echo $tipo_inmueble; ?> </p>
@@ -223,6 +223,9 @@ while($row = mysqli_fetch_array($fetch)) {
                 <?php
                 }
                 ?>
+                <div class="labelVerInmueble">
+                    <p>VER INMUEBLE</p>
+                </div>
             </figure>
         </div>
     </a>
@@ -234,3 +237,5 @@ while($row = mysqli_fetch_array($fetch)) {
 <script type="text/javascript">
     $(".iframe").colorbox({iframe:true, width:"90%", height:"95%", fixed:true});
 </script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>

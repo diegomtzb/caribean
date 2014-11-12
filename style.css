@@ -498,7 +498,6 @@ main.main-index {
   width: 50%;
   float: left;
   position: relative;
-  left: 25px;
 }
 .search_result div.result_info div.divInfo {
   background-color: #1a3c6e;
@@ -508,6 +507,7 @@ main.main-index {
   -ms-border-radius: 4px;
   border-radius: 4px;
   height: 100%;
+  padding-top: 10px;
 }
 .search_result div.result_info P {
   color: #fff;
@@ -516,13 +516,18 @@ main.main-index {
 }
 .search_result div.result_info p.pTipoInmuble {
   font-size: 1.3em;
+  font-family: 'Lato', sans-serif;
+  color: #f39200;
+}
+.search_result div.result_info p.pTipoNegocio {
+  font-size: 1.3em;
 }
 .search_result div.result_info p.pPrice {
   font-size: 1.3em;
   color: #1a3c6e;
   background-color: ededed;
-  margin: 0;
-  width: 100%;
+  margin: 0 auto;
+  width: 83%;
   border: 2px solid #f39200;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -534,17 +539,45 @@ main.main-index {
   padding-top: 0.5em;
   position: absolute;
   width: 100%;
-  bottom: 10px;
+  bottom: 17px;
 }
 .search_result figure {
   height: 190px;
   width: 50%;
   float: left;
   overflow: hidden;
+  position: relative;
 }
 .search_result figure img {
   width: 100%;
   min-height: 100%;
+}
+.search_result figure .labelVerInmueble {
+  position: absolute;
+  bottom: 17px;
+  overflow: hidden;
+  max-height: 2em;
+  width: 0%;
+  -webkit-transition: width 0.3s;
+/* For Safari 3.1 to 6.0 */
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  transition: width 0.3s;
+}
+.search_result figure .activeVerInmueble {
+  width: 100%;
+}
+.search_result figure .labelVerInmueble p {
+  margin: 0;
+  text-align: center;
+  background: #f39200;
+/* Fall-back for browsers that don't support rgba */
+  background: rgba(243,146,0,0.5);
+  width: 80%;
+  padding: 5px 0;
+  color: #fff;
 }
 footer {
   width: 100%;
