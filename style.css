@@ -38,7 +38,6 @@ main.main-index {
 .header {
   margin: 0 auto;
   background-color: #be1622;
-  height: 80px;
   width: 100%;
   z-index: 999;
 }
@@ -61,8 +60,7 @@ main.main-index {
   display: none;
 }
 .nav {
-  margin-top: 30px;
-  margin-right: 30px;
+  margin: auto;
   font-family: 'Lato', sans-serif;
 }
 .nav li a {
@@ -78,7 +76,7 @@ main.main-index {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  background-color: transparent;
+  background-color: #e6332a;
 }
 .nav-pills > li {
   float: left;
@@ -98,19 +96,18 @@ main.main-index {
   -ms-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-.nav-pills > li > a:hover:after {
-  width: 100%;
-}
+/*OJO FUCINALIDAD SUBRAYADO
 .nav-pills > li.active > a:after {
   content: '';
   display: block;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid white;
   width: 100%;
 }
+*/
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background-color: transparent;
+  background-color: #e6332a;
 }
 #page-grupo .nav-pills > li > a:after {
   content: '';
@@ -1433,6 +1430,264 @@ section#vision p {
 #reservar_frm form input[type="submit"]:hover {
   background-color: #1a3c6e;
   color: #fff;
+}
+#logosheader {
+  background-color: #fff;
+}
+#logosheader .social figure img {
+  width: 50px;
+}
+#logosheader .logo figure img {
+  width: 250px;
+}
+.padding16 {
+  padding: 16px 0;
+}
+#menuHeader {
+  background-color: #be1622;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
+}
+.destbusq {
+  background: #fff;
+  padding: 10px 0;
+}
+.busq {
+  background-color: #f39200;
+  height: 347px;
+}
+.busq h3 {
+  color: #fff;
+  text-align: center;
+}
+.busq hr {
+  width: 80%;
+  margin: 20px auto;
+}
+.busq div#ventas {
+  border: 1px solid #be1622;
+  float: left;
+  color: #be1622;
+  background-color: #fff;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 5px 34px;
+  font-size: 1.5em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.busq div#ventas:hover {
+  cursor: pointer;
+  background-color: #e6332a;
+  color: #fff;
+}
+.busq div#ventas.active {
+  background-color: #e6332a;
+  color: #fff;
+}
+.busq div#ventas label {
+  display: none;
+}
+.busq div#arriendos {
+  margin-left: 0%;
+  border: 1px solid #be1622;
+  float: left;
+  color: #be1622;
+  background-color: #fff;
+  margin-right: 2%;
+  padding: 5px 24px;
+  font-size: 1.5em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.busq div#arriendos:hover {
+  cursor: pointer;
+  background-color: #e6332a;
+  color: #fff;
+}
+.busq div#arriendos.active {
+  background-color: #e6332a;
+  color: #fff;
+}
+.busq div#arriendos label {
+  display: none;
+}
+.busq div#tipo-inmueble {
+  background-color: transparent;
+  padding: 0;
+  margin: 0 10px;
+  width: 309px;
+}
+.busq div#ubicacion {
+  background-color: transparent;
+  padding: 0;
+  margin: 0 10px;
+  width: 309px;
+}
+.busq div#price {
+  background-color: transparent;
+  padding: 0;
+  margin: 0 10px;
+  width: 150px;
+  float: left;
+}
+.busq select {
+  color: #c6c6cd;
+  border: 2px solid #be1622;
+  padding: 3px 3px;
+  width: 100%;
+  font-style: italic;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url("imgs/Iconos-Flecha.png") no-repeat right;
+}
+.busq select option {
+  color: #be1623;
+}
+.busq select option:first-child {
+  color: #c6c6cd;
+}
+.busq div#buscar {
+  background-color: #be1622;
+  margin-right: 2%;
+  margin-left: 1%;
+  padding: 5px 10px;
+  float: left;
+  color: #fff;
+  font-size: 1.5em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 105px;
+}
+.busq div#buscar:hover {
+  cursor: pointer;
+}
+.busq p.busqCodigo {
+  color: #1a3c6e;
+  font-style: italic;
+  font-size: 0.8em;
+  float: left;
+  padding-left: 20px;
+  padding-top: 6px;
+}
+.busq .surroundcodigo {
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+.busq .surroundcodigo span.hovercodigo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 44px;
+}
+.busq .surroundcodigo span.hovercodigo:hover {
+  cursor: pointer;
+}
+.busq .surroundcodigo input {
+  color: #be1622;
+  border: 2px solid #be1622;
+  padding: 3px 0;
+  width: 225px;
+  padding-left: 5px;
+  font-style: italic;
+  background: #fff url("imgs/Icono-Lupa.png") no-repeat right;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.busq .surroundcodigo p {
+  color: #1a3c6e;
+  font-style: italic;
+  font-size: 0.8em;
+  float: left;
+  padding-left: 20px;
+  padding-top: 6px;
+}
+.busq .surroundcodigo ::-webkit-input-placeholder {
+  color: #be1622;
+}
+.busq .surroundcodigo ::-moz-placeholder {
+/* Firefox 18- */
+  color: #be1622;
+}
+.busq .surroundcodigo ::-moz-placeholder {
+/* Firefox 19+ */
+  color: #be1622;
+}
+.busq .surroundcodigo ::-ms-input-placeholder {
+  color: #be1622;
+}
+.aboutus {
+  background-color: rgba(255,255,255,0.6);
+}
+.aboutus h3 {
+  text-align: center;
+}
+.aboutus .somos {
+  background-color: #e6332a;
+  -webkit-box-shadow: 0px 10px 0px 0px #be1622;
+  -moz-box-shadow: 0px 10px 0px 0px #be1622;
+  box-shadow: 0px 10px 0px 0px #be1622;
+}
+.aboutus .grupo {
+  margin-top: 10px;
+}
+.aboutus .inmoPadding {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.aboutus .recuPadding {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+.aboutus .grupo .myContainer {
+  width: 80%;
+  margin: auto;
+}
+.aboutus .grupo figure img {
+  width: 300px;
+  max-height: 169px;
+  margin: auto;
+  display: block;
+}
+.aboutus .grupo .desc {
+  background-color: #fff;
+}
+.aboutus .grupo .desc p {
+  margin: 0;
+}
+.aboutus .grupo .inmobiliaria {
+  background-color: rgba(255,255,255,0.6);
+  padding: 0;
+}
+.aboutus .grupo .recuperacion {
+  background-color: rgba(255,255,255,0.6);
+  padding: 0;
+}
+.aboutus footer {
+  position: static;
+}
+.aboutus footer figure.footer-logo {
+  overflow: visible;
+  position: static;
+  padding-top: 10px;
 }
 @-moz-keyframes spin {
   to {
