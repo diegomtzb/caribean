@@ -1683,12 +1683,23 @@ section#vision p {
 }
 .aboutus h3 {
   text-align: center;
+  color: #be1622;
+  font-size: 3em;
+  font-weight: bold;
+  padding: 50px 0;
 }
 .aboutus .somos {
   background-color: #e6332a;
   -webkit-box-shadow: 0px 10px 0px 0px #be1622;
   -moz-box-shadow: 0px 10px 0px 0px #be1622;
   box-shadow: 0px 10px 0px 0px #be1622;
+}
+.aboutus .somos p {
+  color: #fff;
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  padding: 30px 0;
 }
 .aboutus .grupo {
   margin-top: 10px;
@@ -1705,6 +1716,9 @@ section#vision p {
   width: 80%;
   margin: auto;
 }
+.aboutus .grupo figure {
+  padding: 50px 0;
+}
 .aboutus .grupo figure img {
   width: 300px;
   max-height: 169px;
@@ -1716,14 +1730,26 @@ section#vision p {
 }
 .aboutus .grupo .desc p {
   margin: 0;
+  color: #8f8788;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 30px 0;
 }
 .aboutus .grupo .inmobiliaria {
   background-color: rgba(255,255,255,0.6);
   padding: 0;
 }
+.aboutus .grupo .inmobiliaria:hover {
+  background-color: rgba(243,146,0,0.6);
+  cursor: pointer;
+}
 .aboutus .grupo .recuperacion {
   background-color: rgba(255,255,255,0.6);
   padding: 0;
+}
+.aboutus .grupo .recuperacion:hover {
+  background-color: rgba(70,100,140,0.6);
+  cursor: pointer;
 }
 .aboutus footer {
   position: static;
