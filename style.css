@@ -1454,17 +1454,55 @@ section#vision p {
   background: #fff;
   padding: 10px 0;
 }
+.destacado {
+  position: relative;
+}
+.destacado .labelVerInmueble {
+  position: absolute;
+  bottom: 17px;
+  width: 70%;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.destacado .labelVerInmueble p {
+  margin: 0;
+  background: rgba(243,146,0,0.5);
+  padding: 5px 0;
+  color: #fff;
+}
+.destacado .labelVerInmuebleMas {
+  position: absolute;
+  bottom: 17px;
+  right: 0;
+  width: 25%;
+  overflow: hidden;
+}
+.destacado .labelVerInmuebleMas p {
+  margin: 0;
+  background: #f39200;
+  padding: 5px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+}
 .busq {
-  background-color: #f39200;
+  background-color: #f9b234;
   height: 347px;
 }
 .busq h3 {
   color: #fff;
   text-align: center;
+  padding-top: 20px;
+  font-size: 2em;
+  margin: 0;
 }
 .busq hr {
   width: 80%;
-  margin: 20px auto;
+  margin: 15px auto;
+}
+.busq #controllers {
+  margin: auto;
+  width: 350px;
 }
 .busq div#ventas {
   border: 1px solid #be1622;
@@ -1473,7 +1511,9 @@ section#vision p {
   background-color: #fff;
   margin-right: 2%;
   margin-left: 2%;
-  padding: 5px 34px;
+  padding: 0;
+  width: 135px;
+  text-align: center;
   font-size: 1.5em;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1500,7 +1540,9 @@ section#vision p {
   color: #be1622;
   background-color: #fff;
   margin-right: 2%;
-  padding: 5px 24px;
+  padding: 0;
+  width: 135px;
+  text-align: center;
   font-size: 1.5em;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1541,14 +1583,15 @@ section#vision p {
 }
 .busq select {
   color: #c6c6cd;
-  border: 2px solid #be1622;
+  border: 2px solid #f39200;
   padding: 3px 3px;
   width: 100%;
   font-style: italic;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff url("imgs/Iconos-Flecha.png") no-repeat right;
+  background: #fff url("imgs/Iconos-Flecha-naranja.png") no-repeat right;
+  margin-top: 10px;
 }
 .busq select option {
   color: #be1623;
@@ -1560,7 +1603,9 @@ section#vision p {
   background-color: #be1622;
   margin-right: 2%;
   margin-left: 1%;
-  padding: 5px 10px;
+  padding: 0;
+  width: 135px;
+  text-align: center;
   float: left;
   color: #fff;
   font-size: 1.5em;
@@ -1569,16 +1614,16 @@ section#vision p {
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  text-align: center;
-  width: 105px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .busq div#buscar:hover {
   cursor: pointer;
 }
 .busq p.busqCodigo {
-  color: #1a3c6e;
+  color: #fff;
   font-style: italic;
-  font-size: 0.8em;
+  font-size: 0.7em;
   float: left;
   padding-left: 20px;
   padding-top: 6px;
@@ -1602,7 +1647,6 @@ section#vision p {
   color: #be1622;
   border: 2px solid #be1622;
   padding: 3px 0;
-  width: 225px;
   padding-left: 5px;
   font-style: italic;
   background: #fff url("imgs/Icono-Lupa.png") no-repeat right;
