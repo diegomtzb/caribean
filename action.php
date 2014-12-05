@@ -255,8 +255,12 @@ while($row = mysqli_fetch_array($fetch)) {
 //print_r($all_data);
 ?>
 
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<link rel="stylesheet" href="colorbox.css">
+<script src="jquery.colorbox-min.js"></script>
+
 <script type="text/javascript">
     $(".iframe").colorbox({iframe:true, width:"90%", height:"95%", fixed:true});
 </script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>

@@ -30,6 +30,8 @@ $(document).ready(function() {
 
         $search_result.remove();
 
+        $("#sugeridos").hide();
+
         $("footer").removeClass("absolutePosition");
         $("#flash")
             .show()
@@ -62,7 +64,8 @@ $(document).ready(function() {
                 }
 
 
-                $("#show").after(newHtml);
+                //$("#show").after(newHtml);
+                $("#section-search .inside_me").html($("#section-search .inside_me").html() + newHtml)
             }
         });
 
@@ -492,4 +495,19 @@ miniatureFigureImg.click(function(e){
 //setear activo el next
 function startSliding(){
     alert ("starting");
+}
+
+
+function get_sugeridos(){
+
+    $.ajax({
+        type: "POST",
+        url: "get_sugeridos.php",
+        data: "",
+        cache: true,
+        success: function(get_html){
+            $("#sugeridos .inside_me").html($("#sugeridos .inside_me").html() + get_html);
+        }
+    });
+
 }

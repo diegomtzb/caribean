@@ -160,9 +160,16 @@
                     </p>
                 </div>
         </div>-->
-
-
     </section>
+
+    <!--Esta seccion se llena mediante la llamada js get_sugeridos() (Al final)-->
+    <section id ="sugeridos">
+        <div class="inside_me container">
+            <h3>SUGERENCIAS</h3>
+            <div class="spaceBar"></div>
+        </div>
+    </section>
+
     <section id="section-search">
        <!-- <div id="order_by"><select onChange="javascript:orderByHasChanged();">
                 <option value="" disabled="disabled" selected="selected">Ordenar por</option>
@@ -184,6 +191,7 @@
         <div id="tipo-inmueble"></div>
         <div id="flash"></div>
         <div id="show"></div>
+        <div class="container inside_me"></div>
         <div class="spaceBar"></div>
 
         <div class="paginacion">
@@ -194,7 +202,7 @@
     </section>
 </main>
 
-<section id="suscripcion">
+<!--<section id="suscripcion">
     <div><p>Recibe en tu correo las ultimas ofertas inmobiliarias,
             remate de bienes y oportunidades de inversión.</p>
 
@@ -227,7 +235,7 @@
         </div>
 
     </figure>
-</section>
+</section>-->
 <footer class="absolutePosition noneDisplay">
     <p>Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia</p>
     <div></div>
@@ -254,6 +262,7 @@
 
 <!--Se llama para cargar la informacion inicial de las busquedas-->
 <script>
+    get_sugeridos();
     gotoChangeSearchAttributeFromNegocio(2);
 </script>
 

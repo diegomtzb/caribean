@@ -420,6 +420,13 @@ main.main-index {
   border: 2px solid #1a3c6e;
   width: 218px;
 }
+#sugeridos {
+  background-color: #fff;
+  overflow: hidden;
+}
+#sugeridos h3 {
+  color: #f39200;
+}
 #section-search {
   background-color: #ededed;
   overflow: hidden;
