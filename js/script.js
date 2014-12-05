@@ -446,7 +446,7 @@ function orderByHasChanged(){
 }
 
 function tipoInmuebleHasChanged(){
-    $('#tipo-inmueble select').css('color', '#e6332a');
+    $('#tipo-inmueble select').css('color', '#f39200');
 
     var negocio = $("#criterios1").find(".active").find("label").text();
     if (negocio=="VENTA")
@@ -460,7 +460,7 @@ function tipoInmuebleHasChanged(){
 }
 
 function ubicacionHasChanged(){
-    $('#ubicacion select').css('color', '#e6332a');
+    $('#ubicacion select').css('color', '#f39200');
 
     var negocio = $("#criterios1").find(".active").find("label").text();
     if (negocio=="VENTA")

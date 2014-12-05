@@ -33,7 +33,7 @@ main {
 }
 main.main-index {
   padding-bottom: 7em;
-  padding-top: 11em;
+  padding-top: 25em;
 }
 .header {
   margin: 0 auto;
@@ -62,6 +62,13 @@ main.main-index {
 .nav {
   margin: auto;
   font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+.navwidth810 {
+  width: 810px;
+}
+.navwidth604 {
+  width: 604px;
 }
 .nav li a {
   color: #fff;
@@ -83,6 +90,7 @@ main.main-index {
 }
 .nav-pills > li > a {
   text-decoration: none;
+  width: 200px;
 }
 .nav-pills > li > a:after {
   content: '';
@@ -184,21 +192,11 @@ main.main-index {
   font-style: italic;
 }
 #section-main #busquedaCodigo {
-  background: rgba(255,255,255,0.6);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-  max-width: 83%;
-  margin: auto;
-  margin-top: 15px;
+  float: right;
+  margin-right: 10%;
 }
 #section-main #busquedaCodigo div#codigo {
   font-size: 1.5em;
-  margin-left: 2%;
-  padding-top: 15px;
-  padding-bottom: 15px;
   overflow: hidden;
 }
 #section-main #busquedaCodigo div#codigo .surroundcodigo {
@@ -260,40 +258,45 @@ main.main-index {
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  max-width: 83%;
   margin: auto;
 }
-#section-main #busqueda h3 {
-  color: #1a3c6e;
+#section-main #busqueda #criterios1 section#controllers {
+  width: 1055px;
+  overflow: hidden;
+  margin: auto;
+}
+#section-main .tittlebusqueda h3 {
+  color: #fff;
   text-align: center;
   font-size: 1.8em;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  margin: 0;
-  padding: 15px 0;
+  margin: 0 auto;
+  padding: 15px 10px;
+  width: 355px;
+  background-color: rgba(249,178,52,0.8);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
 }
 .spaceBar {
-  height: 2px;
-  width: 96%;
+  height: 1px;
+  width: 100%;
   margin: 0 auto;
-  background-color: #1a3c6e;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  clear: both;
+  background-color: #f9b234;
 }
 #section-main #busqueda #criterios1 {
   display: inline-block;
   width: 100%;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 #section-main #busqueda #criterios1 div {
   float: left;
   color: #fff;
-  background-color: #be1622;
+  background-color: #f9b234;
   margin-right: 2%;
   margin-left: 2%;
   padding: 5px 24px;
@@ -309,14 +312,14 @@ main.main-index {
 }
 #section-main #busqueda #criterios1 select {
   color: #c6c6cd;
-  border: 2px solid #be1622;
+  border: 2px solid #f9b234;
   padding: 3px 3px;
   width: 100%;
   font-style: italic;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff url("imgs/Iconos-Flecha.png") no-repeat right;
+  background: #fff url("imgs/Iconos-Flecha-naranja.png") no-repeat right;
 }
 #section-main #busqueda #criterios1 select option {
   color: #be1623;
@@ -343,14 +346,14 @@ main.main-index {
 }
 #section-main #busqueda div#ventas {
   padding: 5px 42px;
-  border: 1px solid #be1622;
+  border: 1px solid #f9b234;
 }
 #section-main #busqueda div#ventas:hover {
   cursor: pointer;
-  background-color: #e6332a;
+  background-color: #f39200;
 }
 #section-main #busqueda div#ventas.active {
-  background-color: #e6332a;
+  background-color: #f39200;
 }
 #section-main #busqueda div.checkTrue span.icon-checkmark {
   color: #efcc95;
@@ -360,14 +363,14 @@ main.main-index {
 }
 #section-main #busqueda div#arriendos {
   margin-left: 0%;
-  border: 1px solid #be1622;
+  border: 1px solid #f39200;
 }
 #section-main #busqueda div#arriendos:hover {
   cursor: pointer;
-  background-color: #e6332a;
+  background-color: #f39200;
 }
 #section-main #busqueda div#arriendos.active {
-  background-color: #e6332a;
+  background-color: #f39200;
 }
 #section-main #busqueda div#tipo-inmueble {
   background-color: transparent;
@@ -390,7 +393,7 @@ main.main-index {
   margin-right: 5%;
 }
 #section-main #busqueda div#buscar {
-  background-color: #be1622;
+  background-color: #f9b234;
   margin-right: 2%;
   margin-left: 1%;
   padding: 5px 10px;
@@ -462,6 +465,9 @@ main.main-index {
   appearance: none;
   background: #fff url("imgs/Iconos-Flecha-naranja.png") no-repeat right;
 }
+#section-search div.paginacionContainer {
+  overflow: hidden;
+}
 #section-search div.paginacion {
   float: right;
   margin-top: 10px;
@@ -491,30 +497,31 @@ main.main-index {
   overflow: hidden;
 }
 .search_result div.result_info {
-  height: 190px;
-  width: 50%;
-  float: left;
   position: relative;
 }
 .search_result div.result_info div.divInfo {
-  background-color: #1a3c6e;
+  background-color: #f9b234;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  height: 100%;
-  padding-top: 10px;
 }
 .search_result div.result_info P {
   color: #fff;
-  text-align: center;
   margin: 0;
+  margin-left: 10px;
+}
+.search_result div.result_info .tittleapartamento {
+  background-color: #fff;
+  border: 1px solid #f39200;
 }
 .search_result div.result_info p.pTipoInmuble {
   font-size: 1.3em;
   font-family: 'Lato', sans-serif;
   color: #f39200;
+  text-align: center;
+  padding: 10px 0;
 }
 .search_result div.result_info p.pTipoNegocio {
   font-size: 1.3em;
@@ -531,17 +538,21 @@ main.main-index {
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
+  display: inline;
+  padding: 5px 20px;
 }
 .search_result div.result_info div.divPrice {
-  padding-top: 0.5em;
-  position: absolute;
   width: 100%;
-  bottom: 17px;
+  bottom: 12px;
+  position: absolute;
+  text-align: center;
+}
+.search_result div.result_info .detalles {
+  min-height: 130px;
+  padding-top: 10px;
 }
 .search_result figure {
-  height: 190px;
-  width: 50%;
-  float: left;
+  height: 210px;
   overflow: hidden;
   position: relative;
 }
@@ -1450,6 +1461,13 @@ section#vision p {
   -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
 }
+#menuHeaderInmo {
+  background-color: #be1622;
+  margin-bottom: 0px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
+}
 .destbusq {
   background: #fff;
   padding: 10px 0;
@@ -1758,6 +1776,9 @@ section#vision p {
   overflow: visible;
   position: static;
   padding-top: 10px;
+}
+.padding25 {
+  padding: 25px 15px !important;
 }
 @-moz-keyframes spin {
   to {

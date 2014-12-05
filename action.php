@@ -198,35 +198,56 @@ while($row = mysqli_fetch_array($fetch)) {
         <div class="search_result col-lg-4 col-md-6">
             <div class="result_info">
                 <div class="divInfo">
-                    <p class="pTipoInmuble"> <?php echo $tipo_inmueble; ?> </p>
-                    <p class="pTipoNegocio"> <?php echo $tipo_negocio; ?> </p>
-                    <p><?php echo $ciudad; ?> </p>
-                    <p><?php echo $rowUbicacion['zon_nombre']; ?></p>
-                    <p><?php echo $row['inm_area']; ?> m2 - <?php echo $row['inm_alcobas']; ?> habitacion(es)</p>
-                    <p class="inmueble_id"> <?php echo $row['inm_id']; ?></p>
+                    <div class="tittleapartamento">
+                        <p class="pTipoInmuble"> <?php echo $tipo_inmueble; ?>,<?php echo $tipo_negocio; ?> </p>
+                    </div>
+
+                    <figure>
+                        <?php
+                        if (file_exists('images/inmuebles/' .$row['inm_codigo'] . '/destacado/' .$row['inm_img'])) {
+                            ?>
+                            <img src="images/inmuebles/<?php echo $row['inm_codigo'] ?>/destacado/<?php echo $row['inm_img'] ?>"/>
+                        <?php
+                        } else{
+                            ?>
+                            <img src="imgs/No-foto.jpg"/>
+                        <?php
+                        }
+                        ?>
+                        <div class="labelVerInmueble">
+                            <p>VER INMUEBLE</p>
+                        </div>
+                    </figure>
+
+                    <div class="detalles">
+                        <p>Para <?php echo $tipo_negocio; ?>, <?php echo $tipo_inmueble; ?> </p>
+                        <p>En <?php echo $ciudad; ?>, <?php echo $rowUbicacion['zon_nombre']; ?></p>
+                        <?php
+                        if ( $row['inm_alcobas']==1){
+                            $stringHabitacion = "habitación";
+                        }else {
+                            $stringHabitacion = "habitaciones";
+                        }
+
+                        if ( $row['inm_banos']==1){
+                            $stringBanos = "Baño";
+                        }else {
+                            $stringBanos = "Baños";
+                        }
+                        ?>
+                        <p><?php echo $row['inm_area']; ?> m2, <?php echo $row['inm_alcobas']; echo " "; echo $stringHabitacion?>, <?php echo $row['inm_banos']; echo " "; echo $stringBanos;?></p>
+                        <p class="inmueble_id"> <?php echo $row['inm_id']; ?></p>
+
+                        <div class="divPrice">
+                            <p class="pPrice">$ <?php echo $format_price; ?> </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="divPrice">
-                    <p class="pPrice">$ <?php echo $format_price; ?> </p>
-                </div>
+
 
             </div>
-            <figure>
-                <?php
-                if (file_exists('images/inmuebles/' .$row['inm_codigo'] . '/destacado/' .$row['inm_img'])) {
-                    ?>
-                    <img src="images/inmuebles/<?php echo $row['inm_codigo'] ?>/destacado/<?php echo $row['inm_img'] ?>"/>
-                <?php
-                } else{
-                ?>
-                    <img src="imgs/No-foto.jpg"/>
-                <?php
-                }
-                ?>
-                <div class="labelVerInmueble">
-                    <p>VER INMUEBLE</p>
-                </div>
-            </figure>
+
         </div>
     </a>
 <?php
