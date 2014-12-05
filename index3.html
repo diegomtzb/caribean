@@ -28,7 +28,6 @@
 
     </script>
 
-
 </head>
 <body id="page-home">
 <header class="header fixed">
@@ -39,9 +38,16 @@
             <div class="col-sm-12 padding16">
                 <div class="social col-sm-4">
                     <figure class="padding16">
-                        <img src="imgs/Facebook-rojo.png"/>
-                        <img src="imgs/Twitter-rojo.png"/>
+                        <a href="#" >
+                            <img src="imgs/Facebook-rojo.png"/>
+                        </a>
+                        <a href="#">
+                            <img src="imgs/Twitter-rojo.png"/>
+                        </a>
+                        <a href="#">
                         <img src="imgs/Instagram-rojo.png"/>
+                        </a>
+
                     </figure>
                 </div>
 
@@ -120,30 +126,12 @@
                             <div id="tipo-inmueble">
                                 <select onChange="javascript:tipoInmuebleHasChanged();">
                                     <option value="" disabled="disabled" selected="selected">Tipo de inmueble</option>
-                                    <?php
-                                    while($row = mysqli_fetch_array($fetch)) {
-                                    ?>
-                                        <option value="<?php echo $row['inm_tipo']?>"><?php echo $row['tipo_nombre']?></option>
-                                    <?php
-                                    }
-                                    ?>
                                 </select>
                             </div>
 
                             <div id="ubicacion">
                                 <select onChange="javascript:ubicacionHasChanged();">
                                     <option value="" disabled="disabled" selected="selected">Ubicación</option>
-                                    <?php
-                                    while($row = mysqli_fetch_array($fetchzona)) {
-                                        $ubicacion = $row['zon_nombre'];
-                                        if (strlen($ubicacion)>0)
-                                        {
-                                    ?>
-                                            <option value="<?php echo utf8_encode($ubicacion)?>"><?php echo  utf8_encode($ubicacion)?></option>
-                                    <?php
-                                        }
-                                    }
-                                    ?>
                                 </select>
                             </div>
 
@@ -255,4 +243,9 @@
 <link rel="stylesheet" href="colorbox.css">
 <script src="jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+
+<!--Se llama para cargar la informacion inicial de las busquedas-->
+<script>
+    gotoChangeSearchAttributeFromNegocio(2);
+</script>
 </html>
