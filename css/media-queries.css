@@ -103,8 +103,11 @@ smaller than 1000
     }
 
     .nav li a{
-        font-size: 0.9em;
-        padding: 10px 5px;
+        font-size: 1em;
+    }
+
+    .nav-pills > li > a{
+        width: 150px;
     }
 
     #section-main #busqueda div#buscar{
@@ -165,6 +168,12 @@ smaller than 768
         margin: 20px auto;
     }
 
+    #logosHeader .logo{
+        text-align: center;
+    }
+
+
+
     /*--------------------------------*/
 
 }
@@ -190,6 +199,16 @@ smaller than 705
         max-width: 208px;
     }
 
+    .destacado .labelVerInmueble{
+        top: 0;
+        width: 100%;
+    }
+
+    .destacado .labelVerInmuebleMas p{
+        font-size: 1.5em;
+    }
+
+
     /*--------------------------------*/
 }
 
@@ -201,6 +220,10 @@ smaller than 606
     /*--------------------------------*/
     #section-main #busqueda div#tipo-inmueble{
         margin-top: 10px;
+    }
+
+    #menuInmobiliaria  li a{
+        width: 115px;
     }
 
     /*--------------------------------*/
