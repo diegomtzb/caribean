@@ -112,7 +112,7 @@
           <file leaf-file-name="style.styl" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="519" column="4" selection-start="10274" selection-end="10274" vertical-scroll-proportion="0.47539017" vertical-offset="8427" max-vertical-offset="32929">
+                <state line="1774" column="16" selection-start="32701" selection-end="32701" vertical-scroll-proportion="0.3937575" vertical-offset="29830" max-vertical-offset="32946">
                   <folding />
                 </state>
               </provider>
@@ -121,7 +121,7 @@
           <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="76" column="0" selection-start="2272" selection-end="2272" vertical-scroll-proportion="-28.4" vertical-offset="582" max-vertical-offset="8823">
+                <state line="8" column="27" selection-start="200" selection-end="200" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="8823">
                   <folding />
                 </state>
               </provider>
@@ -139,19 +139,9 @@
           <file leaf-file-name="action.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/action.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="265" column="9" selection-start="7771" selection-end="7771" vertical-scroll-proportion="-15.156863" vertical-offset="3732" max-vertical-offset="4607">
+                <state line="86" column="1" selection-start="2149" selection-end="2149" vertical-scroll-proportion="-8.921569" vertical-offset="1007" max-vertical-offset="4607">
                   <folding>
                     <marker date="1417820544575" expanded="true" signature="391:419" placeholder="SELECT * FRO..inmueble..." />
-                    <marker date="1417820544575" expanded="true" signature="5023:7369" placeholder="..." />
-                    <marker date="1417820544575" expanded="true" signature="5077:7360" placeholder="..." />
-                    <marker date="1417820544575" expanded="true" signature="5115:7344" placeholder="..." />
-                    <marker date="1417820544575" expanded="true" signature="5153:7322" placeholder="..." />
-                    <marker date="1417820544575" expanded="true" signature="5205:5345" placeholder="..." />
-                    <marker date="1417820544575" expanded="true" signature="5375:6082" placeholder="..." />
-                    <marker date="1417820544575" expanded="true" signature="5973:6052" placeholder="..." />
-                    <marker date="1417820544575" expanded="true" signature="6126:7299" placeholder="..." />
-                    <marker date="1417820544575" expanded="true" signature="7159:7272" placeholder="..." />
-                    <marker date="1417820544575" expanded="true" signature="7679:7770" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -494,16 +484,6 @@
         <state line="97" column="0" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4097">
           <folding>
             <marker date="1417820544575" expanded="true" signature="391:419" placeholder="SELECT * FRO..inmueble..." />
-            <marker date="1417820544575" expanded="true" signature="5023:7369" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5077:7360" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5115:7344" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5153:7322" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5205:5345" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5375:6082" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5973:6052" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="6126:7299" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7159:7272" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7679:7770" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -599,16 +579,6 @@
         <state line="141" column="0" selection-start="3470" selection-end="3470" vertical-scroll-proportion="0.0" vertical-offset="2049" max-vertical-offset="4233">
           <folding>
             <marker date="1417820544575" expanded="true" signature="391:419" placeholder="SELECT * FRO..inmueble..." />
-            <marker date="1417820544575" expanded="true" signature="5023:7369" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5077:7360" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5115:7344" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5153:7322" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5205:5345" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5375:6082" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5973:6052" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="6126:7299" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7159:7272" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7679:7770" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -692,16 +662,6 @@
         <state line="100" column="33" selection-start="2541" selection-end="2541" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="4233">
           <folding>
             <marker date="1417820544575" expanded="true" signature="391:419" placeholder="SELECT * FRO..inmueble..." />
-            <marker date="1417820544575" expanded="true" signature="5023:7369" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5077:7360" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5115:7344" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5153:7322" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5205:5345" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5375:6082" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5973:6052" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="6126:7299" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7159:7272" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7679:7770" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -785,16 +745,6 @@
         <state line="90" column="43" selection-start="2206" selection-end="2244" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="4556">
           <folding>
             <marker date="1417820544575" expanded="true" signature="391:419" placeholder="SELECT * FRO..inmueble..." />
-            <marker date="1417820544575" expanded="true" signature="5023:7369" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5077:7360" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5115:7344" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5153:7322" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5205:5345" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5375:6082" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5973:6052" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="6126:7299" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7159:7272" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7679:7770" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -878,16 +828,6 @@
         <state line="101" column="59" selection-start="2557" selection-end="2612" vertical-scroll-proportion="0.0" vertical-offset="1271" max-vertical-offset="4216">
           <folding>
             <marker date="1417820544575" expanded="true" signature="391:419" placeholder="SELECT * FRO..inmueble..." />
-            <marker date="1417820544575" expanded="true" signature="5023:7369" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5077:7360" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5115:7344" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5153:7322" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5205:5345" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5375:6082" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5973:6052" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="6126:7299" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7159:7272" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7679:7770" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -971,16 +911,6 @@
         <state line="101" column="59" selection-start="2557" selection-end="2612" vertical-scroll-proportion="0.0" vertical-offset="1271" max-vertical-offset="4216">
           <folding>
             <marker date="1417820544575" expanded="true" signature="391:419" placeholder="SELECT * FRO..inmueble..." />
-            <marker date="1417820544575" expanded="true" signature="5023:7369" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5077:7360" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5115:7344" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5153:7322" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5205:5345" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5375:6082" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5973:6052" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="6126:7299" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7159:7272" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7679:7770" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1064,16 +994,6 @@
         <state line="101" column="59" selection-start="2557" selection-end="2612" vertical-scroll-proportion="0.0" vertical-offset="1271" max-vertical-offset="4216">
           <folding>
             <marker date="1417820544575" expanded="true" signature="391:419" placeholder="SELECT * FRO..inmueble..." />
-            <marker date="1417820544575" expanded="true" signature="5023:7369" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5077:7360" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5115:7344" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5153:7322" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5205:5345" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5375:6082" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5973:6052" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="6126:7299" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7159:7272" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7679:7770" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1229,25 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="265" column="9" selection-start="7771" selection-end="7771" vertical-scroll-proportion="-15.156863" vertical-offset="3732" max-vertical-offset="4607">
-          <folding>
-            <marker date="1417820544575" expanded="true" signature="391:419" placeholder="SELECT * FRO..inmueble..." />
-            <marker date="1417820544575" expanded="true" signature="5023:7369" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5077:7360" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5115:7344" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5153:7322" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5205:5345" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5375:6082" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="5973:6052" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="6126:7299" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7159:7272" placeholder="..." />
-            <marker date="1417820544575" expanded="true" signature="7679:7770" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="67" selection-start="2676" selection-end="2676" vertical-scroll-proportion="91.42308" vertical-offset="3499" max-vertical-offset="4352">
@@ -1264,13 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2272" selection-end="2272" vertical-scroll-proportion="-28.4" vertical-offset="582" max-vertical-offset="8823">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inmobiliaria2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="168" column="40" selection-start="6597" selection-end="6597" vertical-scroll-proportion="0.65096617" vertical-offset="2317" max-vertical-offset="4658">
@@ -1278,9 +1172,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="27" selection-start="200" selection-end="200" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="8823">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="1" selection-start="2149" selection-end="2149" vertical-scroll-proportion="-8.921569" vertical-offset="1007" max-vertical-offset="4607">
+          <folding>
+            <marker date="1417820544575" expanded="true" signature="391:419" placeholder="SELECT * FRO..inmueble..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="519" column="4" selection-start="10274" selection-end="10274" vertical-scroll-proportion="0.47539017" vertical-offset="8427" max-vertical-offset="32929">
+        <state line="1774" column="16" selection-start="32701" selection-end="32701" vertical-scroll-proportion="0.3937575" vertical-offset="29830" max-vertical-offset="32946">
           <folding />
         </state>
       </provider>

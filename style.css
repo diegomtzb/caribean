@@ -1534,8 +1534,6 @@ section#vision p {
   float: left;
   color: #be1622;
   background-color: #fff;
-  margin-right: 2%;
-  margin-left: 2%;
   padding: 0;
   width: 135px;
   text-align: center;
@@ -1564,7 +1562,7 @@ section#vision p {
   float: left;
   color: #be1622;
   background-color: #fff;
-  margin-right: 2%;
+  margin-left: 39px;
   padding: 0;
   width: 135px;
   text-align: center;
@@ -1590,19 +1588,16 @@ section#vision p {
 .busq div#tipo-inmueble {
   background-color: transparent;
   padding: 0;
-  margin: 0 10px;
   width: 309px;
 }
 .busq div#ubicacion {
   background-color: transparent;
   padding: 0;
-  margin: 0 10px;
   width: 309px;
 }
 .busq div#price {
   background-color: transparent;
   padding: 0;
-  margin: 0 10px;
   width: 150px;
   float: left;
 }
@@ -1627,7 +1622,7 @@ section#vision p {
 .busq div#buscar {
   background-color: #be1622;
   margin-right: 2%;
-  margin-left: 1%;
+  margin-left: 25px;
   padding: 0;
   width: 135px;
   text-align: center;
@@ -1648,9 +1643,9 @@ section#vision p {
 .busq p.busqCodigo {
   color: #fff;
   font-style: italic;
-  font-size: 0.7em;
+  font-size: 0.9em;
   float: left;
-  padding-left: 20px;
+  padding-left: 45px;
   padding-top: 6px;
 }
 .busq .surroundcodigo {
