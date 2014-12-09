@@ -33,7 +33,7 @@ main {
 }
 main.main-index {
   padding-bottom: 7em;
-  padding-top: 25em;
+  padding-top: 22em;
 }
 main.main-cartera {
   padding-bottom: 7em;
@@ -83,27 +83,56 @@ main.main-cartera #section-main {
 }
 .nav li a {
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -o-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
+  padding: 3px 15px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
   background-color: #e6332a;
 }
-.nav-pills > li {
+#menuInmobiliaria .nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent;
+  webkit-box-shadow: inset 0px 10px 0px 0px #e6332a;
+  -moz-box-shadow: inset 0px 10px 0px 0px #e6332a;
+  box-shadow: inset 0px -6px 0px 0px #e6332a;
+}
+#menuInmobiliaria .nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: transparent;
+}
+#menuInmobiliaria .nav-pills > li > a:hover:after {
+  width: 100%;
+}
+#menuInmobiliaria .nav-pills > li.active {
+  webkit-box-shadow: inset 0px 10px 0px 0px #e6332a;
+  -moz-box-shadow: inset 0px 10px 0px 0px #e6332a;
+  box-shadow: inset 0px -6px 0px 0px #e6332a;
+/*OJO FUCINALIDAD SUBRAYADO
+  .nav-pills > li.active > a:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+  */
+}
+#menuInmobiliaria .nav-pills > li.active .nav-pills > li {
   float: left;
 }
-.nav-pills > li > a {
+#menuInmobiliaria .nav-pills > li.active .nav-pills > li > a {
   text-decoration: none;
-  width: 200px;
+  width: 11em;
 }
-.nav-pills > li > a:after {
+#menuInmobiliaria .nav-pills > li.active .nav-pills > li > a:after {
   content: '';
   display: block;
   border-bottom: 1px solid #fff;
@@ -115,14 +144,6 @@ main.main-cartera #section-main {
   -ms-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-/*OJO FUCINALIDAD SUBRAYADO
-.nav-pills > li.active > a:after {
-  content: '';
-  display: block;
-  border-bottom: 1px solid white;
-  width: 100%;
-}
-*/
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
@@ -157,7 +178,7 @@ main.main-cartera #section-main {
   right: 2%;
 }
 #page-home {
-  background: url("imgs/SALA_Playa-mod.png") no-repeat center center fixed;
+  background: url("imgs/Foto-Cartagena.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -202,12 +223,22 @@ main.main-cartera #section-main {
   display: table-cell;
   vertical-align: middle;
   float: left;
+  line-height: 0.9em;
 }
-#section-main #alignText h2 span {
+#section-main #alignText h2 span.me {
+  line-height: 1.5em;
+}
+#section-main #alignText h2 span.notme {
   font-size: 1.5em;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-style: italic;
+}
+#section-main #alignText h2 span.me:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #fff;
+  width: 100%;
 }
 #section-main #busquedaCodigo {
   float: right;
@@ -1099,7 +1130,7 @@ section#vision p {
   width: 95px;
 }
 #blueRGBAColor {
-  padding-top: 100px;
+  padding-top: 16em;
   padding-bottom: 200px;
   background: rgba(255,255,255,0.6);
   min-height: 100%;
@@ -1471,10 +1502,14 @@ section#vision p {
   background-color: #fff;
 }
 #logosheader .social figure img {
-  width: 50px;
+  width: 45px;
+  padding-top: 20px;
 }
 #logosheader .logo figure img {
   width: 280px;
+}
+#logosHeader .logofigure {
+  padding-left: 85px;
 }
 .padding16 {
   padding: 16px 0;
@@ -1727,6 +1762,7 @@ section#vision p {
   padding: 50px 0;
 }
 .aboutus .somos {
+  position: relative;
   background-color: #e6332a;
   -webkit-box-shadow: 0px 10px 0px 0px #be1622;
   -moz-box-shadow: 0px 10px 0px 0px #be1622;
@@ -1738,6 +1774,16 @@ section#vision p {
   font-style: italic;
   text-align: center;
   padding: 30px 0;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+.aboutus .somos img {
+  position: absolute;
+  z-index: 999;
+  width: 100px;
+  top: 72%;
+  left: 47%;
 }
 .brindamos {
   background-color: #1a3c6e;
@@ -1783,7 +1829,6 @@ section#vision p {
 }
 .aboutus .grupo .desc p {
   margin: 0;
-  color: #8f8788;
   font-size: 1.3em;
   text-align: center;
   padding: 30px 0;
@@ -1813,7 +1858,7 @@ section#vision p {
   padding-top: 10px;
 }
 .padding25 {
-  padding: 25px 15px !important;
+  padding: 16px 15px !important;
 }
 .rows4 div {
   height: 22em;
@@ -1843,6 +1888,16 @@ section#vision p {
   Background-color: #fff;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+.no-foto {
+  background-color: #fff;
+}
+.no-foto img {
+  width: 50% !important;
+  height: auto;
+  margin: auto;
+  display: block;
+  padding-top: 2em;
 }
 @-moz-keyframes spin {
   to {

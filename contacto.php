@@ -1,55 +1,20 @@
+<?php $page = 'contacto'; ?>
 <!DOCTYPE html5>
 <html>
-<head><title>Contacto - Caribean Service</title>
-    <meta charset="utf-8"/>
-    <meta name="description"
-          content="Contacto - Somos una empresa especializada en el sector de gestión inmobiliria: Ventas, arriendos, avalúos, administración de propiedad horizontal y gerenciamiento de ventas de nuevos proyectos inmobiliarios."/>
-    <meta name="keywords"
-          content="Empresarial, Inmobiliaria, Ventas, Arriendos, Avaluos, propiedad horizontal, bienes, proyectos, inmobiliarios"/>
-    <meta name="author" content="Caribean service"/>
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet'
-          type='text/css'>
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="css/media-queries.css"/>
-    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
-    <script>(function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-47464037-5', 'auto');
-    ga('send', 'pageview');
-
-    </script>
+<head>
+    <?php include("head.html"); ?>
 </head>
 <body id="page-contacto">
-<header class="header">
-    <div class="container">
-        <ul id="menuprincipal" class="nav nav-pills pull-right">
-            <li><a href="index.php">INICIO</a></li>
-            <li><a href="inmobiliaria.html">INMOBILIARIA</a></li>
-            <li><a href="grupoempresarial.html">GRUPO EMPRESARIAL</a></li>
-            <li class="active"><a href="#">CONTACTO</a></li>
-        </ul>
-        <div id="mobilemenu" data-menu-style="mystyle" class="rmm rmm-home">
-            <ul>
-                <li><a href="index.php">INICIO</a></li>
-                <li><a href="inmobiliaria.html">INMOBILIARIA</a></li>
-                <li><a href="grupoempresarial.html">GRUPO EMPRESARIA</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
-        </div>
-    </div>
+<header class="header fixed">
+
+    <!-- Header -->
+    <?php include("header.html"); ?>
+
+    <!-- Menu -->
+    <?php include("menu.php"); ?>
+
 </header>
+
 <main>
     <section id="contacto-mainsection">
         <div id="blueRGBAColor">

@@ -210,7 +210,7 @@ while($row = mysqli_fetch_array($fetch)) {
                         <?php
                         } else{
                             ?>
-                            <img src="imgs/No-foto.jpg"/>
+                            <img class="no-foto" src="imgs/No-foto.png"/>
                         <?php
                         }
                         ?>

@@ -57,14 +57,14 @@ $fetchzona = mysqli_query($conn, $queryzona);
             <li><a href="inmobiliaria.html">INMOBILIARIA</a></li>
             <!--li: a(href='servicios.html') SERVICIOS-->
             <li><a href="grupoempresarial.html">GRUPO EMPRESARIAL</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="contacto.php">CONTACTO</a></li>
         </ul>
         <div id="mobilemenu" class="rmm rmm-home" data-menu-style = "mystyle">
             <ul>
                 <li><a href="#">INICIO</a></li>
                 <li><a href="inmobiliaria.html">INMOBILIARIA</a></li>
                 <li><a href="grupoempresarial.html">GRUPO EMPRESARIA</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="contacto.php">CONTACTO</a></li>
             </ul>
         </div>
 

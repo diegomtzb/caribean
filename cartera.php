@@ -1,86 +1,19 @@
+<?php $page = 'cartera'; ?>
+
 <!DOCTYPE html5>
 <html>
-<head><title>Caribean Service</title>
-    <meta charset="utf-8"/>
-    <meta name="description"
-          content="Somos una empresa especializada en el sector de gestión inmobiliria: Ventas, arriendos, avalúos, administración de propiedad horizontal y gerenciamiento de ventas de nuevos proyectos inmobiliarios."/>
-    <meta name="keywords"
-          content="Empresarial, Inmobiliaria, Ventas, Arriendos, Avaluos, propiedad horizontal, bienes, proyectos, inmobiliarios"/>
-    <meta name="author" content="Caribean Service"/>
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet'
-          type='text/css'>
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="css/media-queries.css"/>
-    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
-
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-47464037-5', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
+<head>
+    <?php include("head.html"); ?>
 </head>
 <body id="page-cartera">
 <header class="header fixed">
 
-    <!-- Head -->
-    <div id = "logosHeader" class="row">
-        <div class="container">
-            <div class="col-sm-12 padding16">
-                <div class="social col-sm-4">
-                    <figure class="padding16">
-                        <a href="#" >
-                            <img src="imgs/Facebook-rojo.png"/>
-                        </a>
-                        <a href="#">
-                            <img src="imgs/Twitter-rojo.png"/>
-                        </a>
-                        <a href="#">
-                            <img src="imgs/Instagram-rojo.png"/>
-                        </a>
+    <!-- Header -->
+    <?php include("header.html"); ?>
 
-                    </figure>
-                </div>
+    <!-- Menu -->
+    <?php include("menu.php"); ?>
 
-                <div class="logo col-sm-8">
-                    <figure>
-                        <img src="imgs/logos-GE.png"/>
-                    </figure>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-
-    <div id = "menuHeader">
-        <div class="container">
-            <ul id="menuprincipal" class="nav nav-pills navwidth810">
-                <li><a class="padding25" href="index3.php">INICIO</a></li>
-                <li><a class="padding25" href="inmobiliaria2.php">INMOBILIARIA</a></li>
-                <li class="active"><a href="#">RECUPERACION <br>DE CARTERA</a></li>
-                <li><a class="padding25" href="contacto.html">CONTACTO</a></li>
-            </ul>
-
-            <div id="mobilemenu" class="rmm rmm-home" data-menu-style = "mystyle">
-                <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="inmobiliaria2.php">INMOBILIARIA</a></li>
-                    <li><a href="grupoempresarial.html">GRUPO EMPRESARIA</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
 </header>
 
 <main class="main-cartera">

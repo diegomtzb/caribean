@@ -18,7 +18,7 @@
     <main class="main-index">
         <section id="section-main">
             <div id="alignText">
-                <h2>LE ASESORAMOS PARA QUE REALICE <span><br> SU MEJOR INVERSIÓN</span></h2>
+                <h2><span class="me">LO ASESORAMOS PARA QUE REALICE</span><br> <span class="notme">SU MEJOR INVERSIÓN</span></h2>
             </div>
 
             <!-- Destacado y busqueda -->
@@ -99,8 +99,6 @@
     </main>
 </div>
 
-<hr>
-
 <section class="aboutus">
     <div class="container">
         <h3>¿QUIENES SOMOS?</h3>
@@ -113,6 +111,7 @@
                 orientándolos a realizar su mejor inversión satisfaciendo sus necesidades
                 y espectativas.</p>
         </div>
+        <img src="imgs/Flechita.png"/>
     </div>
 
     <!-- Grupo -->
@@ -122,7 +121,9 @@
                 <div class="inmobiliaria">
                     <div class="myContainer">
                         <figure>
-                            <img src="imgs/logo-C-Service.png"/>
+                            <a href="inmobiliaria2.php">
+                                <img src="imgs/logo-C-Service.png"/>
+                            </a>
                         </figure>
                     </div>
 
@@ -139,7 +140,9 @@
                 <div class="recuperacion">
                     <div class="myContainer">
                         <figure>
-                            <img src="imgs/logo-C-Solutions.png"/>
+                            <a href="cartera.php">
+                                <img src="imgs/logo-C-Solutions.png"/>
+                            </a>
                         </figure>
                     </div>
 

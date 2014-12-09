@@ -18,15 +18,15 @@
             <?php } ?>
 
             <?php if ($page == 'cartera') { ?>
-                <li class="active"><a href="cartera.html">RECUPERACION <br>DE CARTERA</a></li>
+                <li class="active"><a href="cartera.php">RECUPERACION <br>DE CARTERA</a></li>
             <?php } else { ?>
-                <li><a href="cartera.html">RECUPERACION <br>DE CARTERA</a></li>
+                <li><a href="cartera.php">RECUPERACION <br>DE CARTERA</a></li>
             <?php } ?>
 
             <?php if ($page == 'contacto') { ?>
-                <li class="active"><a class="padding25" href="contacto.html">CONTACTO</a></li>
+                <li class="active"><a class="padding25" href="contacto.php">CONTACTO</a></li>
             <?php } else { ?>
-                <li><a class="padding25" href="contacto.html">CONTACTO</a></li>
+                <li><a class="padding25" href="contacto.php">CONTACTO</a></li>
             <?php } ?>
         </ul>
 
@@ -36,7 +36,7 @@
                 <li><a href="#">INICIO</a></li>
                 <li><a href="inmobiliaria2.php">INMOBILIARIA</a></li>
                 <li><a href="grupoempresarial.html">GRUPO EMPRESARIA</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="contacto.php">CONTACTO</a></li>
             </ul>
         </div>
     </div>

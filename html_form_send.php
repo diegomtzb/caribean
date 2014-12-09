@@ -73,7 +73,7 @@ if(isset($_POST['email'])) {
             // Print a message
             alert('Gracias por su mensaje. Nos pondremos en contacto con usted muy pronto.');
             // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-            window.location = 'contacto.html';
+            window.location = 'contacto.php';
         </script>
     <?php
     }else { ?>
@@ -81,7 +81,7 @@ if(isset($_POST['email'])) {
             // Print a message
             alert('Su mensaje no pudo ser enviado. Puede contactarse directamente con nosotros a direccioncomercial@caribeanservice.com');
             // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-            window.location = 'contacto.html';
+            window.location = 'contacto.php';
         </script>
     <?php
     }?>

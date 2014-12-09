@@ -32,6 +32,10 @@ smaller than 1525
         width: 100%;
     }
 
+    #logosHeader .logofigure{
+        padding-left: 0;
+    }
+
     /*--------------------------------*/
 }
 

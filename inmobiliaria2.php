@@ -16,9 +16,9 @@
 
     <div id = "menuInmobiliaria">
             <ul class="nav nav-pills navwidth604">
-                <li><a class="padding25" href="#">VENTAS</a></li>
+                <li class="active"><a class="padding25" href="#">VENTAS</a></li>
                 <li><a class="padding25" href="inmobiliaria.html">ARRIENDOS</a></li>
-                <li><a class="padding25" href="inmobiliaria.html">SERVICIOS</a></li>
+                <li><a class="padding25" href="grupoempresarial.html">SERVICIOS</a></li>
             </ul>
     </div>
 
