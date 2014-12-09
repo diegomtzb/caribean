@@ -35,6 +35,17 @@ main.main-index {
   padding-bottom: 7em;
   padding-top: 25em;
 }
+main.main-cartera {
+  padding-bottom: 7em;
+  padding-top: 15em;
+}
+main.main-cartera #section-main {
+  height: 80%;
+}
+.newPadding {
+  padding-top: 20em;
+  padding-left: 5em;
+}
 .header {
   margin: 0 auto;
   background-color: #be1622;
@@ -161,6 +172,13 @@ main.main-index {
 }
 #page-grupo {
   background: url("imgs/Foto-Cartagena.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#page-cartera {
+  background: url("imgs/call-center-group.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1456,7 +1474,7 @@ section#vision p {
   width: 50px;
 }
 #logosheader .logo figure img {
-  width: 250px;
+  width: 280px;
 }
 .padding16 {
   padding: 16px 0;
@@ -1476,7 +1494,6 @@ section#vision p {
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
 }
 .destbusq {
-  background: #fff;
   padding: 10px 0;
 }
 .destacado {
@@ -1513,6 +1530,7 @@ section#vision p {
 .busq {
   background-color: #f9b234;
   height: 347px;
+  overflow: hidden;
 }
 .busq h3 {
   color: #fff;
@@ -1721,6 +1739,21 @@ section#vision p {
   text-align: center;
   padding: 30px 0;
 }
+.brindamos {
+  background-color: #1a3c6e;
+}
+.brindamos p {
+  color: #fff;
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  padding: 30px 0;
+  width: 70%;
+  margin: 0 auto;
+}
+.brindamos p span {
+  font-weight: bold;
+}
 .aboutus .grupo {
   margin-top: 10px;
 }
@@ -1781,6 +1814,35 @@ section#vision p {
 }
 .padding25 {
   padding: 25px 15px !important;
+}
+.rows4 div {
+  height: 22em;
+  background-color: #fff;
+  margin-bottom: 1em;
+  padding-top: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.rows4 .tittle {
+  color: #f39240;
+  font-size: 2.5em;
+  font-style: italic;
+  text-align: center;
+}
+.rows4 .texto {
+  color: #000;
+  font-size: 1.4em;
+  text-align: center;
+}
+.figure-destacado {
+  overflow: hidden;
+  width: 100%;
+  height: 347px;
+}
+.patchstyle {
+  Background-color: #fff;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 @-moz-keyframes spin {
   to {

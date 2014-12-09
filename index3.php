@@ -1,87 +1,17 @@
+<?php $page = 'index'; ?>
+
 <!DOCTYPE html5>
 <html>
-<head><title>Caribean Service</title>
-    <meta charset="utf-8"/>
-    <meta name="description"
-          content="Somos una empresa especializada en el sector de gestión inmobiliria: Ventas, arriendos, avalúos, administración de propiedad horizontal y gerenciamiento de ventas de nuevos proyectos inmobiliarios."/>
-    <meta name="keywords"
-          content="Empresarial, Inmobiliaria, Ventas, Arriendos, Avaluos, propiedad horizontal, bienes, proyectos, inmobiliarios"/>
-    <meta name="author" content="Caribean Service"/>
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet'
-          type='text/css'>
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="css/media-queries.css"/>
-    <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
-
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-47464037-5', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
+<head>
+<?php include("head.html"); ?>
 </head>
 <body id="page-home">
 <header class="header fixed">
+    <!-- Header -->
+    <?php include("header.html"); ?>
 
-    <!-- Head -->
-    <div id = "logosHeader" class="row">
-        <div class="container">
-            <div class="col-sm-12 padding16">
-                <div class="social col-sm-4">
-                    <figure class="padding16">
-                        <a href="#" >
-                            <img src="imgs/Facebook-rojo.png"/>
-                        </a>
-                        <a href="#">
-                            <img src="imgs/Twitter-rojo.png"/>
-                        </a>
-                        <a href="#">
-                        <img src="imgs/Instagram-rojo.png"/>
-                        </a>
-
-                    </figure>
-                </div>
-
-                <div class="logo col-sm-8">
-                    <figure>
-                        <img src="imgs/logos-GE.png"/>
-                    </figure>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-
-    <div id = "menuHeader">
-        <div class="container">
-            <ul id="menuprincipal" class="nav nav-pills navwidth810">
-                <li class="active"><a class="padding25" href="#">INICIO</a></li>
-                <li><a class="padding25" href="inmobiliaria.html">INMOBILIARIA</a></li>
-                <!--li: a(href='servicios.html') SERVICIOS-->
-                <li><a href="cartera.html">RECUPERACION <br>DE CARTERA</a></li>
-                <li><a class="padding25" href="contacto.html">CONTACTO</a></li>
-            </ul>
-
-            <div id="mobilemenu" class="rmm rmm-home" data-menu-style = "mystyle">
-                <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="inmobiliaria.html">INMOBILIARIA</a></li>
-                    <li><a href="grupoempresarial.html">GRUPO EMPRESARIA</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <!-- Menu -->
+    <?php include("menu.php"); ?>
 </header>
 
 <div class="container">
@@ -93,10 +23,13 @@
 
             <!-- Destacado y busqueda -->
             <div class="row destbusq">
-                <div class="col-md-6">
+                <div class="col-md-6 patchstyle">
                     <div class="destacado">
                         <a href="#">
-                            <img class="img-responsive" src="imgs/SALA_Playa-mod.png">
+                            <figure class="figure-destacado">
+                                <img src="imgs/SALA_Playa-mod.png">
+                            </figure>
+
                             <div class="labelVerInmueble">
                                 <p>Para Arriendo, Apartamento En Cartagena, Bocagrande
                                     120m2, 3 habitaciones, 2 baños</p>
@@ -107,7 +40,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5 patchstyle">
                     <div class="busq">
                         <h3>BUSQUE SU INMUEBLE</h3>
                         <hr>
