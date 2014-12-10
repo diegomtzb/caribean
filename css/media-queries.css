@@ -62,6 +62,10 @@ smaller than 1349
         margin-top: 10px;
     }
 
+    .aboutus .somos img{
+        left: 46%;
+    }
+
     /*--------------------------------*/
 }
 
@@ -82,6 +86,8 @@ smaller than 1200
         max-width: 100%;
     }
 
+
+
     /*--------------------------------*/
 }
 
@@ -94,6 +100,10 @@ smaller than 1070
         float: left;
         margin: 0 6%;
     }
+
+    .aboutus .somos img{
+        left: 45%;
+    }
     /*--------------------------------*/
 }
 
@@ -102,17 +112,8 @@ smaller than 1000
 *************************************************************************************/
 @media screen and (max-width: 1000px) {
     /*--------------------------------*/
-    .nav{
-        margin-right: 0;
-    }
 
-    .nav li a{
-        font-size: 1em;
-    }
 
-    .nav-pills > li > a{
-        width: 150px;
-    }
 
     #section-main #busqueda div#buscar{
         margin-top: 10px;
@@ -147,6 +148,16 @@ smaller than 991
     #suscripcion figure.social{
         top: 35px;
     }
+
+    .aboutus .somos img{
+        top: 82%;
+    }
+
+    .aboutus .grupo .myContainer{
+        width: 90%;
+    }
+
+
 }
 
 /************************************************************************************
@@ -176,8 +187,6 @@ smaller than 768
         text-align: center;
     }
 
-
-
     /*--------------------------------*/
 
 }
@@ -187,13 +196,13 @@ smaller than 705
 *************************************************************************************/
 @media screen and (max-width: 705px) {
     /*--------------------------------*/
-    #menuprincipal {
+    /*#menuprincipal {
         display: none;
     }
 
     #mobilemenu {
         display: block;
-    }
+    }*/
 
     #section-main #busqueda div#buscar{
         margin-left: 2%;
@@ -212,7 +221,30 @@ smaller than 705
         font-size: 1.5em;
     }
 
+    .aboutus .somos p{
+        width: 100%;
+    }
 
+    .aboutus .grupo figure img{
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-pills > li > a{
+        width: 10.2em;
+    }
+
+    .nav li a{
+        font-size: 0.8em;
+    }
+
+    .padding25{
+        padding: 12px 15px !important;
+    }
+
+    .navwidth810{
+        width: 33.2em;
+    }
     /*--------------------------------*/
 }
 
@@ -230,6 +262,41 @@ smaller than 606
         width: 115px;
     }
 
+    #section-main #alignText h2{
+        font-size: 1.5em;
+    }
+
+    .aboutus h3{
+        font-size: 2.9em;
+    }
+
+    .aboutus .somos img{
+        display: none;
+    }
+
+    .nav li a{
+        font-size: 0.6em;
+    }
+
+    .padding25{
+        padding: 10px 15px !important;
+    }
+
+    .navwidth810{
+        width: 24.9em;
+    }
+
+    #logosheader .social figure img{
+        width: 30%;
+    }
+
+    #logosheader .logo figure img{
+        width: 80%;
+        padding-top: 10%;
+    }
+
+
+
     /*--------------------------------*/
 }
 
@@ -246,6 +313,85 @@ smaller than 430
     #mobilemenu .rmm-toggled ul{
         font-size: 0.9em;
     }
+
+    #section-main #alignText h2{
+        font-size: 1em;
+    }
+
+    .busq #controllers{
+        width: 16em;
+    }
+
+    .busq div#arriendos{
+        width: 4.3em;
+    }
+
+    .busq div#ventas{
+        width: 4.3em;
+    }
+
+    .busq div#tipo-inmueble{
+        width: 15.3em
+    }
+
+    .busq div#ubicacion{
+        width: 15.3em;
+    }
+
+    .busq div#buscar{
+        width: 3em;
+    }
+
+    .busq h3{
+        font-size: 1.7em;
+    }
+
+    .busq .surroundcodigo input{
+        font-size: 0.6em;
+        padding-right: 1em;
+    }
+
+    .busq p.busqCodigo{
+        font-size: 0.5em;
+    }
+
+    .upto430{
+        display: none;
+    }
+
+    .from430{
+        display: block;
+    }
+
+    .destacado .labelVerInmuebleMas{
+        right: 35%;
+    }
+
+    .aboutus h3{
+        font-size: 2.1em;
+    }
+
+    .aboutus .somos p{
+        font-size: 1em;
+    }
+
+    .aboutus .grupo .desc p{
+        display: none;
+    }
+
+    .nav li a{
+        font-size: 0.4em;
+    }
+
+    .padding25{
+        padding: 11px 15px !important;
+    }
+
+    .navwidth810{
+        width: 16.9em;
+    }
+
+
 
     /*--------------------------------*/
 }

@@ -23,7 +23,7 @@
 
             <!-- Destacado y busqueda -->
             <div class="row destbusq">
-                <div class="col-md-6 patchstyle">
+                <div class="col-md-6 patchstyle upto430">
                     <div class="destacado">
                         <a href="#">
                             <figure class="figure-destacado">
@@ -94,6 +94,24 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-6 patchstyle from430">
+                    <div class="destacado">
+                        <a href="#">
+                            <figure class="figure-destacado">
+                                <img src="imgs/SALA_Playa-mod.png">
+                            </figure>
+
+                            <div class="labelVerInmueble">
+                                <p>Para Arriendo, Apartamento En Cartagena, Bocagrande
+                                    120m2, 3 habitaciones, 2 baños</p>
+                            </div>
+                            <div class="labelVerInmuebleMas">
+                                <p>Ver más</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -116,8 +134,8 @@
 
     <!-- Grupo -->
     <div class="row grupo">
-        <div class="col-sm-12">
-            <div class="col-sm-6 inmoPadding">
+        <div class="col-xs-12">
+            <div class="col-xs-6 inmoPadding">
                 <div class="inmobiliaria">
                     <div class="myContainer">
                         <figure>
@@ -136,7 +154,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6 recuPadding">
+            <div class="col-xs-6 recuPadding">
                 <div class="recuperacion">
                     <div class="myContainer">
                         <figure>

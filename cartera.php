@@ -19,7 +19,7 @@
 <main class="main-cartera">
     <section id="section-main" class="newPadding">
         <div id="alignText">
-            <h2>NEGOCIACIONES Y<span><br> ATENCIÓN AL CLIENTE</span><br>PARA CONCRETAR ACUERDOS DE PAGO</h2>
+            <h2>NEGOCIACIONES Y</span> <br><span class="notme me"> ATENCIÓN AL CLIENTE</span><br>PARA CONCRETAR ACUERDOS DE PAGO</h2>
         </div>
     </section>
 
