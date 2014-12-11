@@ -413,13 +413,12 @@ paddingLeftRightSize = 24px
 
 #section-main #busqueda #criterios1
   display: inline-block
-  width 100%
   margin-bottom: 25px;
   margin-top: 25px;
 
-  width 82%
-  margin-left: 9%;
-  margin-right: 9%;
+  width 74%
+  margin-left: 13%;
+  margin-right: 13%;
 
 #section-main #busqueda #criterios1 div
   float left
@@ -601,6 +600,10 @@ paddingLeftRightSize = 24px
 
 #sugeridos h3
   color #f39200
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: bold;
 
 
 
@@ -609,14 +612,14 @@ paddingLeftRightSize = 24px
   background-color #EDEDED
   overflow: hidden
   //padding-top 50px
-  padding-bottom 50px
-  display: none
-  margin-bottom: 7em;
-  width 83%
-  margin-left auto
-  margin-right auto
-  margin-top 15px
-  border-radius 4px
+  //padding-bottom 50px
+  //display: none
+  //margin-bottom: 7em;
+  //width 83%
+  //margin-left auto
+  //margin-right auto
+  //margin-top 15px
+  //border-radius 4px
 
 #section-search div#order_by
   float left
@@ -847,7 +850,9 @@ footer figure.social p
   float none
 
 #inmobiliaria-mainsection
-  margin-top: 25em
+  //margin-top: 25em
+  position: absolute;
+  bottom: 0
 
 #inmobiliaria-mainsection div
   //border-left 4px solid #E30613
@@ -999,7 +1004,6 @@ section#vision p
   font-weight bold
   padding 30px 0
 
-
 #nuestrosServicios .fincaraiz-gerenciadeproyectos ul li
   border-bottom: 1px solid #EF3F36;
   list-style-image: url('imgs/Flecha-1.png');
@@ -1012,6 +1016,8 @@ section#vision p
   font-weight 400
   font-style italic
   line-height: 65px;
+  position: relative
+  z-index 2
 
 #nuestrosServicios .fincaraiz-gerenciadeproyectos ul li a:hover
   text-decoration none
@@ -1033,6 +1039,8 @@ section#vision p
   border-radius: 4px;
   margin-top 50px
   margin-bottom 20px
+  position: relative
+  z-index 2
 
 #nuestrosServicios .fincaraiz-gerenciadeproyectos div.contacto:hover
   background-color #EF3F36
@@ -1056,6 +1064,7 @@ section#vision p
 
 #fincaraiz img
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   height: 100%;
@@ -1299,52 +1308,62 @@ section#vision p
   background-color white
 
 #page-single_imagenes .header
-  background-color #1a3c6e
-  height: 70px;
+  background-color white
 
-#page-single_imagenes .header ul.nav
-  margin-top: 0
-  margin-right: 0
-
-#page-single_imagenes .header ul li
-  font-size: 1.5em;
+#page-single_imagenes .header h3
+  color #f9b234
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+  font-style italic
+  font-weight bold
+  padding-top: 20px
+  padding-left: 10px;
 
 #single-info
-  background-color #EDEDED
+  background-color #f9b234
   display: inline-block;
   float right
-  margin-top: 61px;
+  //margin-top: 61px;
   border-radius 3px
-  padding: 38px 25px 20px 25px;
+  padding: 38px 25px 35px 25px;
   line-height: 0.9em;
   text-align center
-  -webkit-box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.83);
-  -moz-box-shadow:    0px 7px 14px 0px rgba(50, 50, 50, 0.83);
-  box-shadow:         0px 7px 14px 0px rgba(50, 50, 50, 0.83);
+  //-webkit-box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.83);
+  //-moz-box-shadow:    0px 7px 14px 0px rgba(50, 50, 50, 0.83);
+  //box-shadow:         0px 7px 14px 0px rgba(50, 50, 50, 0.83);
 
-#single-info div
-  border-bottom: 4px solid #1a3c6e;
+#single-info div.surround-single
+  background-color #EDEDED
+  border: 3px solid #f39200;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+
+#single-info > div > div
+  border-bottom: 2px solid white;
   overflow: hidden;
+  width: 90%;
+  margin: auto;
 
 #single-info div h4
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: bold;
   text-align: left;
+  margin: 5px 0;
+
 
 
 #single-info p
   //font-size 1.5em
   //color black
   //clear both
-  font-size: 1.6em;
-  margin-top: 14px;
+  font-size: 1.4em;
+  //margin-top: 14px;
+  margin: 9px 0;
 
 #single-info p.precio
-  border 2px solid #F39200
-  border-radius 3px
   font-size: 2.5em;
   padding: 22px 30px;
-  color #575756
+  color: #f39200;
 
 #page-single_imagenes #contenido-single
   overflow hidden
@@ -1356,11 +1375,12 @@ section#vision p
   color: black;
   font-style: italic;
   font-weight: bold;
+  display none
 
 #page-single_imagenes #contenido-single figure#mainFigure
   overflow: hidden;
   max-width: 100%;
-  max-height: 600px;
+  max-height: 479px;
   padding: 2% 7%;
   border: 1px solid #737373;
   background-color #EDEDED
@@ -1375,13 +1395,13 @@ section#vision p
   clear both
 
 #page-single_imagenes #minuatures-single figure.miniatureFigure
-  width: 135px;
-  height: 100px;
-  overflow: hidden;
+  //width: 135px;
+  //height: 100px;
+  //overflow: hidden;
   margin-top: 15px;
-  margin-right: 25px
-  float left
-  position: relative
+  //margin-right: 25px
+  //float left
+  //position: relative
 
 
 #page-single_imagenes #minuatures-single figure.miniatureFigure.active
@@ -1393,6 +1413,19 @@ section#vision p
 
 #page-single_imagenes #minuatures-single figure.miniatureFigure img:hover
   cursor pointer
+
+#page-single_imagenes .caracteristicas
+  border: 3px solid #f9b234;
+  margin-top: 15px;
+  text-align center
+
+#page-single_imagenes .caracteristicas h4
+  color: #f9b234;
+  font-size: 2em;
+
+#page-single_imagenes .caracteristicas p
+  font-size: 1.4em;
+  font-style: italic;
 
 #page-single_imagenes #footer-single
   overflow: hidden;
@@ -1591,13 +1624,17 @@ section#vision p
 #reservar{
   clear: both;
   float right
+  padding 0
+  background-color #f9b234
 }
 
 #reservar_btn{
-  border: 2px solid #1a3c6e;
-  color: #1a3c6e;
+  border: 3px solid #f39200;
+  color: #f39200;
+  background: white;
   display: block;
-  width: 100%;
+  width: 100% !important;
+  margin auto
   height: 50px;
   text-align: center;
   -webkit-border-radius: 4px;
@@ -1605,45 +1642,53 @@ section#vision p
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  margin-top: 50px;
+  //margin-top: 50px;
   margin-bottom: 0;
+  border-bottom: 3px solid #f39200 !important;
+
 }
 
 #reservar_btn p{
-  font-size: 1.4em;
+  font-size: 1.8em;
   padding-top: 6px;
 }
 
 #reservar_btn:hover{
-  background-color: #1a3c6e;
+  background-color: #f39200;
   color: #fff;
   cursor: pointer;
 }
 
 
 .highlight{
-  background-color: #1a3c6e;
-  color: #fff !important;
+  background-color: white !important;
+  color: #f39200 !important;
 }
 
 
 #reservar_frm{
-  width 100%
+  width 75%
+  margin auto
   display: none;
-  background-color: #E7E7E7;
+  background-color: white;
   border 1px solid #8A8B8E;
+  margin-top: 0 !important;
+  border-top: none;
+  border-bottom: none !important;
 }
 
 #reservar_frm form input{
   width: 70%;
-  height: 50px;
+  height: 35px;
   border: 2px solid #1a3c6e;
   margin: 10px auto;
   display: block;
   border-radius: 4px;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-left: 20px;
+  padding-top 10px
+  background-color #e7e7e7
 }
 
 #reservar_frm form input[type="submit"] {
@@ -1651,6 +1696,7 @@ section#vision p
   margin 10px 15%;
   font-style: normal;
   padding-left 0;
+  padding-top 0;
 }
 
 #reservar_frm form input[type="submit"]:hover {
@@ -1964,6 +2010,7 @@ section#vision p
   width: 100px;
   top: 72%;
   left: 47%;
+  left: calc(50% - 50px);//centrar elemento horizontalmente(50% - mitad del width)
 
 .brindamos {
   background-color: #1A3C6E;
@@ -2104,3 +2151,11 @@ section#vision p
 
 .from430
   display none
+
+.height100{
+  height: 100%;
+}
+
+.posrel {
+  position: relative;
+}

@@ -51,9 +51,6 @@ smaller than 1349
 *************************************************************************************/
 @media screen and (max-width: 1349px) {
     /*--------------------------------*/
-    .aboutus .somos img{
-        left: 46%;
-    }
 
     /*--------------------------------*/
 }
@@ -65,6 +62,9 @@ smaller than 1200
 *************************************************************************************/
 @media screen and (max-width: 1200px) {
     /*--------------------------------*/
+    #nuestrosServicios #contenido div.texto p{
+        font-size: 1.5em;
+    }
 
     /*--------------------------------*/
 }
@@ -79,14 +79,11 @@ smaller than 1070
         margin: 0 6%;
     }
 
-    .aboutus .somos img{
-        left: 45%;
-    }
-
     .tittlebusqueda{
         clear: both;
         padding-top: 2em;
     }
+
     /*--------------------------------*/
 }
 
@@ -124,6 +121,10 @@ smaller than 991
         width: 90%;
     }
 
+    #single-info p {
+        text-align: left;
+    }
+
 
 }
 
@@ -152,6 +153,10 @@ smaller than 768
 
     #logosHeader .logo{
         text-align: center;
+    }
+
+    #inmobiliaria-mainsection div h2{
+        font-size: 2em;
     }
 
     /*--------------------------------*/
@@ -259,6 +264,18 @@ smaller than 606
     #logosheader .logo figure img{
         width: 80%;
         padding-top: 10%;
+    }
+
+    #inmobiliaria-mainsection div h2{
+        font-size: 1.5em;
+    }
+
+    .rows4 .tittle{
+        font-size: 2em;
+    }
+
+    .rows4 .texto{
+        font-size: 1em;
     }
 
 

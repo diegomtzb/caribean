@@ -14,14 +14,14 @@ $fetch = mysqli_query($conn, $query);
 <?php
 while($row = mysqli_fetch_array($fetch))
 {
-    if ($row['main']==0)
-    {
+    //if ($row['main']==0)
+    //{
         $ciudad="Cartagena";
 
         if ($row['inm_negocio'] == 2) {
-            $tipo_negocio = "VENTA";
+            $tipo_negocio = "Venta";
         } elseif ($row['inm_negocio'] == 2) {
-            $tipo_negocio = "ARRIENDO";
+            $tipo_negocio = "Arriendo";
         }
 
         if ( $row['inm_valor'] == "") {
@@ -30,15 +30,18 @@ while($row = mysqli_fetch_array($fetch))
             $format_price =  number_format($row['inm_valor']);
         }
 
+        //$tipo_negocio = strtolower($tipo_negocio);//Covierte cadena a minuscula
+        //$tipo_negocio = ucfirst($tipo_negocio);//convierte primera letra cadena a mayuscula
+
 
         ?>
 
         <a class="iframe" href="single_imagenes.php?id=<?php echo $row['inm_id']; ?>">
-            <div class="search_result col-lg-4 col-md-6">
+            <div class="search_result col-lg-3 col-md-6 col-sm-6">
                 <div class="result_info">
                     <div class="divInfo">
                         <div class="tittleapartamento">
-                            <p class="pTipoInmuble"> <?php echo $row['tipo_nombre']; ?>,<?php echo $tipo_negocio; ?> </p>
+                            <p class="pTipoInmuble"> <?php echo $row['tipo_nombre']; ?>, <?php echo $tipo_negocio; ?> </p>
                         </div>
 
                             <?php
@@ -92,7 +95,7 @@ while($row = mysqli_fetch_array($fetch))
         </a>
 
 <?php
-    }
+    //}
 }
 ?>
 
@@ -103,5 +106,4 @@ while($row = mysqli_fetch_array($fetch))
 <script type="text/javascript">
     $(".iframe").colorbox({iframe:true, width:"90%", height:"95%", fixed:true});
 </script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>

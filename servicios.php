@@ -23,7 +23,7 @@
     </div>
 </header>
 <main>
-    <div class="container">
+    <div class="container height100 posrel">
         <section id="inmobiliaria-mainsection">
             <div>
                 <h2>

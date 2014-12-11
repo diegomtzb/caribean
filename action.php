@@ -191,11 +191,14 @@ while($row = mysqli_fetch_array($fetch)) {
     $fetchUbicacion = mysqli_query($conn, $queryUbicacion);
     $rowUbicacion = mysqli_fetch_array($fetchUbicacion);
 
+    $tipo_negocio = strtolower($tipo_negocio);//Covierte cadena a minuscula
+    $tipo_negocio = ucfirst($tipo_negocio);//convierte primera letra cadena a mayuscula
+
 
 
     ?>
     <a class="iframe" href="single_imagenes.php?id=<?php echo $row['inm_id']; ?>">
-        <div class="search_result col-lg-4 col-md-6">
+        <div class="search_result col-lg-3 col-md-6 col-sm-6">
             <div class="result_info">
                 <div class="divInfo">
                     <div class="tittleapartamento">
@@ -260,3 +263,4 @@ while($row = mysqli_fetch_array($fetch)) {
 <script type="text/javascript">
     $(".iframe").colorbox({iframe:true, width:"90%", height:"95%", fixed:true});
 </script>
+<script type="text/javascript" src="js/script.js"></script>

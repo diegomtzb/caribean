@@ -6,6 +6,8 @@ var ubicacion="";
 
 $(document).ready(function() {
     $("#buscar").click(function(e) {
+        alert("start");
+
         e.preventDefault();
 
         var section_search = $("#section-search");
@@ -72,6 +74,8 @@ $(document).ready(function() {
         $('#suscripcion').css('margin-bottom', '5em');
         $('footer').removeClass('noneDisplay');
 
+
+        alert("end");
         return false;
     });
 
