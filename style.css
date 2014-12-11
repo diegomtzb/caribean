@@ -33,7 +33,11 @@ main {
 }
 main.main-index {
   padding-bottom: 7em;
-  padding-top: 35%;
+  padding-top: 20%;
+}
+main.main-inmobiliaria {
+  padding-bottom: 7em;
+  padding-top: 30em;
 }
 main.main-cartera {
   padding-bottom: 7em;
@@ -323,7 +327,7 @@ main.main-cartera #section-main {
   margin: 0 auto;
   padding: 15px 10px;
   width: 355px;
-  background-color: rgba(249,178,52,0.8);
+  background-color: #f9b234;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
@@ -341,13 +345,14 @@ main.main-cartera #section-main {
   width: 100%;
   margin-bottom: 25px;
   margin-top: 25px;
+  width: 82%;
+  margin-left: 9%;
+  margin-right: 9%;
 }
 #section-main #busqueda #criterios1 div {
   float: left;
   color: #fff;
   background-color: #f9b234;
-  margin-right: 2%;
-  margin-left: 2%;
   padding: 5px 24px;
   font-size: 1.5em;
   -webkit-border-radius: 4px;
@@ -394,8 +399,22 @@ main.main-cartera #section-main {
   border-radius: 4px;
 }
 #section-main #busqueda div#ventas {
-  padding: 5px 42px;
   border: 1px solid #f9b234;
+  padding: 0;
+  width: 135px;
+  text-align: center;
+  font-size: 1.5em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 #section-main #busqueda div#ventas:hover {
   cursor: pointer;
@@ -411,8 +430,22 @@ main.main-cartera #section-main {
   color: #fff;
 }
 #section-main #busqueda div#arriendos {
-  margin-left: 0%;
   border: 1px solid #f39200;
+  padding: 0;
+  width: 135px;
+  text-align: center;
+  font-size: 1.5em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin-right: 25px;
+  margin-top: 10px;
 }
 #section-main #busqueda div#arriendos:hover {
   cursor: pointer;
@@ -424,15 +457,25 @@ main.main-cartera #section-main {
 #section-main #busqueda div#tipo-inmueble {
   background-color: transparent;
   padding: 0;
-  margin: 0 10px;
   font-style: italic;
-  width: 224px;
+  width: 309px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#section-main #busqueda div#price {
+  background-color: transparent;
+  font-style: italic;
+  padding: 0;
+  width: 150px;
+  margin-right: 25px;
+  margin-top: 10px;
 }
 #section-main #busqueda div#ubicacion {
   background-color: transparent;
   padding: 0;
-  margin: 0 10px;
   width: 309px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 #section-main #busqueda div#codigo {
   background-color: transparent;
@@ -443,9 +486,8 @@ main.main-cartera #section-main {
 }
 #section-main #busqueda div#buscar {
   background-color: #f9b234;
-  margin-right: 2%;
-  margin-left: 1%;
   padding: 5px 10px;
+  margin-top: 10px;
 }
 #section-main #busqueda div#buscar:hover {
   cursor: pointer;
@@ -1891,6 +1933,8 @@ section#vision p {
 }
 .no-foto {
   background-color: #fff;
+  border-left: 1px #c6c6c6 solid;
+  border-right: 1px #c6c6c6 solid;
 }
 .no-foto img {
   width: 50% !important;

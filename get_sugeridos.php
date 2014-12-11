@@ -41,7 +41,6 @@ while($row = mysqli_fetch_array($fetch))
                             <p class="pTipoInmuble"> <?php echo $row['tipo_nombre']; ?>,<?php echo $tipo_negocio; ?> </p>
                         </div>
 
-
                             <?php
                             if (file_exists('images/inmuebles/' .$row['inm_codigo'] . '/destacado/' .$row['inm_img'])) {
                                 ?>

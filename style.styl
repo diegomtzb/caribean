@@ -93,7 +93,11 @@ main
 main.main-index
   padding-bottom:7em;
   //padding-top: 22em;
-  padding-top 35%
+  padding-top 20%
+
+main.main-inmobiliaria
+  padding-bottom:7em;
+  padding-top 30em;
 
 main.main-cartera
   padding-bottom:7em;
@@ -397,7 +401,7 @@ paddingLeftRightSize = 24px
   margin 0 auto
   padding: 15px 10px;
   width: 355px;
-  background-color: rgba(249,178,52,0.8);
+  background-color: rgba(249,178,52,1);
   border-radius 5px
 
 .spaceBar
@@ -413,12 +417,16 @@ paddingLeftRightSize = 24px
   margin-bottom: 25px;
   margin-top: 25px;
 
+  width 82%
+  margin-left: 9%;
+  margin-right: 9%;
+
 #section-main #busqueda #criterios1 div
   float left
   color white
   background-color #f9b234
-  margin-right 2%
-  margin-left: 2%;
+  //margin-right 2%
+  //margin-left: 2%;
   padding: paddingTopDownSize paddingLeftRightSize;
   //padding-left: 50px;
   font-size: 1.5em;
@@ -464,8 +472,19 @@ paddingLeftRightSize = 24px
   border-radius: 4px;
 
 #section-main #busqueda div#ventas
-  padding: 5px 42px;
+  //padding: 5px 42px;
   border: 1px solid #f9b234;
+  padding: 0;
+  width: 135px;
+  text-align: center;
+  font-size: 1.5em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px
+  margin-right 10px
+  margin-top 10px
 
 #section-main #busqueda div#ventas:hover
   cursor pointer
@@ -483,8 +502,21 @@ paddingLeftRightSize = 24px
   color white
 
 #section-main #busqueda div#arriendos
-  margin-left 0%
+  //margin-left 0%
   border: 1px solid #f39200
+  //margin-left: 39px;
+  padding: 0;
+  width: 135px;
+  text-align: center;
+  font-size: 1.5em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin-right 25px
+  margin-top 10px
+
 
 #section-main #busqueda div#arriendos:hover
   cursor pointer
@@ -497,16 +529,31 @@ paddingLeftRightSize = 24px
   background-color: transparent;
   //border: 1px solid #efcc95;
   padding: 0;
-  margin: 0 10px;
+  //margin: 0 10px;
   font-style italic
-  width 224px
+  //width 224px
+  width: 309px;
+  margin-right 10px
+  margin-top 10px
+
+#section-main #busqueda div#price
+  background-color: transparent;
+  //border: 1px solid #efcc95;
+  //margin: 0 10px;
+  font-style italic
+  padding: 0;
+  width: 150px;
+  margin-right 25px
+  margin-top 10px
 
 #section-main #busqueda div#ubicacion
   background-color: transparent;
   //border: 1px solid #efcc95;
   padding: 0;
-  margin: 0 10px;
+  //margin: 0 10px;
   width: 309px;
+  margin-right: 10px
+  margin-top: 10px
 
 #section-main #busqueda div#codigo
   background-color: transparent;
@@ -519,9 +566,10 @@ paddingLeftRightSize = 24px
 #section-main #busqueda div#buscar
   background-color: #f9b234
   //float: right;
-  margin-right: 2%;
-  margin-left: 1%;
+  //margin-right: 2%;
+  //margin-left: 1%;
   padding: 5px 10px;
+  margin-top 10px
 
 #section-main #busqueda div#buscar:hover
   cursor pointer
@@ -2044,6 +2092,8 @@ section#vision p
 
 .no-foto
   background-color white
+  border-left: 1px #C6C6C6 solid;
+  border-right: 1px #C6C6C6 solid;
 
 .no-foto img
   width: 50% !important;

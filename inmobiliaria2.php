@@ -24,7 +24,7 @@
 
 </header>
 
-<main class="main-index">
+<main class="main-inmobiliaria">
     <section id="section-main">
         <div id="busquedaCodigo">
             <div id="codigo">
@@ -44,7 +44,7 @@
         <div id="busqueda">
 
             <div id="criterios1">
-                <section id="controllers">
+                <section id="controllers col-lg-12">
 
                     <div id="ventas" class="active checkTrue" onclick="CheckActive(this, 2);">
                         <span>Ventas</span>
@@ -67,6 +67,12 @@
                     <div id="ubicacion">
                         <select onChange="javascript:ubicacionHasChanged();">
                             <option value="" disabled="disabled" selected="selected">Ubicación</option>
+                        </select>
+                    </div>
+
+                    <div id="price">
+                        <select onChange="javascript:priceHasChanged();">
+                            <option value="" disabled="disabled" selected="selected">Precio</option>
                         </select>
                     </div>
 

@@ -17,6 +17,7 @@
     .container {
         width: 1487px;
     }
+
 }
 
 
@@ -26,12 +27,6 @@ smaller than 1525
 *************************************************************************************/
 @media screen and (max-width: 1525px) {
     /*--------------------------------*/
-
-    #section-main #busqueda #criterios1 select{
-        padding: 3px 45px 3px 0;
-        width: 100%;
-    }
-
     #logosHeader .logofigure{
         padding-left: 0;
     }
@@ -56,12 +51,6 @@ smaller than 1349
 *************************************************************************************/
 @media screen and (max-width: 1349px) {
     /*--------------------------------*/
-    #section-main #busqueda div#buscar{
-        float: right;
-        margin-right: 3%;
-        margin-top: 10px;
-    }
-
     .aboutus .somos img{
         left: 46%;
     }
@@ -76,17 +65,6 @@ smaller than 1200
 *************************************************************************************/
 @media screen and (max-width: 1200px) {
     /*--------------------------------*/
-    #section-main #busqueda{
-        width: 100%;
-        max-width: 100%;
-    }
-
-    #section-main #busquedaCodigo{
-        width: 100%;
-        max-width: 100%;
-    }
-
-
 
     /*--------------------------------*/
 }
@@ -104,6 +82,11 @@ smaller than 1070
     .aboutus .somos img{
         left: 45%;
     }
+
+    .tittlebusqueda{
+        clear: both;
+        padding-top: 2em;
+    }
     /*--------------------------------*/
 }
 
@@ -113,13 +96,6 @@ smaller than 1000
 @media screen and (max-width: 1000px) {
     /*--------------------------------*/
 
-
-
-    #section-main #busqueda div#buscar{
-        margin-top: 10px;
-        width: 200px;
-        text-align: center;
-    }
     /*--------------------------------*/
 }
 
@@ -130,15 +106,6 @@ smaller than 991
 @media screen and (max-width: 991px) {
     #servicios-grupo div {
         min-height: 402px;
-    }
-
-    #section-main #busqueda div#ubicacion{
-        margin-left: 2%;
-        margin-top: 10px;
-    }
-
-    #section-main #busqueda div#buscar{
-        float: left;
     }
 
     #suscripcion div{
@@ -204,13 +171,6 @@ smaller than 705
         display: block;
     }*/
 
-    #section-main #busqueda div#buscar{
-        margin-left: 2%;
-    }
-
-    #section-main #busqueda div#tipo-inmueble{
-        max-width: 208px;
-    }
 
     .destacado .labelVerInmueble{
         top: 0;
@@ -245,6 +205,11 @@ smaller than 705
     .navwidth810{
         width: 33.2em;
     }
+
+    .navwidth604{
+        width: 25em;
+    }
+
     /*--------------------------------*/
 }
 
@@ -254,9 +219,6 @@ smaller than 606
 *************************************************************************************/
 @media screen and (max-width: 606px) {
     /*--------------------------------*/
-    #section-main #busqueda div#tipo-inmueble{
-        margin-top: 10px;
-    }
 
     #menuInmobiliaria  li a{
         width: 115px;
@@ -284,6 +246,10 @@ smaller than 606
 
     .navwidth810{
         width: 24.9em;
+    }
+
+    .navwidth604 {
+        width: 22em;
     }
 
     #logosheader .social figure img{
@@ -391,6 +357,10 @@ smaller than 430
         width: 16.9em;
     }
 
+    main.main-index{
+        padding-top: 35%;
+    }
+
 
 
     /*--------------------------------*/
@@ -401,10 +371,6 @@ smaller than 364
 *************************************************************************************/
 @media screen and (max-width: 364px) {
     /*--------------------------------*/
-    #section-main #busqueda div#arriendos{
-        margin-left: 2%;
-        margin-top: 10px;
-    }
 
     #mobilemenu{
         width: 75px;
