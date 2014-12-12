@@ -6,18 +6,28 @@ include('db.php');
 $all_data = array();
 
 //Se asignan las variables de php obteniendolas por el metodo POST enviadas desde script.js por Ajax
-$tipo_negocio = $_POST['negocio'];
+
+if (isset($_POST['negocio'])) {
+    $tipo_negocio = $_POST['negocio'];
+}
+
+if (isset($_POST['tipo'])) {
+    $tipo_inmueble = $_POST['tipo'];
+}
+
+if (isset($_POST['ubicacion'])) {
+    $ubicacion = $_POST['ubicacion'];
+}
+
+if (isset($_POST['tipo_val'])) {
+    $tipo_negocio_num = $_POST['tipo_val'];
+}
+
+//$tipo_negocio = $_POST['negocio'];
+//$tipo_inmueble = $_POST['tipo'];
+//$ubicacion = $_POST['ubicacion'];
+//$tipo_inmueble_val = $_POST['tipo_val'];
 $tipo_negocio_num = 0;
-$tipo_inmueble = $_POST['tipo'];
-$tipo_inmueble_val = $_POST['tipo_val'];
-$ubicacion = $_POST['ubicacion'];
-
-
-
-
-
-
-$query="SELECT * FROM inmueble WHERE ";
 
 if ($tipo_negocio == "VENTA") {
     $tipo_negocio_num=intval(2);
@@ -25,15 +35,9 @@ if ($tipo_negocio == "VENTA") {
     $tipo_negocio_num=intval(3);
 }
 
-
-
+$query="SELECT * FROM inmueble WHERE ";
 //$tipo_negocio debe venir siempre o venta o arriendo pero nunca vacio
 $query=$query . "inm_negocio='" . $tipo_negocio_num . "'";
-
-//print_r($query);
-
-
-
 
 //Las siguientes variables se asignan opcionalmente por el usuario
 if(strlen($ubicacion)>0)
@@ -48,9 +52,6 @@ if(strlen($tipo_inmueble)>0)
 {
     $query=$query ."and inm_tipo='" . $tipo_inmueble ."'" ;
 }
-
-
-
 
 //Variables para la paginación
 $pagi = 0;

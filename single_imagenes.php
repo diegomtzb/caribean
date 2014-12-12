@@ -79,7 +79,7 @@ $row = mysqli_fetch_array($fetch);
 
         <div class="col-sm-12 caracteristicas">
             <h4>OTRAS CARACTERÍSTICAS</h4>
-            <P>BLABLABLA</P>
+            <P><?php $row['inm_desc']?></P>
         </div>
     </div>
 

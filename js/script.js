@@ -5,6 +5,7 @@ var tipo_inmueble_val="";
 var ubicacion="";
 
 $(document).ready(function() {
+    /*
     $("#buscar").click(function(e) {
         alert("start");
 
@@ -77,7 +78,7 @@ $(document).ready(function() {
 
         alert("end");
         return false;
-    });
+    });*/
 
 
     var suscription_form = $("#suscription_form");
@@ -514,4 +515,74 @@ function get_sugeridos(){
         }
     });
 
+}
+
+function searchInmuebles() {
+
+    var section_search = $("#section-search");
+    var $search_result=$(".search_result")
+
+    //Se asignan las variables a asignar a dataString y enviar por ajax en un Json
+    $negocio = $("#criterios1").find(".active").find("label");
+    tipo_negocio = $negocio.text();
+    tipo_inmueble = $("#tipo-inmueble select").val();
+    tipo_inmueble_val = $("#tipo-inmueble option:selected").text();
+    ubicacion = $("#ubicacion select").val();
+
+    var paginacion = $(".paginacion");
+
+
+    var dataString = {
+        "negocio" : tipo_negocio,
+        "tipo" : tipo_inmueble,
+        "tipo_val" : tipo_inmueble_val,
+        "ubicacion" : ubicacion
+    };
+
+    $search_result.remove();
+
+    $("#sugeridos").hide();
+
+    $("footer").removeClass("absolutePosition");
+    $("#flash")
+        .show()
+        .fadeIn(400).html('<div class="medium load"><div>Loading…</div></div>');
+
+
+
+    section_search.slideDown( "fast");
+
+
+
+    $.ajax({
+        type: "POST",
+        url: "action.php",
+        data: dataString,
+        cache: true,
+        success: function(html){
+
+            $("#flash").hide();
+
+            if (html.indexOf("INICIO(BORRAR)") >= 0){
+                var start = html.indexOf("INICIO(BORRAR)")
+                var end = html.indexOf("FIN(BORRAR)")
+                var lenEnd = ("FIN(BORRAR)").length;
+                var res = html.substring(start, end+lenEnd);
+                var resSplit = res.split(",");
+                var pagiNavegacion = resSplit[1].split("->")[1];
+                paginacion.html(pagiNavegacion);
+                var newHtml = html.replace(res, "");
+            }
+
+
+            //$("#show").after(newHtml);
+            $("#section-search .inside_me").html($("#section-search .inside_me").html() + newHtml)
+        }
+    });
+
+    $('#suscripcion').css('margin-bottom', '5em');
+    $('footer').removeClass('noneDisplay');
+
+
+    return false;
 }

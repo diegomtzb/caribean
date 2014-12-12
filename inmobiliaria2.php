@@ -76,7 +76,7 @@
                         </select>
                     </div>
 
-                    <div id="buscar">
+                    <div id="buscar"  onclick="searchInmuebles()">
                         <span>Buscar</span>
                     </div>
                 </section>
