@@ -124,7 +124,7 @@
 
                         <p>Soluciones en viviendas de interés social y de interés prioritario.</p></li>
                     <li class="showhide"><a href="#">Administración
-                            <pan>de propiedad horizontal</span>
+                            <span>de propiedad horizontal</span>
                         </a>
 
                         <p>Generamos solución integral en la administración de edificios, conjuntos
@@ -145,16 +145,10 @@
 
             --></section>
 </main>
-<footer class="absolutePosition"><p>Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena -
-        Colombia</p>
 
-    <div></div>
-    <p>(5)668 70 64 - (5) 660 52 05</p>
+<!-- Footer -->
+<?php include("footer.html"); ?>
 
-    <div></div>
-    <p>*Diseño Web: Ludico</p>
-    <figure class="footer-logo"><p>Somos una empresa miembro de</p><img src="imgs/logo_footer.png"/></figure>
-</footer>
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>

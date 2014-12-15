@@ -48,12 +48,12 @@
                         <div id="controllers">
                             <div id="ventas" class="active checkTrue" onclick="CheckActive(this, 2);">
                                 <span>Ventas</span>
-                                <label>VENTA</label><!--Asi debe aparecer en la base de datos-->
+                                <label>2</label><!--Asi debe aparecer en la base de datos-->
                             </div>
 
                             <div id="arriendos" class="checkTrue" onclick="CheckActive(this, 3);">
                                 <span>Arriendos</span>
-                                <label>ARRIENDO</label><!--Asi debe aparecer en la base de datos-->
+                                <label>3</label><!--Asi debe aparecer en la base de datos-->
                             </div>
 
                             <div id="tipo-inmueble">
@@ -176,19 +176,10 @@
         <!-- /.row -->
     </div>
 
-    <footer>
-        <p>Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia</p>
-        <div></div>
-        <p>(5)668 70 64 - (5) 660 52 05</p>
-        <div></div>
-        <p>*Diseño Web: Ludico</p>
-        <div></div>
-
-        <figure class="footer-logo">
-            <p>Somos una empresa miembro de</p><img src="imgs/logo_footer.png"/>
-        </figure>
-    </footer>
 </section>
+
+<!-- Footer -->
+<?php include("footer.html"); ?>
 
 </body>
 

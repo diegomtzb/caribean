@@ -90,20 +90,8 @@
     </section>
 </main>
 
-
-    <footer>
-        <p>Centro, Sector La Matuna Edificio Banco Cafetero Oficina 703 -704 - 705, Cartagena - Colombia</p>
-        <div></div>
-        <p>(5)668 70 64 - (5) 660 52 05</p>
-        <div></div>
-        <p>*Diseño Web: Ludico</p>
-        <div></div>
-
-        <figure class="footer-logo">
-            <p>Somos una empresa miembro de</p><img src="imgs/logo_footer.png"/>
-        </figure>
-    </footer>
-</section>
+<!-- Footer -->
+<?php include("footer.html"); ?>
 
 </body>
 

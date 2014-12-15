@@ -5,82 +5,6 @@ var tipo_inmueble_val="";
 var ubicacion="";
 
 $(document).ready(function() {
-    /*
-    $("#buscar").click(function(e) {
-        alert("start");
-
-        e.preventDefault();
-
-        var section_search = $("#section-search");
-        var $search_result=$(".search_result")
-
-        //Se asignan las variables a asignar a dataString y enviar por ajax en un Json
-        $negocio = $("#criterios1").find(".active").find("label");
-        tipo_negocio = $negocio.text();
-        tipo_inmueble = $("#tipo-inmueble select").val();
-        tipo_inmueble_val = $("#tipo-inmueble option:selected").text();
-        ubicacion = $("#ubicacion select").val();
-
-        var paginacion = $(".paginacion");
-
-
-        var dataString = {
-            "negocio" : tipo_negocio,
-            "tipo" : tipo_inmueble,
-            "tipo_val" : tipo_inmueble_val,
-            "ubicacion" : ubicacion
-        };
-
-        $search_result.remove();
-
-        $("#sugeridos").hide();
-
-        $("footer").removeClass("absolutePosition");
-        $("#flash")
-            .show()
-            .fadeIn(400).html('<div class="medium load"><div>Loading…</div></div>');
-
-
-
-        section_search.slideDown( "fast");
-
-
-
-        $.ajax({
-            type: "POST",
-            url: "action.php",
-            data: dataString,
-            cache: true,
-            success: function(html){
-
-                $("#flash").hide();
-
-                if (html.indexOf("INICIO(BORRAR)") >= 0){
-                    var start = html.indexOf("INICIO(BORRAR)")
-                    var end = html.indexOf("FIN(BORRAR)")
-                    var lenEnd = ("FIN(BORRAR)").length;
-                    var res = html.substring(start, end+lenEnd);
-                    var resSplit = res.split(",");
-                    var pagiNavegacion = resSplit[1].split("->")[1];
-                    paginacion.html(pagiNavegacion);
-                    var newHtml = html.replace(res, "");
-                }
-
-
-                //$("#show").after(newHtml);
-                $("#section-search .inside_me").html($("#section-search .inside_me").html() + newHtml)
-            }
-        });
-
-        $('#suscripcion').css('margin-bottom', '5em');
-        $('footer').removeClass('noneDisplay');
-
-
-        alert("end");
-        return false;
-    });*/
-
-
     var suscription_form = $("#suscription_form");
     suscription_form.submit(function(event) {
         var form = $( this );
@@ -102,17 +26,6 @@ $(document).ready(function() {
         return false;
     });
 
-
-    /*var btnCheckActive = $(".checkTrue");
-    btnCheckActive.click(function(e){
-        e.preventDefault();
-        btnCheckActive.toggleClass("active");
-        //$( this ).toggleClass("active");
-
-        alert("okok");
-    });*/
-
-
     var lishowhide = $(".showhide");
     lishowhide.click(function(e){
         e.preventDefault();
@@ -133,18 +46,6 @@ $(document).ready(function() {
         }
 
     });
-
-    /*var showservices = $(".showservices");
-    showservices.hover(function() {
-        var contenedor = $( this).parent().parent();
-        //contenedor.find('p').toggle();
-
-        if (!$( this ).hasClass('active') ){
-            contenedor.find('p').show();
-        }
-
-    });*/
-
 
     var showservices = $(".showservices");
     showservices.hover(
@@ -243,63 +144,7 @@ function CheckActive(elemen, negocio){
     }
 }
 
-function linkNextPagi(pagi){
 
-    var section_search = $("#section-search");
-    var $search_result=$(".search_result")
-
-    //Se asignan las variables a asignar a dataString y enviar por ajax en un Json
-    /*var $negocio = $("#criterios1").find(".active").find("label");
-    var tipo_negocio = $negocio.text();
-    var tipo_inmueble = $("#tipo-inmueble select").val();
-    var tipo_inmueble_val = $("#tipo-inmueble option:selected").text();
-    var ubicacion = $("#ubicacion select").val();*/
-
-    var paginacion = $(".paginacion");
-
-    var dataString = {
-        "negocio" : tipo_negocio,
-        "tipo" : tipo_inmueble,
-        "tipo_val" : tipo_inmueble_val,
-        "ubicacion" : ubicacion,
-        "pagi" : pagi
-    };
-
-    $search_result.remove();
-
-    $("footer").removeClass("absolutePosition");
-    $("#flash")
-        .show()
-        .fadeIn(400).html('<div class="medium load"><div>Loading…</div></div>');
-
-    section_search.slideDown( "fast");
-
-    $.ajax({
-        type: "POST",
-        url: "action.php",
-        data: dataString,
-        cache: true,
-        success: function(html){
-
-            $("#flash").hide();
-            //alert(html);
-            if (html.indexOf("INICIO(BORRAR)") >= 0){
-                var start = html.indexOf("INICIO(BORRAR)")
-                var end = html.indexOf("FIN(BORRAR)")
-                var lenEnd = ("FIN(BORRAR)").length;
-                var res = html.substring(start, end+lenEnd);
-                var resSplit = res.split(",");
-                var pagiNavegacion = resSplit[1].split("->")[1];
-                paginacion.html(pagiNavegacion);
-                var newHtml = html.replace(res, "");
-            }
-            $("#show").after(newHtml);
-        }
-    });
-
-
-
-}
 
 
 function gotoChangeSearchAttributeFromNegocio(negocio){
@@ -517,72 +362,93 @@ function get_sugeridos(){
 
 }
 
-function searchInmuebles() {
+function search_inmuebles(){
 
+    var $search_result = $(".search_result");
     var section_search = $("#section-search");
-    var $search_result=$(".search_result")
-
-    //Se asignan las variables a asignar a dataString y enviar por ajax en un Json
-    $negocio = $("#criterios1").find(".active").find("label");
-    tipo_negocio = $negocio.text();
-    tipo_inmueble = $("#tipo-inmueble select").val();
-    tipo_inmueble_val = $("#tipo-inmueble option:selected").text();
-    ubicacion = $("#ubicacion select").val();
-
     var paginacion = $(".paginacion");
 
-
     var dataString = {
-        "negocio" : tipo_negocio,
-        "tipo" : tipo_inmueble,
-        "tipo_val" : tipo_inmueble_val,
-        "ubicacion" : ubicacion
+        "negocio" : $("#criterios1 .active label").text(),
+        "inmueble" : $("#tipo-inmueble select").val(),
+        "ubicacion" : $("#ubicacion select").val()
     };
 
     $search_result.remove();
-
     $("#sugeridos").hide();
 
-    $("footer").removeClass("absolutePosition");
     $("#flash")
         .show()
         .fadeIn(400).html('<div class="medium load"><div>Loading…</div></div>');
 
-
-
     section_search.slideDown( "fast");
 
-
-
     $.ajax({
-        type: "POST",
-        url: "action.php",
+        type: "GET",
+        url: "get_any.php",
         data: dataString,
         cache: true,
         success: function(html){
-
             $("#flash").hide();
 
+
+
             if (html.indexOf("INICIO(BORRAR)") >= 0){
-                var start = html.indexOf("INICIO(BORRAR)")
-                var end = html.indexOf("FIN(BORRAR)")
+                var start = html.indexOf("INICIO(BORRAR)");
+                var end = html.indexOf("FIN(BORRAR)");
                 var lenEnd = ("FIN(BORRAR)").length;
                 var res = html.substring(start, end+lenEnd);
-                var resSplit = res.split(",");
+                var resSplit = res.split(",*:");
                 var pagiNavegacion = resSplit[1].split("->")[1];
                 paginacion.html(pagiNavegacion);
                 var newHtml = html.replace(res, "");
             }
 
-
-            //$("#show").after(newHtml);
-            $("#section-search .inside_me").html($("#section-search .inside_me").html() + newHtml)
+            $("#section-search .inside_me").append(newHtml);
         }
     });
 
-    $('#suscripcion').css('margin-bottom', '5em');
-    $('footer').removeClass('noneDisplay');
+}
 
+function linkNextPagi(dataString){
+    var $search_result=$(".search_result");
+    var section_search = $("#section-search");
+    var paginacion = $(".paginacion");
 
-    return false;
+    var dataString = {
+        "negocio" : dataString.negocio,
+        "inmueble" : dataString.inmueble,
+        "ubicacion" : dataString.ubicacion,
+        "pagi" : dataString.pagi
+    };
+
+    $search_result.remove();
+
+    $("#flash")
+        .show()
+        .fadeIn(400).html('<div class="medium load"><div>Loading…</div></div>');
+
+    section_search.slideDown( "fast");
+
+    $.ajax({
+        type: "GET",
+        url: "get_any.php",
+        data: dataString,
+        cache: true,
+        success: function(html){
+
+            $("#flash").hide();
+            if (html.indexOf("INICIO(BORRAR)") >= 0){
+                var start = html.indexOf("INICIO(BORRAR)");
+                var end = html.indexOf("FIN(BORRAR)");
+                var lenEnd = ("FIN(BORRAR)").length;
+                var res = html.substring(start, end+lenEnd);
+                var resSplit = res.split(",*:");
+                var pagiNavegacion = resSplit[1].split("->")[1];
+                paginacion.html(pagiNavegacion);
+                var newHtml = html.replace(res, "");
+            }
+            $("#section-search .inside_me").append(newHtml);
+        }
+    });
 }
