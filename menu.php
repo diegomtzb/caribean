@@ -6,9 +6,9 @@
     <div class="container">
         <ul id="menuprincipal" class="nav nav-pills navwidth810">
             <?php if ($page == 'index') { ?>
-                <li class="active"><a class="padding25" href="index3.php">INICIO</a></li>
+                <li class="active"><a class="padding25" href="index.php">INICIO</a></li>
             <?php } else { ?>
-                <li><a class="padding25" href="index3.php">INICIO</a></li>
+                <li><a class="padding25" href="index.php">INICIO</a></li>
             <?php } ?>
 
             <?php if ($page == 'inmobiliaria') { ?>

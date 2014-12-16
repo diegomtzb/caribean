@@ -218,20 +218,19 @@ function gotoChangeSearchAttributeFromNegocio(negocio){
 
 
 function gotoChangeSearchAttributeFromTipoInmueble(negocio){
-
     var tipo_inmueble = $("#tipo-inmueble select").val();
-    var ubicacion = $("#ubicacion select").val();
+    var ubicacion = $("#ubicacion select");
 
-    $('#ubicacion select').css('color', '#c6c6cd');
+    ubicacion.css('color', '#c6c6cd');
 
-    $("#ubicacion").find('select').html('<option value="" disabled="disabled" selected="selected">Cargando...</option>');
+    ubicacion.html('<option value="" disabled="disabled" selected="selected">Cargando...</option>');
 
     var dataString = {
         "negocio" : negocio,
         "tipo" : tipo_inmueble,
         //"tipo" : null,
         //"ubicacion" : ubicacion,
-        "ubicacion" : ubicacion,
+        "ubicacion" : ubicacion.val(),
         "parametro" : 2
     };
 
@@ -242,7 +241,7 @@ function gotoChangeSearchAttributeFromTipoInmueble(negocio){
         cache: true,
         success: function(html){
             html='<option value="" disabled="disabled" selected="selected">Ubicación</option>' + html;
-            $("#ubicacion").find('select').html(html);
+            ubicacion.html(html);
         }
     });
 
@@ -300,29 +299,16 @@ function orderByHasChanged(){
 
 function tipoInmuebleHasChanged(){
     $('#tipo-inmueble select').css('color', '#f39200');
-
     var negocio = $("#criterios1").find(".active").find("label").text();
-    if (negocio=="VENTA")
-    {
-        negocio = 2;
-    }else
-    {
-        negocio = 3;
+    if(negocio==""){
+        negocio=$("#controllers .checktrue.active label").text();
     }
     gotoChangeSearchAttributeFromTipoInmueble(negocio);
 }
 
 function ubicacionHasChanged(){
     $('#ubicacion select').css('color', '#f39200');
-
     var negocio = $("#criterios1").find(".active").find("label").text();
-    if (negocio=="VENTA")
-    {
-        negocio = 2;
-    }else
-    {
-        negocio = 3;
-    }
     gotoChangeSearchAttributeFromUbicacion(negocio);
 }
 
@@ -448,6 +434,104 @@ function linkNextPagi(dataString){
                 paginacion.html(pagiNavegacion);
                 var newHtml = html.replace(res, "");
             }
+            $("#section-search .inside_me").append(newHtml);
+        }
+    });
+}
+
+function busqueda_codigo(){
+    var $search_result=$(".search_result");
+    var section_search = $("#section-search");
+    var surroundcodigo = $(".surroundcodigo input").val();
+    if (surroundcodigo ==""){
+        alert("Debe escribir un código del inmueble");
+        return;
+    }
+
+    var dataString = {
+        "codigo" : surroundcodigo
+    };
+
+    $search_result.remove();
+    $("#sugeridos").hide();
+
+    $("#flash")
+        .show()
+        .fadeIn(400).html('<div class="medium load"><div>Loading…</div></div>');
+
+    section_search.slideDown( "fast");
+
+    $.ajax({
+        type: "GET",
+        url: "get_codigo.php",
+        data: dataString,
+        cache: true,
+        success: function(html){
+            $("#flash").hide();
+            $("#section-search .inside_me").append(html);
+        }
+    });
+}
+
+function busqueda_home(){
+    var dataString = {
+        "negocio" : $("#controllers .checktrue.active label").text(),
+        "inmueble" : $("#tipo-inmueble select").val(),
+        "ubicacion" : $("#ubicacion select").val()
+    };
+
+    var string_url = "?negocio=" + dataString.negocio;
+    if (dataString.inmueble != null){
+        string_url += "&inmueble=" + dataString.inmueble;
+    }
+    if (dataString.ubicacion != null){
+        string_url += "&ubicacion=" + dataString.ubicacion;
+    }
+
+    window.location.href = 'inmobiliaria2.php' + string_url;
+}
+
+function busqueda_home_inmobiliaria(datastring){
+    var $search_result = $(".search_result");
+    var section_search = $("#section-search");
+    var paginacion = $(".paginacion");
+
+    var dataString = {
+        "negocio" : datastring.negocio,
+        "inmueble" : datastring.inmueble,
+        "ubicacion" : datastring.ubicacion
+    };
+
+    $search_result.remove();
+    $("#sugeridos").hide();
+
+    $("#flash")
+        .show()
+        .fadeIn(400).html('<div class="medium load"><div>Loading…</div></div>');
+
+    section_search.slideDown( "fast");
+
+    $.ajax({
+        type: "GET",
+        url: "get_any.php",
+        data: dataString,
+        cache: true,
+        success: function(html){
+            $("#flash").hide();
+
+
+
+            if (html.indexOf("INICIO(BORRAR)") >= 0){
+                var start = html.indexOf("INICIO(BORRAR)");
+                var end = html.indexOf("FIN(BORRAR)");
+                var lenEnd = ("FIN(BORRAR)").length;
+                var res = html.substring(start, end+lenEnd);
+                var resSplit = res.split(",*:");
+                var pagiNavegacion = resSplit[1].split("->")[1];
+                paginacion.html(pagiNavegacion);
+                var newHtml = html.replace(res, "");
+            }
+
             $("#section-search .inside_me").append(newHtml);
         }
     });

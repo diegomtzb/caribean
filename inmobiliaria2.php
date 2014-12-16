@@ -30,13 +30,14 @@
             <div id="codigo">
                 <div class="surroundcodigo">
                     <input type="text" placeholder="Buscar por código" name="codigo"/>
-                    <span class="hovercodigo"></span>
+                    <span class="hovercodigo" onclick="busqueda_codigo();"></span>
                 </div>
             </div>
         </div>
 
         <div class="tittlebusqueda">
-
+            <div class="barratittle"></div>
+            <div class="barratittle leftrightadded"></div>
             <h3>BUSQUE SU INMUEBLE</h3>
             <!--<div class="spaceBar"></div>-->
         </div>
@@ -153,5 +154,27 @@
     get_sugeridos();
     gotoChangeSearchAttributeFromNegocio(2);
 </script>
+
+<?php
+if (isset($_GET['negocio'])) {
+    $negocio = $_GET['negocio'];
+    //2 venta, 3 arriendo
+
+    $inmueble="";
+    $ubicacion="";
+
+    if (isset($_GET['inmueble'])) {
+        $inmueble = $_GET['inmueble'];
+    }
+
+    if (isset($_GET['ubicacion'])) {
+        $ubicacion = $_GET['ubicacion'];
+    }
+
+    $dataString = array('negocio' => $negocio, 'inmueble' => $inmueble, 'ubicacion' => $ubicacion);
+    $dataString = json_encode($dataString);
+    echo "<script>busqueda_home_inmobiliaria($dataString);</script>";
+}
+?>
 
 </html>

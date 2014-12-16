@@ -97,7 +97,7 @@ main.main-index
 
 main.main-inmobiliaria
   padding-bottom:7em;
-  padding-top 30em;
+  padding-top 23em;
 
 main.main-cartera
   padding-bottom:7em;
@@ -334,7 +334,7 @@ paddingLeftRightSize = 24px
   position: relative;
   overflow: hidden;
   float: left;
-
+  z-index: 2
 
 #section-main #busquedaCodigo div#codigo .surroundcodigo span.hovercodigo
   position: absolute;
@@ -365,7 +365,6 @@ paddingLeftRightSize = 24px
   padding-left: 20px;
   padding-top: 6px;
 
-
 #section-main #busquedaCodigo div#codigo ::-webkit-input-placeholder {
   color: #be1622;
 }
@@ -386,23 +385,41 @@ paddingLeftRightSize = 24px
   background: rgba(255,255,255,0.6);
   border-radius: 4px;
   margin: auto;
+  margin-bottom 25px
 
 #section-main #busqueda #criterios1 section#controllers
   width: 1055px;
   overflow: hidden;
   margin: auto;
 
+#section-main .tittlebusqueda{
+  position: relative;
+  top: 1.3em;
+}
+
 #section-main .tittlebusqueda h3
   color white
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   margin 0 auto
   padding: 15px 10px;
-  width: 355px;
+  width: 305px;
   background-color: rgba(249,178,52,1);
   border-radius 5px
+
+#section-main .barratittle
+  width: calc(50% - 152px);
+  height: 6px;
+  position: relative;
+  top: 35px;
+  left: 0;
+  background-color: #f9b234;
+
+#section-main .barratittle.leftrightadded
+  left: calc(50% + 152px);
+  top: 29px;
 
 .spaceBar
   height 1px
@@ -604,9 +621,7 @@ paddingLeftRightSize = 24px
   font-size: 2.5em;
   font-style: italic;
   font-weight: bold;
-
-
-
+  margin-top 30px
 
 #section-search
   background-color #EDEDED

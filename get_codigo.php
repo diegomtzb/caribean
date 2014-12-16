@@ -2,148 +2,13 @@
 
 include('db.php');
 
-$negocio="";
-$inmueble="";
-$ubicacion="";
-$string_url="";//Para usar en link de paginacion después de ?
-
-//Se asignan las variables de php obteniendolas por el metodo GET enviadas desde script.js por Ajax
-if (isset($_GET['negocio'])) {
-    $negocio = $_GET['negocio'];
-    //2 venta, 3 arriendo
-    $string_url = "negocio=$negocio";
+if (isset($_GET['codigo'])) {
+    $codigo = $_GET['codigo'];
 }
 
-if ($negocio == 2) {
-    $negocio_string="Venta";
-} elseif ($negocio == 3) {
-    $negocio_string="Arriendo";
-}
-
-if (isset($_GET['inmueble'])) {
-    $inmueble = $_GET['inmueble'];
-}
-
-if (isset($_GET['ubicacion'])) {
-    $ubicacion = $_GET['ubicacion'];
-}
-
-$query="SELECT * FROM inmueble WHERE ";
-//$negocio debe venir siempre o 2 (venta) o 3 (arriendo) pero nunca vacio
-$query=$query . "inm_negocio='" . $negocio . "'";
-
-//Las siguientes variables se asignan opcionalmente por el usuario
-if(strlen($ubicacion)>0)
-{
-    $queryUbicacion = "SELECT * FROM zonas WHERE zon_nombre='" . $ubicacion . "'" . " and zon_ciu_id=3";
-    $fetchUbicacion = mysqli_query($conn, $queryUbicacion);
-    $rowUbicacion = mysqli_fetch_array($fetchUbicacion);
-    $query=$query . " and inm_zon_id='" . $rowUbicacion['zon_id'] . "'";
-}
-
-if(strlen($inmueble)>0)
-{
-    $query=$query ."and inm_tipo='" . $inmueble ."'" ;
-}
-
-$query=$query . " and inm_ciu_id='3'";
-
-
-//Variables para la paginación
-$pagi = 0;
-if (isset($_GET['pagi']))
-{
-    $pagi = $_GET['pagi'];
-}
-$contar_pagi = (strlen($pagi));    // Contamos el numero de caracteres
-
-// Numero de registros por pagina
-$numer_reg = 12;
-
-$result0= mysqli_query($conn, $query);
-$numero_registros0 = mysqli_num_rows($result0);
-
-$pag_anterior = "";
-$separador = "";
-$pag_siguiente = "";
-
-##############################################
-// ----------------------------- Pagina anterior
-$prim_reg_an = $numer_reg - $pagi;
-$prim_reg_ant = abs($prim_reg_an);        // Tomamos el valor absoluto
-
-
-if ($pagi <> 0)
-{
-    $dataString = array('negocio' => $negocio, 'inmueble' => $inmueble, 'ubicacion' => $ubicacion, 'pagi' => $prim_reg_ant);
-    $dataString = json_encode($dataString);
-    //$pag_anterior = "<a href='resultados.php?pagi=$prim_reg_ant'>Pagina anterior</a>";
-    //$pag_anterior = "<a href='javascript:void(0)' onclick='linkNextPagi($prim_reg_ant);'>Anterior</a>";
-    $pag_anterior = "<a href='javascript:void(0)' onclick='linkNextPagi($dataString);'>Anterior</a>";
-
-}
-
-// ----------------------------- Pagina siguiente
-$prim_reg_sigu = $numer_reg + $pagi;
-
-//$string_url .= "&pagi=$prim_reg_sigu";
-
-if ($pagi < $numero_registros0 - ($numer_reg))
-{
-    //$pag_siguiente = "<a href='action.php?pagi=$prim_reg_sigu'>Pagina siguiente</a>";
-    //$pag_siguiente = "<a href='get_any.php?$string_url'>Pagina siguiente</a>";
-    $dataString = array('negocio' => $negocio, 'inmueble' => $inmueble, 'ubicacion' => $ubicacion, 'pagi' => $prim_reg_sigu);
-    $dataString = json_encode($dataString);
-
-    $pag_siguiente = "<a href='javascript:void(0)' onclick='linkNextPagi($dataString);'>Siguiente</a>";
-
-}
-
-// ----------------------------- Separador
-$pagActual = $pagi/$numer_reg + 1;
-$numPaginas = ceil($numero_registros0/$numer_reg);
-$separador = "<p>Página $pagActual de $numPaginas</p>";
-
-// Creamos la barra de navegacion
-
-$pagi_navegacion = "$pag_anterior $separador $pag_siguiente";
-
-
-// -----------------------------
-##############################################
-
-
-
-
-//Mostraremos solo los n elementos necesarios
-//-----------------------------------------
-if ($contar_pagi > 0)
-{
-// Si recibimos un valor por la variable $page ejecutamos esta consulta
-
-    //$query = "select * from $nombre_tabla LIMIT $pagi,$numer_reg";
-    $query = $query .  "LIMIT  $pagi,$numer_reg";
-}
-else
-{
-// Si NO recibimos un valor por la variable $page ejecutamos esta consulta
-
-    //$query = "select * from $nombre_tabla LIMIT 0,$numer_reg";
-    $query = $query .  "LIMIT  0,$numer_reg";
-}
+$query="SELECT * FROM inmueble WHERE inm_codigo = '" . $codigo . "'";
 $fetch= mysqli_query($conn, $query);
-$numero_registros = mysqli_num_rows($fetch);
-//-----------------------------------------
 
-
-?>
-
-
-INICIO(BORRAR),*:
-Navegcion-><?php echo $pagi_navegacion;?>,*:
-FIN(BORRAR)
-
-<?php
 while($row = mysqli_fetch_array($fetch)) {
 
     if ( $row['inm_valor'] == "") {
@@ -152,8 +17,11 @@ while($row = mysqli_fetch_array($fetch)) {
         $format_price =  number_format($row['inm_valor']);
     }
 
-
-
+    if( $row['inm_negocio'] == 2) {
+        $negocio_string = "Venta";
+    }else {
+        $negocio_string = "Arriendo";
+    }
 
     if ( $row['inm_tipo'] == 1) {
         $tipo_inmueble="Proyecto";
