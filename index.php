@@ -25,19 +25,7 @@
             <div class="row destbusq">
                 <div class="col-md-6 patchstyle upto430">
                     <div class="destacado">
-                        <a href="#">
-                            <figure class="figure-destacado">
-                                <img src="imgs/SALA_Playa-mod.png">
-                            </figure>
 
-                            <div class="labelVerInmueble">
-                                <p>Para Arriendo, Apartamento En Cartagena, Bocagrande
-                                    120m2, 3 habitaciones, 2 baños</p>
-                            </div>
-                            <div class="labelVerInmuebleMas">
-                                <p>Ver más</p>
-                            </div>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-5 patchstyle">
@@ -71,6 +59,11 @@
                             <div id="price">
                                 <select onChange="javascript:priceHasChanged();">
                                     <option value="" disabled="disabled" selected="selected">Precio</option>
+                                    <option value="1">0-100.000.000</option>
+                                    <option value="2">100.000.000-200.000.000</option>
+                                    <option value="2">200.000.000-300.000.000</option>
+                                    <option value="2">300.000.000-400.000.000</option>
+                                    <option value="2">Mayor 400.000.000</option>
                                 </select>
                             </div>
 
@@ -191,6 +184,7 @@
 
 <!--Se llama para cargar la informacion inicial de las busquedas-->
 <script>
+    get_sugerido_main();
     gotoChangeSearchAttributeFromNegocio(2);
 </script>
 </html>

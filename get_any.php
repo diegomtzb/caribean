@@ -198,12 +198,12 @@ while($row = mysqli_fetch_array($fetch)) {
                     <figure>
                         <img src="images/inmuebles/<?php echo $row['inm_codigo'] ?>/destacado/<?php echo $row['inm_img'] ?>"/>
                         <?php
-                        } else{
+                    } else{
                         ?>
                         <figure class="no-foto">
                             <img src="imgs/No-foto.png"/>
                             <?php
-                            }
+                    }
                             ?>
                             <div class="labelVerInmueble">
                                 <p>VER INMUEBLE</p>

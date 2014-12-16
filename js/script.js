@@ -140,7 +140,8 @@ function CheckActive(elemen, negocio){
     if (!me.hasClass("active"))
     {
         btnCheckActive.toggleClass("active");
-        gotoChangeSearchAttributeFromNegocio(negocio)
+        gotoChangeSearchAttributeFromNegocio(negocio);
+        cargar_precio(negocio);
     }
 }
 
@@ -333,6 +334,18 @@ function startSliding(){
     alert ("starting");
 }
 
+function get_sugerido_main(){
+    $.ajax({
+        type: "POST",
+        url: "get_sugerido_main.php",
+        data: "",
+        cache: true,
+        success: function(get_html){
+            $(".destacado").html(get_html);
+        }
+    });
+
+}
 
 function get_sugeridos(){
 
@@ -535,4 +548,35 @@ function busqueda_home_inmobiliaria(datastring){
             $("#section-search .inside_me").append(newHtml);
         }
     });
+}
+
+function busqueda_from_menu(elemen, negocio){
+    var me = $(elemen);
+    me.addClass("active");
+}
+
+function cargar_precio(negocio){
+    var price = $("#price");
+    var html='<select onChange="javascript:priceHasChanged();">';
+    if (negocio==2){
+        html += '<option value="" disabled="disabled" selected="selected">Precio</option>';
+        html += '<option value="1">0-100.000.000</option>';
+        html += '<option value="2">100.000.000-200.000.000</option>';
+        html += '<option value="2">200.000.000-300.000.000</option>';
+        html += '<option value="2">300.000.000-400.000.000</option>';
+        html += '<option value="2">Mayor 400.000.000</option>';
+    }else{
+        html += '<option value="" disabled="disabled" selected="selected">Precio</option>';
+        html += '<option value="1">0-1.000.000</option>';
+        html += '<option value="2">1.000.000-2.000.000</option>';
+        html += '<option value="2">2.000.000-3.000.000</option>';
+        html += '<option value="2">3.000.000-4.000.000</option>';
+        html += '<option value="2">Mayor 4.000.000</option>';
+    }
+    html += '</select>';
+    price.html(html);
+}
+
+function priceHasChanged(){
+    $('#price select').css('color', '#f39200');
 }

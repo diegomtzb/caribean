@@ -16,8 +16,8 @@
 
     <div id = "menuInmobiliaria">
             <ul class="nav nav-pills navwidth604">
-                <li class="active"><a class="padding25" href="#">VENTAS</a></li>
-                <li><a class="padding25" href="#">ARRIENDOS</a></li>
+                <li><a class="padding25" href="inmobiliaria2.php?negocio=2">VENTAS</a></li>
+                <li><a class="padding25" href="inmobiliaria2.php?negocio=3">ARRIENDOS</a></li>
                 <li><a class="padding25" href="servicios.php">SERVICIOS</a></li>
             </ul>
     </div>
@@ -74,6 +74,11 @@
                     <div id="price">
                         <select onChange="javascript:priceHasChanged();">
                             <option value="" disabled="disabled" selected="selected">Precio</option>
+                            <option value="1">0-100.000.000</option>
+                            <option value="2">100.000.000-200.000.000</option>
+                            <option value="2">200.000.000-300.000.000</option>
+                            <option value="2">300.000.000-400.000.000</option>
+                            <option value="2">Mayor 400.000.000</option>
                         </select>
                     </div>
 

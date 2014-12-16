@@ -102,9 +102,6 @@ while($row = mysqli_fetch_array($fetch)) {
                             </div>
                         </div>
                 </div>
-
-
-
             </div>
 
         </div>

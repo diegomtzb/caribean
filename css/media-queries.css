@@ -17,7 +17,6 @@
     .container {
         width: 1487px;
     }
-
 }
 
 
@@ -33,6 +32,10 @@ smaller than 1525
 
     footer figure.footer-logo p{
         display: none;
+    }
+
+    #single-info p{
+        font-size: 1.2em;
     }
 
     /*--------------------------------*/
@@ -140,6 +143,19 @@ smaller than 991
         text-align: left;
     }
 
+    .upto430{
+        display: none;
+    }
+
+    .from430{
+        display: block;
+    }
+
+    #single-info p.precio{
+        font-size: 2em;
+        padding-left: 5px;
+    }
+
 }
 
 /************************************************************************************
@@ -180,6 +196,15 @@ smaller than 768
 
     footer p{
         font-size: 0.8em;
+    }
+
+    #single-info{
+        margin-top: 3em;
+        width: 100%;
+    }
+
+    #reservar{
+        width: 100%;
     }
     /*--------------------------------*/
 
@@ -391,13 +416,13 @@ smaller than 430
         font-size: 0.5em;
     }
 
-    .upto430{
+    /*.upto430{
         display: none;
     }
 
     .from430{
         display: block;
-    }
+    }*/
 
     .destacado .labelVerInmuebleMas{
         right: 35%;
@@ -435,6 +460,34 @@ smaller than 430
         padding: 0;
     }
 
+    #section-main #busqueda div#ventas{
+        width: 100px;
+    }
+
+    #section-main #busqueda div#arriendos{
+        width: 100px;
+    }
+
+    #section-main #busqueda div#tipo-inmueble{
+        width: 265px;
+    }
+
+    #section-main #busqueda div#ubicacion{
+        width: 265px;
+    }
+
+    #page-single_imagenes #minuatures-single{
+        display: none;
+    }
+
+    #page-single_imagenes .caracteristicas h4{
+        font-size: 1.5em;
+    }
+
+    #single-info p.precio{
+        font-size: 1.5em;
+    }
+
 
 
     /*--------------------------------*/
@@ -465,6 +518,40 @@ smaller than 364
     #logosheader .social figure img{
         width: 29%;
     }
+
+    #page-single_imagenes .header h3{
+        font-size: 2em;
+        padding-left: 0;
+    }
+
+    #page-single_imagenes .caracteristicas h4{
+        font-size: 1em;
+    }
+
+    #single-info div h4{
+        font-size: 1.1em;
+    }
+
+    #single-info p{
+        font-size: 1em;
+    }
+
+    #single-info p.precio{
+        font-size: 1.1em;
+        padding: 0;
+    }
+
+    #reservar_frm form input[type="submit"]{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reservar_frm form input{
+        font-size: 1em;
+    }
+
+
 
 
     /*--------------------------------*/

@@ -18,6 +18,7 @@ $row = mysqli_fetch_array($fetch);
 <header class="header">
     <div class="container">
         <h3>DESCRIPCIÓN</h3>
+        <h2>Cod. <?php echo $row["inm_codigo"] ?></h2>
     </div>
 </header>
 
@@ -87,7 +88,7 @@ $row = mysqli_fetch_array($fetch);
             <div class="surround-single">
                 <div>
                     <h4 class="col-md-6">CIUDAD</h4>
-                    <p class="col-md-4">Cartagena</p>
+                    <p class="col-md-6">Cartagena</p>
                 </div>
 
                 <?php
@@ -111,7 +112,7 @@ $row = mysqli_fetch_array($fetch);
                 ?>
                 <div>
                     <h4 class="col-md-6">BARRIO</h4>
-                    <p class="col-md-4"> <?php echo $rowUbicacion['zon_nombre']?></p>
+                    <p class="col-md-6"> <?php echo $rowUbicacion['zon_nombre']?></p>
                 </div>
                 <?php
                 }
@@ -119,22 +120,22 @@ $row = mysqli_fetch_array($fetch);
 
                 <div>
                     <h4 class="col-md-6">TIPO DE INMUEBLE</h4>
-                    <p class="col-md-4"><?php echo  $tipoNegocio?></p>
+                    <p class="col-md-6"><?php echo  $tipoNegocio?></p>
                 </div>
 
                 <div>
                     <h4 class="col-md-6">HABITACIONES</h4>
-                    <p class="col-md-4"> <?php echo $row['inm_alcobas']?></p>
+                    <p class="col-md-6"> <?php echo $row['inm_alcobas']?></p>
                 </div>
 
                 <div>
                     <h4 class="col-md-6">BAÑOS</h4>
-                    <p class="col-md-4"> <?php echo $row['inm_banos']?></p>
+                    <p class="col-md-6"> <?php echo $row['inm_banos']?></p>
                 </div>
 
                 <div>
                     <h4 class="col-md-6">AREA</h4>
-                    <p class="col-md-4"> <?php echo $row['inm_area']?>m2</p>
+                    <p class="col-md-6"> <?php echo $row['inm_area']?>m2</p>
                 </div>
 
                 <div>

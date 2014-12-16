@@ -44,7 +44,8 @@ main.main-cartera {
   padding-top: 15em;
 }
 .newPadding {
-  padding-top: 16em;
+  padding-top: 8em;
+  padding-bottom: 6em;
   padding-left: 3em;
 }
 .header {
@@ -207,7 +208,7 @@ main.main-cartera {
   background-size: cover;
 }
 #page-contacto {
-  background: url("imgs/call-center.jpg") no-repeat center center fixed;
+  background: url("imgs/call-center-group.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1220,6 +1221,14 @@ section#vision p {
   font-weight: bold;
   padding-top: 20px;
   padding-left: 10px;
+  float: left;
+}
+#page-single_imagenes .header h2 {
+  color: #f9b234;
+  font-style: italic;
+  font-weight: bold;
+  float: right;
+  margin-top: 2em;
 }
 #single-info {
   background-color: #f9b234;
@@ -1292,6 +1301,7 @@ section#vision p {
 }
 #page-single_imagenes #minuatures-single figure.miniatureFigure {
   margin-top: 15px;
+  max-height: 101px;
 }
 #page-single_imagenes #minuatures-single figure.miniatureFigure.active {
   background-color: transparent;
@@ -1527,6 +1537,7 @@ section#vision p {
 #reservar_btn p {
   font-size: 1.8em;
   padding-top: 6px;
+  text-align: center !important;
 }
 #reservar_btn:hover {
   background-color: #f39200;
@@ -1871,7 +1882,7 @@ section#vision p {
   font-size: 1.5em;
   font-style: italic;
   text-align: center;
-  padding: 40px 0;
+  padding: 60px 0;
   width: 70%;
   margin: 0 auto;
 }
@@ -1988,6 +1999,9 @@ section#vision p {
 }
 .posrel {
   position: relative;
+}
+#cboxClose {
+  background: url("images/close.png") no-repeat 0 -20 !important;
 }
 @-moz-keyframes spin {
   to {
