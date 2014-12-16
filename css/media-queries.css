@@ -31,6 +31,10 @@ smaller than 1525
         padding-left: 0;
     }
 
+    footer figure.footer-logo p{
+        display: none;
+    }
+
     /*--------------------------------*/
 }
 
@@ -51,7 +55,9 @@ smaller than 1349
 *************************************************************************************/
 @media screen and (max-width: 1349px) {
     /*--------------------------------*/
-
+    footer figure.footer-logo img{
+        display: none;
+    }
     /*--------------------------------*/
 }
 
@@ -83,7 +89,6 @@ smaller than 1070
         clear: both;
         padding-top: 2em;
     }
-
     /*--------------------------------*/
 }
 
@@ -92,7 +97,17 @@ smaller than 1000
 *************************************************************************************/
 @media screen and (max-width: 1000px) {
     /*--------------------------------*/
+    #nuestrosservicios #fincaraiz img{
+        display: none;
+    }
 
+    #nuestrosServicios #gerenciadeproyectos img{
+        display: none;
+    }
+
+    #fincaraiz ul li p {
+        max-width: 100%;
+    }
     /*--------------------------------*/
 }
 
@@ -124,7 +139,6 @@ smaller than 991
     #single-info p {
         text-align: left;
     }
-
 
 }
 
@@ -159,6 +173,14 @@ smaller than 768
         font-size: 2em;
     }
 
+    #nuestrosServicios #titulo{
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    footer p{
+        font-size: 0.8em;
+    }
     /*--------------------------------*/
 
 }
@@ -278,7 +300,38 @@ smaller than 606
         font-size: 1em;
     }
 
+    #nuestrosServicios #contenido{
+        padding-top: 0;
+    }
 
+    #nuestrosServicios #contenido figure{
+        width: 57%;
+    }
+
+    #nuestrosServicios #contenido div.texto{
+        min-height: 0;
+    }
+
+    #nuestrosServicios #contenido div.texto p{
+        display: block !important;
+    }
+
+    #nuestrosServicios #gerenciadeproyectos {
+        padding-top: 0;
+    }
+
+    #nuestrosServicios .fincaraiz-gerenciadeproyectos{
+        min-height: 0;
+    }
+
+    #nuestrosServicios .fincaraiz-gerenciadeproyectos h1{
+        font-size: 3em;
+        text-align: center;
+    }
+
+    #nuestrosServicios .fincaraiz-gerenciadeproyectos ul{
+        font-size: 0.5em;
+    }
 
     /*--------------------------------*/
 }
@@ -378,6 +431,10 @@ smaller than 430
         padding-top: 35%;
     }
 
+    footer{
+        padding: 0;
+    }
+
 
 
     /*--------------------------------*/
@@ -399,6 +456,14 @@ smaller than 364
 
     #mobilemenu .rmm-toggled ul{
         font-size: 0.6em;
+    }
+
+    .rows4 .texto{
+        font-size: 0.9em;
+    }
+
+    #logosheader .social figure img{
+        width: 29%;
     }
 
 
