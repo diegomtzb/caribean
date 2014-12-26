@@ -5,8 +5,7 @@
 if(isset($_POST['email'])) {
 
     // CHANGE THE TWO LINES BELOW
-    //$email_to = "direccioncomercial@caribeanservice.com";
-    $email_to = "diego_martine57@hotmail.com";
+    $email_to = "direccioncomercial@caribeanservice.com";
     $email_to_cco = "diegomtzb@hotmail.com";
 
     $email_subject = utf8_decode ("Reserva Página Web Caribean");

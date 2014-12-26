@@ -47,25 +47,16 @@
       <file leaf-file-name="contacto.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contacto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="14" selection-start="2963" selection-end="2963" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="1292">
+            <state line="37" column="25" selection-start="1319" selection-end="1319" vertical-scroll-proportion="-14.115385" vertical-offset="262" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media-queries.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="media-queries.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/media-queries.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="0" selection-start="3502" selection-end="3502" vertical-scroll-proportion="-7.0807176" vertical-offset="8764" max-vertical-offset="9656">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="369" column="22" selection-start="10123" selection-end="10123" vertical-scroll-proportion="0.0" vertical-offset="5773" max-vertical-offset="9996">
+            <state line="144" column="0" selection-start="3502" selection-end="3502" vertical-scroll-proportion="0.0" vertical-offset="8764" max-vertical-offset="9656">
               <folding />
             </state>
           </provider>
@@ -83,7 +74,7 @@
       <file leaf-file-name="html_form_send.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html_form_send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="5" selection-start="2037" selection-end="2037" vertical-scroll-proportion="-12.730769" vertical-offset="570" max-vertical-offset="1768">
+            <state line="53" column="5" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -117,7 +108,16 @@
       <file leaf-file-name="single_imagenes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/single_imagenes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="22" selection-start="3730" selection-end="3730" vertical-scroll-proportion="0.0" vertical-offset="2091" max-vertical-offset="2992">
+            <state line="151" column="65" selection-start="4723" selection-end="4743" vertical-scroll-proportion="-18.307692" vertical-offset="2091" max-vertical-offset="2992">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="html_form_send2.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html_form_send2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="64" selection-start="651" selection-end="651" vertical-scroll-proportion="0.30177516" vertical-offset="0" max-vertical-offset="1836">
               <folding />
             </state>
           </provider>
@@ -136,7 +136,6 @@
         <option value="$PROJECT_DIR$/single_descripcion.php" />
         <option value="$PROJECT_DIR$/contacto.html" />
         <option value="$PROJECT_DIR$/html_form_send.php" />
-        <option value="$PROJECT_DIR$/html_form_send2.php" />
         <option value="$PROJECT_DIR$/index2.html" />
         <option value="$PROJECT_DIR$/style2.styl" />
         <option value="$PROJECT_DIR$/inmobiliaria2.html" />
@@ -170,6 +169,7 @@
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/inmobiliaria2.php" />
         <option value="$PROJECT_DIR$/css/media-queries.css" />
+        <option value="$PROJECT_DIR$/html_form_send2.php" />
       </list>
     </option>
   </component>
@@ -206,7 +206,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,22 +224,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caribean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caribean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,7 +298,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -326,26 +312,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278867" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -578,33 +544,11 @@
         <state line="2173" column="0" selection-start="40467" selection-end="40467" vertical-scroll-proportion="0.0" vertical-offset="36440" max-vertical-offset="37400" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inmobiliaria2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="67" selection-start="3286" selection-end="3286" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3230">
-          <folding>
-            <marker date="1418760971754" expanded="true" signature="56:82" placeholder="..." />
-            <marker date="1418760971754" expanded="true" signature="63:82" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="2" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contacto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="14" selection-start="2963" selection-end="2963" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="1292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html_form_send2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="9" selection-start="3704" selection-end="3704" vertical-scroll-proportion="-58.192307" vertical-offset="0" max-vertical-offset="1853" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_sugerido_main.php">
@@ -626,17 +570,27 @@
         <state line="9" column="0" selection-start="212" selection-end="284" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="4624" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/single_imagenes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="22" selection-start="3730" selection-end="3730" vertical-scroll-proportion="0.0" vertical-offset="2091" max-vertical-offset="2992">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="369" column="22" selection-start="10123" selection-end="10123" vertical-scroll-proportion="0.0" vertical-offset="5773" max-vertical-offset="9996">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/media-queries.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="0" selection-start="3502" selection-end="3502" vertical-scroll-proportion="0.0" vertical-offset="8764" max-vertical-offset="9656">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inmobiliaria2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="67" selection-start="3286" selection-end="3286" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3230">
+          <folding>
+            <marker date="1418760971754" expanded="true" signature="56:82" placeholder="..." />
+            <marker date="1418760971754" expanded="true" signature="63:82" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -649,14 +603,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html_form_send.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="5" selection-start="2037" selection-end="2037" vertical-scroll-proportion="-12.730769" vertical-offset="570" max-vertical-offset="1768">
+        <state line="53" column="5" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1768">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/media-queries.css">
+    <entry file="file://$PROJECT_DIR$/contacto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="0" selection-start="3502" selection-end="3502" vertical-scroll-proportion="-7.0807176" vertical-offset="8764" max-vertical-offset="9656">
+        <state line="37" column="25" selection-start="1319" selection-end="1319" vertical-scroll-proportion="-14.115385" vertical-offset="262" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single_imagenes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="65" selection-start="4723" selection-end="4743" vertical-scroll-proportion="-18.307692" vertical-offset="2091" max-vertical-offset="2992">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_form_send2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="64" selection-start="651" selection-end="651" vertical-scroll-proportion="0.30177516" vertical-offset="0" max-vertical-offset="1836">
           <folding />
         </state>
       </provider>
