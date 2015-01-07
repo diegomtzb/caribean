@@ -61,7 +61,12 @@ while($row = mysqli_fetch_array($fetch)) {
                     </div>
 
                     <?php
-                    if (file_exists('images/inmuebles/' .$row['inm_codigo'] . '/destacado/' .$row['inm_img'])) {
+                    if (file_exists('images/inmuebles/' .$row['inm_id'] . '/destacado/' .$row['inm_img'])) {
+                    ?>
+                    <figure>
+                        <img src="images/inmuebles/<?php echo $row['inm_id'] ?>/destacado/<?php echo $row['inm_img'] ?>"/>
+                        <?php
+                    }else if (file_exists('images/inmuebles/' .$row['inm_codigo'] . '/destacado/' .$row['inm_img'])) {
                     ?>
                     <figure>
                         <img src="images/inmuebles/<?php echo $row['inm_codigo'] ?>/destacado/<?php echo $row['inm_img'] ?>"/>

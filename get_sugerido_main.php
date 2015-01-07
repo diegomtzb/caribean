@@ -50,6 +50,11 @@ while($row = mysqli_fetch_array($fetch))
             <figure class="figure-destacado">
                 <img src="images/inmuebles/<?php echo $row['inm_codigo'] ?>/lightbox/<?php echo $row['inm_img'] ?>"/>
         <?php
+        }else if (file_exists('images/inmuebles/' .$row['inm_id'] . '/lightbox/' .$row['inm_img'])) {
+        ?>
+                <figure class="figure-destacado">
+                    <img src="images/inmuebles/<?php echo $row['inm_id'] ?>/lightbox/<?php echo $row['inm_img'] ?>"/>
+                    <?php
         } else{
         ?>
             <figure class="figure-destacado no-foto">

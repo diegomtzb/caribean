@@ -27,11 +27,18 @@ $row = mysqli_fetch_array($fetch);
         <h2>Cod. C16281</h2>
         <figure id="mainFigure">
             <?php
-            if (file_exists('images/inmuebles/' .$row['inm_codigo'] . '/lightbox/' .$row['inm_img'])) {
+            if (file_exists('images/inmuebles/' .$row['inm_id'] . '/lightbox/' .$row['inm_img'])) {
+                $folder = 'images/inmuebles/' .$row['inm_id'] . '/lightbox/';
+                ?>
+                <img src="images/inmuebles/<?php echo $row['inm_id'] ?>/lightbox/<?php echo $row['inm_img'] ?>"/>
+            <?php
+            }else if (file_exists('images/inmuebles/' .$row['inm_codigo'] . '/lightbox/' .$row['inm_img'])) {
+                $folder = 'images/inmuebles/' .$row['inm_codigo'] . '/lightbox/';
                 ?>
                 <img src="images/inmuebles/<?php echo $row['inm_codigo'] ?>/lightbox/<?php echo $row['inm_img'] ?>"/>
             <?php
             } else{
+                $folder = 'images/inmuebles/' .$row['inm_id'] . '/lightbox/';
                 ?>
                 <img src="imgs/No-foto.png"/>
             <?php
@@ -43,7 +50,7 @@ $row = mysqli_fetch_array($fetch);
         $imgMiniatures = array();
 
 
-        $folder = 'images/inmuebles/' .$row['inm_codigo'] . '/lightbox/';
+
         $filetype = '*.*';
         $files = glob($folder.$filetype);
         $count = count($files);
@@ -80,7 +87,7 @@ $row = mysqli_fetch_array($fetch);
 
         <div class="col-sm-12 caracteristicas">
             <h4>OTRAS CARACTERÍSTICAS</h4>
-            <P><?php $row['inm_desc']?></P>
+            <P><?php echo utf8_encode($row['inm_desc'])?></P>
         </div>
     </div>
 
