@@ -1300,17 +1300,17 @@ section#vision p {
   overflow: hidden;
   clear: both;
 }
-#page-single_imagenes #minuatures-single figure.miniatureFigure {
+#page-single_imagenes #minuatures-single .miniatureFigure {
   margin-top: 15px;
   max-height: 86px;
 }
-#page-single_imagenes #minuatures-single figure.miniatureFigure.active {
+#page-single_imagenes #minuatures-single .miniatureFigure.active {
   background-color: transparent;
 }
-#page-single_imagenes #minuatures-single figure.miniatureFigure img {
+#page-single_imagenes #minuatures-single .miniatureFigure img {
   max-width: 100%;
 }
-#page-single_imagenes #minuatures-single figure.miniatureFigure img:hover {
+#page-single_imagenes #minuatures-single .miniatureFigure img:hover {
   cursor: pointer;
 }
 #page-single_imagenes .caracteristicas {

@@ -64,6 +64,7 @@ $row = mysqli_fetch_array($fetch);
             //print_r($imgMiniatures);
             ?>
             <div id="minuatures-single" class="col-sm-12">
+
                 <?php
                 //for ($i = 0; $i < $count; $i++) {
                 for ($i = 0; $i < 4; $i++) {
@@ -148,6 +149,14 @@ $row = mysqli_fetch_array($fetch);
                 <div>
                     <?php $format_price =  number_format($row['inm_valor'])?>
                     <p class="precio">$ <?php echo $format_price?></p></div>
+                <?php
+                if ($id == 376)
+                {
+                    ?>
+                    <span>*Este valor incluye administración</span>
+                    <?php
+                }
+                ?>
             </div>
 
             <div id="reservar" class="col-sm-12">
@@ -174,4 +183,18 @@ $row = mysqli_fetch_array($fetch);
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
+
+<!-- slick slider JS -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<!-- initialize slick slider -->
+<script>
+    //Iniciar slick slider
+    $('.main-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000
+    });
+</script>
 </html>
