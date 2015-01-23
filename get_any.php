@@ -189,7 +189,7 @@ while($row = mysqli_fetch_array($fetch)) {
             <div class="result_info">
                 <div class="divInfo">
                     <div class="tittleapartamento">
-                        <p class="pTipoInmuble"> <?php echo $tipo_inmueble; ?>,<?php echo $negocio_string; ?> </p>
+                        <p class="pTipoInmuble"> <?php echo $tipo_inmueble; ?> en <?php echo $negocio_string; ?> </p>
                     </div>
 
                     <?php

@@ -38,7 +38,7 @@ if ( $row['inm_negocio'] == 1) {
     </div>
 </header>
 
-<div class="container">
+<div class="container" style="position: relative;">
     <div id="contenido-single" class="col-sm-6">
         <h2>Cod. C16281</h2>
         <figure id="mainFigure">
@@ -208,6 +208,11 @@ if ( $row['inm_negocio'] == 1) {
             </div>
         </div>
 
+        <figure class="logofigure" style="overflow: hidden;bottom: 0;position: absolute;right: 0;">
+            <a href="http://caribeanservice.com/inmobiliaria2.php">
+                <img src="imgs/logo-C-Service.png" style="width: 200px">
+            </a>
+        </figure>
 
 
 

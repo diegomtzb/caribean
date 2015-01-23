@@ -84,7 +84,7 @@ while($row = mysqli_fetch_array($fetch)) {
                         </figure>
 
                         <div class="detalles">
-                            <p>Para <?php echo $negocio_string; ?>, <?php echo $tipo_inmueble; ?> </p>
+                            <p>Para <?php echo $negocio_string; ?> en <?php echo $tipo_inmueble; ?> </p>
                             <p>En <?php echo $ciudad; ?>, <?php echo $rowUbicacion['zon_nombre']; ?></p>
                             <?php
                             if ( $row['inm_alcobas']==1){

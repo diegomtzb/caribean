@@ -41,7 +41,7 @@ while($row = mysqli_fetch_array($fetch))
                 <div class="result_info">
                     <div class="divInfo">
                         <div class="tittleapartamento">
-                            <p class="pTipoInmuble"> <?php echo $row['tipo_nombre']; ?>, <?php echo $tipo_negocio; ?> </p>
+                            <p class="pTipoInmuble"> <?php echo $row['tipo_nombre']; ?> en <?php echo $tipo_negocio; ?> </p>
                         </div>
 
                             <?php
