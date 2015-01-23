@@ -314,11 +314,12 @@ function ubicacionHasChanged(){
 }
 
 var miniatureFigureImg = $(".miniatureFigure img");
-miniatureFigureImg.click(function(e){
+$("#slider1").on("click", ".miniatureFigure img", function(e){
     e.preventDefault();
-    $('#minuatures-single').children().removeClass('active');
+    //$('#slider1').children().removeClass('active');
+    $('#slider1').children().children().children().removeClass('active');
     $( this ).parent().addClass("active");
-    var imgsrc=$( this ).attr("src");
+    var imgsrc = $( this ).attr("src");
     $('#mainFIgure img').attr("src", imgsrc);
 });
 

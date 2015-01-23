@@ -5,19 +5,35 @@ $id= $_GET['id'];
 $fetch = mysqli_query($conn,"SELECT * FROM inmueble WHERE inm_id=" . $id);
 $row = mysqli_fetch_array($fetch);
 
+$fetch_tipo = mysqli_query($conn,"SELECT * FROM tipos_inmueble WHERE tipo_inm_id=" .$row["inm_tipo"]);
+$row_tipo = mysqli_fetch_array($fetch_tipo);
+
+$tipoNegocio="";
+if ( $row['inm_negocio'] == 1) {
+    $tipoNegocio="Venta";
+} elseif ($row['inm_negocio'] == 2) {
+    $tipoNegocio="Arriendo";
+} elseif ($row['inm_negocio'] == 3) {
+    $tipoNegocio="Arriendo";
+}
+
 ?>
 
 <!DOCTYPE html5>
 <html>
 <head>
     <?php include("head.html"); ?>
+
+    <link rel="stylesheet" href="tinycarousel.css" type="text/css" media="screen"/>
+
 </head>
 
 <body id="page-single_imagenes">
 
 <header class="header">
     <div class="container">
-        <h3>DESCRIPCIÓN</h3>
+        <!--<h3>DESCRIPCIÓN</h3>-->
+        <h3><?php echo  $row_tipo["tipo_nombre"]?> para <?php echo  $tipoNegocio?></h3>
         <h2>Cod. <?php echo $row["inm_codigo"] ?></h2>
     </div>
 </header>
@@ -63,7 +79,7 @@ $row = mysqli_fetch_array($fetch);
 
             //print_r($imgMiniatures);
             ?>
-            <div id="minuatures-single" class="col-sm-12">
+            <!--<div id="minuatures-single" class="col-sm-12">
 
                 <?php
                 //for ($i = 0; $i < $count; $i++) {
@@ -81,10 +97,38 @@ $row = mysqli_fetch_array($fetch);
                     }
                 }
                 ?>
-            </div>
+            </div>-->
         <?php
         }
         ?>
+
+
+        <div id="slider1" class="col-sm-12">
+            <a class="buttons prev" href="#">&#60;</a>
+            <div class="viewport">
+                <ul class="overview">
+                    <?php
+                    for ($i = 0; $i < $count; $i++) {
+                    //for ($i = 0; $i < 4; $i++) {
+                        //echo $imgMiniatures[$i];
+                        if ($i == 0) {
+                            ?>
+                            <li class="col-sm-3 miniatureFigure active"><img src="<?php echo $imgMiniatures[$i]?>" /></li>
+                        <?php
+
+                        } else {
+                            ?>
+                            <li class="col-sm-3 miniatureFigure"><img src="<?php echo $imgMiniatures[$i]?>" /></li>
+                        <?php
+                        }
+                    }
+                    ?>
+                </ul>
+            </div>
+            <a class="buttons next" href="#">&#62;</a>
+        </div>
+
+
 
         <div class="col-sm-12 caracteristicas">
             <h4>OTRAS CARACTERÍSTICAS</h4>
@@ -100,17 +144,6 @@ $row = mysqli_fetch_array($fetch);
                 </div>
 
                 <?php
-                $tipoNegocio="";
-                if ( $row['inm_negocio'] == 1) {
-                    $tipoNegocio="Venta";
-                } elseif ($row['inm_negocio'] == 2) {
-                    $tipoNegocio="Arriendo";
-                } elseif ($row['inm_negocio'] == 3) {
-                    $tipoNegocio="Arriendo";
-                }
-
-
-
                 $queryUbicacion = "SELECT zon_nombre FROM zonas WHERE zon_id='" . $row['inm_zon_id'] . "'";
                 $fetchUbicacion = mysqli_query($conn, $queryUbicacion);
                 $rowUbicacion = mysqli_fetch_array($fetchUbicacion);
@@ -128,7 +161,7 @@ $row = mysqli_fetch_array($fetch);
 
                 <div>
                     <h4 class="col-md-6">TIPO DE INMUEBLE</h4>
-                    <p class="col-md-6"><?php echo  $tipoNegocio?></p>
+                    <p class="col-md-6"><?php echo  $row_tipo["tipo_nombre"]?></p>
                 </div>
 
                 <div>
@@ -183,3 +216,12 @@ $row = mysqli_fetch_array($fetch);
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
+
+<script type="text/javascript" src="jquery.tinycarousel.js"></script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $('#slider1').tinycarousel();
+    });
+</script>
