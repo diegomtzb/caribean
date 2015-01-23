@@ -183,18 +183,3 @@ $row = mysqli_fetch_array($fetch);
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
-
-<!-- slick slider JS -->
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<!-- initialize slick slider -->
-<script>
-    //Iniciar slick slider
-    $('.main-slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000
-    });
-</script>
-</html>
